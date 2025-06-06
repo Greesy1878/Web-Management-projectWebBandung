@@ -254,7 +254,7 @@
 
         // Muat dashboard secara default saat halaman dibuka
         window.onload = function () {
-            muatHalaman('dashboard');
+            muatHalaman('admin');
         };
     </script>
 
