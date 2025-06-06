@@ -4,9 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="umkm/globalsss.css" />
-    <link rel="stylesheet" href="umkm/styleee.css" />
-    <link rel="stylesheet" href="umkm/styleguideee.css" />
+    <link rel="stylesheet" href="pariwisata/globalss.css" />
+    <link rel="stylesheet" href="pariwisata/stylee.css" />
+    <link rel="stylesheet" href="pariwisata/styleguidee.css" />
     <title>Sagala Bandung - Portal Wisata & UMKM</title>
 </head>
 
