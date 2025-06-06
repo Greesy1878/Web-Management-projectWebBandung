@@ -22,11 +22,18 @@
             <div class="hamburger-line"></div>
         </div>
         <nav class="nav-menu">
-            <div class="nav-item active">Home</div>
-            <div class="nav-item">UMKM</div>
-            <div class="nav-item">Pariwisata</div>
-            <button class="login-btn">Login</button>
+            <form action="{{ url('/') }}" method="GET">
+                <button type="submit" class="nav-item active">Home</button>
+            </form>
+            <form action="{{ url('/umkm') }}" method="GET">
+                <button type="submit" class="nav-item">UMKM</button>
+            </form>
+            <form action="{{ url('/pariwisata') }}" method="GET">
+                <button type="submit" class="nav-item">Pariwisata</button>
+            </form>
+            <button class="login-btn" onclick="location.href='{{ url('/login') }}'">Login</button>
         </nav>
+        
     </header>
 
    @yield('content')

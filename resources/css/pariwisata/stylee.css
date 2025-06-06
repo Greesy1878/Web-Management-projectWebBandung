@@ -1,0 +1,1984 @@
+.UMKM-user {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.UMKM-user .welcoming-dashboard-wrapper {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 7600px;
+  position: relative;
+}
+
+.UMKM-user .welcoming-dashboard {
+  position: relative;
+  height: 7600px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  overflow-y: scroll;
+}
+
+.UMKM-user .welcoming-dashboard::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.UMKM-user .footer {
+  position: absolute;
+  width: 1920px;
+  height: 406px;
+  top: 7194px;
+  left: 0;
+  background-color: #3d5c73;
+}
+
+.UMKM-user .horizontal-border {
+  position: absolute;
+  width: 1920px;
+  height: 334px;
+  top: 0;
+  left: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #f4f4f633;
+}
+
+.UMKM-user .container {
+  position: absolute;
+  width: 330px;
+  height: 213px;
+  top: 61px;
+  left: 491px;
+}
+
+.UMKM-user .hello-we-are-lift {
+  position: absolute;
+  width: 269px;
+  height: 72px;
+  top: 46px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .list {
+  position: absolute;
+  width: 306px;
+  height: 37px;
+  top: 131px;
+  left: 12px;
+}
+
+.UMKM-user .element {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.UMKM-user .icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 0;
+}
+
+.UMKM-user .icon-wrapper {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: 0;
+  left: 28px;
+}
+
+.UMKM-user .img-wrapper {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: 0;
+  left: 56px;
+}
+
+.UMKM-user .div {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: 0;
+  left: 84px;
+}
+
+.UMKM-user .heading-about {
+  position: absolute;
+  height: 29px;
+  top: -1px;
+  left: 12px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #f4f4f6;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-2 {
+  position: absolute;
+  width: 330px;
+  height: 213px;
+  top: 61px;
+  left: 821px;
+}
+
+.UMKM-user .list-2 {
+  position: absolute;
+  width: 306px;
+  height: 120px;
+  top: 45px;
+  left: 12px;
+}
+
+.UMKM-user .div-wrapper {
+  position: absolute;
+  width: 65px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.UMKM-user .text-wrapper {
+  position: absolute;
+  width: 65px;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-2 {
+  position: absolute;
+  width: 89px;
+  height: 24px;
+  top: 32px;
+  left: 0;
+}
+
+.UMKM-user .text-wrapper-2 {
+  position: absolute;
+  width: 90px;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-3 {
+  position: absolute;
+  width: 98px;
+  height: 24px;
+  top: 64px;
+  left: 0;
+}
+
+.UMKM-user .text-wrapper-3 {
+  position: absolute;
+  width: 99px;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .terms-conditions-wrapper {
+  position: absolute;
+  width: 139px;
+  height: 24px;
+  top: 96px;
+  left: 0;
+}
+
+.UMKM-user .terms-conditions {
+  position: absolute;
+  width: 140px;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-3 {
+  position: absolute;
+  width: 278px;
+  height: 213px;
+  top: 61px;
+  left: 1151px;
+}
+
+.UMKM-user .heading-contact {
+  width: 99px;
+  position: absolute;
+  height: 29px;
+  top: -1px;
+  left: 12px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #f4f4f6;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  white-space: nowrap;
+}
+
+.UMKM-user .list-3 {
+  position: absolute;
+  width: 254px;
+  height: 88px;
+  top: 45px;
+  left: 12px;
+}
+
+.UMKM-user .element-4 {
+  position: absolute;
+  width: 140px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.UMKM-user .text-wrapper-4 {
+  position: absolute;
+  height: 24px;
+  top: -1px;
+  left: 24px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-5 {
+  position: absolute;
+  width: 176px;
+  height: 24px;
+  top: 32px;
+  left: 0;
+}
+
+.UMKM-user .element-6 {
+  position: absolute;
+  width: 209px;
+  height: 24px;
+  top: 64px;
+  left: 0;
+}
+
+.UMKM-user .p {
+  position: absolute;
+  height: 24px;
+  top: 359px;
+  left: 807px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6cc;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .berita {
+  position: absolute;
+  width: 1920px;
+  height: 3598px;
+  top: 3596px;
+  left: 0;
+}
+
+.UMKM-user .overlap {
+  position: relative;
+  height: 3598px;
+}
+
+.UMKM-user .group {
+  position: absolute;
+  width: 1920px;
+  height: 3598px;
+  top: 0;
+  left: 0;
+}
+
+.UMKM-user .background {
+  position: relative;
+  height: 3598px;
+  background-color: #f6f6f6;
+}
+
+.UMKM-user .group-2 {
+  position: absolute;
+  width: 1320px;
+  height: 1184px;
+  top: 120px;
+  left: 300px;
+}
+
+.UMKM-user .container-4 {
+  position: absolute;
+  width: 770px;
+  height: 163px;
+  top: 0;
+  left: 274px;
+}
+
+.UMKM-user .text-wrapper-5 {
+  position: absolute;
+  height: 24px;
+  top: -1px;
+  left: 364px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .heading {
+  position: absolute;
+  width: 746px;
+  height: 115px;
+  top: 24px;
+  left: 12px;
+}
+
+.UMKM-user .text-wrapper-6 {
+  position: absolute;
+  width: 787px;
+  height: 116px;
+  top: -2px;
+  left: -20px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 57.6px;
+}
+
+.UMKM-user .container-5 {
+  position: absolute;
+  width: 660px;
+  height: 985px;
+  top: 199px;
+  left: 0;
+}
+
+.UMKM-user .element-7 {
+  position: absolute;
+  width: 636px;
+  height: 798px;
+  top: 0;
+  left: 12px;
+}
+
+.UMKM-user .solo-travel {
+  position: absolute;
+  width: 69px;
+  height: 5px;
+  top: 821px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .pulang-dari-wisata-wrapper {
+  position: absolute;
+  width: 493px;
+  height: 62px;
+  top: 851px;
+  left: 12px;
+}
+
+.UMKM-user .pulang-dari-wisata {
+  position: absolute;
+  height: 58px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  text-decoration: underline;
+}
+
+.UMKM-user .jelajahi-destinasi {
+  position: absolute;
+  width: 636px;
+  height: 39px;
+  top: 935px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #345867;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .container-6 {
+  position: absolute;
+  width: 330px;
+  height: 468px;
+  top: 199px;
+  left: 660px;
+}
+
+.UMKM-user .element-8 {
+  position: absolute;
+  width: 306px;
+  height: 300px;
+  top: 0;
+  left: 12px;
+}
+
+.UMKM-user .text-wrapper-7 {
+  position: absolute;
+  height: 25px;
+  top: 314px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-9 {
+  position: absolute;
+  width: 250px;
+  height: 52px;
+  top: 354px;
+  left: 12px;
+}
+
+.UMKM-user .text-wrapper-8 {
+  position: absolute;
+  width: 251px;
+  height: 48px;
+  top: 1px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.UMKM-user .jelajahi-wisata {
+  position: absolute;
+  width: 294px;
+  height: 38px;
+  top: 429px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #345867;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .container-7 {
+  position: absolute;
+  width: 330px;
+  height: 468px;
+  top: 199px;
+  left: 990px;
+}
+
+.UMKM-user .detik-com {
+  position: absolute;
+  width: 69px;
+  height: 6px;
+  top: 323px;
+  left: 12px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-8 {
+  position: absolute;
+  width: 330px;
+  height: 492px;
+  top: 692px;
+  left: 660px;
+}
+
+.UMKM-user .container-9 {
+  position: absolute;
+  width: 330px;
+  height: 492px;
+  top: 692px;
+  left: 990px;
+}
+
+.UMKM-user .element-10 {
+  position: absolute;
+  width: 250px;
+  height: 52px;
+  top: 355px;
+  left: 12px;
+}
+
+.UMKM-user .text-wrapper-9 {
+  position: absolute;
+  width: 251px;
+  height: 48px;
+  top: -1px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.UMKM-user .vector {
+  position: absolute;
+  width: 263px;
+  height: 216px;
+  top: 3101px;
+  left: 1588px;
+}
+
+.UMKM-user .img {
+  position: absolute;
+  width: 207px;
+  height: 320px;
+  top: 3126px;
+  left: 166px;
+}
+
+.UMKM-user .login-untuk-agar {
+  position: absolute;
+  top: 3047px;
+  left: 618px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 58px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 75.4px;
+}
+
+.UMKM-user .text-wrapper-10 {
+  position: absolute;
+  width: 907px;
+  top: 3252px;
+  left: 508px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42.3px;
+}
+
+.UMKM-user .bola-wrapper {
+  position: absolute;
+  width: 1920px;
+  height: 777px;
+  top: 2250px;
+  left: 0;
+  background-image: url(./img/vector-9.svg);
+  background-size: 100% 100%;
+}
+
+.UMKM-user .bola {
+  position: relative;
+  width: 779px;
+  height: 528px;
+  top: 125px;
+  left: 571px;
+}
+
+.UMKM-user .overlap-group {
+  position: relative;
+  height: 528px;
+}
+
+.UMKM-user .rectangle {
+  position: absolute;
+  width: 538px;
+  height: 528px;
+  top: 0;
+  left: 136px;
+  background-color: #3d5c73;
+  border-radius: 264.16px;
+}
+
+.UMKM-user .layer {
+  position: absolute;
+  width: 761px;
+  height: 283px;
+  top: 16px;
+  left: 0;
+}
+
+.UMKM-user .overlap-group-2 {
+  position: absolute;
+  width: 607px;
+  height: 248px;
+  top: 0;
+  left: 154px;
+}
+
+.UMKM-user .group-3 {
+  position: absolute;
+  width: 17px;
+  height: 24px;
+  top: 81px;
+  left: 486px;
+}
+
+.UMKM-user .vector-2 {
+  position: absolute;
+  width: 386px;
+  height: 174px;
+  top: 1px;
+  left: 54px;
+}
+
+.UMKM-user .vector-3 {
+  position: absolute;
+  width: 125px;
+  height: 217px;
+  top: 23px;
+  left: 482px;
+}
+
+.UMKM-user .vector-4 {
+  position: absolute;
+  width: 39px;
+  height: 33px;
+  top: 0;
+  left: 440px;
+}
+
+.UMKM-user .vector-5 {
+  position: absolute;
+  width: 38px;
+  height: 32px;
+  top: 170px;
+  left: 326px;
+}
+
+.UMKM-user .vector-6 {
+  position: absolute;
+  width: 502px;
+  height: 239px;
+  top: 9px;
+  left: 0;
+}
+
+.UMKM-user .vector-7 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 48px;
+  left: 27px;
+}
+
+.UMKM-user .vector-8 {
+  position: absolute;
+  width: 35px;
+  height: 31px;
+  top: 33px;
+  left: 100px;
+}
+
+.UMKM-user .vector-9 {
+  position: absolute;
+  width: 307px;
+  height: 196px;
+  top: 97px;
+  left: 16px;
+}
+
+.UMKM-user .frame {
+  gap: 7.89px;
+  padding: 15.78px 31.56px;
+  position: absolute;
+  top: 345px;
+  left: 62px;
+  background-color: var(--white);
+  border-radius: 98.62px;
+  overflow: hidden;
+  box-shadow: 0px 42.41px 25.64px #0000000d, 0px 75.94px 30.57px #00000003,
+    0px 118.34px 33.53px transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.UMKM-user .location {
+  position: relative;
+  width: 23.67px;
+  height: 23.67px;
+}
+
+.UMKM-user .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--medium);
+  font-size: 13.8px;
+  letter-spacing: 0;
+  line-height: 16.6px;
+  white-space: nowrap;
+}
+
+.UMKM-user .card {
+  position: absolute;
+  width: 179px;
+  height: 66px;
+  top: 142px;
+  left: 600px;
+  box-shadow: -0.99px 38.46px 83.82px #0000001a,
+    -4.93px 151.87px 151.87px #00000017, -11.83px 342.2px 205.12px #0000000d,
+    -21.7px 608.47px 243.58px #00000003, -33.53px 951.66px 266.27px transparent;
+}
+
+.UMKM-user .frame-wrapper {
+  height: 66px;
+}
+
+.UMKM-user .frame-2 {
+  gap: 7.89px;
+  padding: 15.78px 31.56px;
+  position: relative;
+  background-color: var(--white);
+  border-radius: 9.86px;
+  overflow: hidden;
+  box-shadow: 0px 42.41px 25.64px #0000000d, 0px 75.94px 30.57px #00000003,
+    0px 118.34px 33.53px transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.UMKM-user .kabupaten-bandung {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.99px;
+  font-family: "Poppins-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5d50c6;
+  font-size: 13.8px;
+  letter-spacing: 0;
+  line-height: 16.6px;
+}
+
+.UMKM-user .frame-3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 7.89px;
+  padding: 15.78px 31.56px;
+  position: absolute;
+  top: 472px;
+  left: 516px;
+  background-color: var(--white);
+  border-radius: 98.62px;
+  overflow: hidden;
+  box-shadow: 0px 42.41px 25.64px #0000000d, 0px 75.94px 30.57px #00000003,
+    0px 118.34px 33.53px transparent;
+}
+
+.UMKM-user .text {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  align-items: center;
+  gap: 96px;
+  position: absolute;
+  top: 1475px;
+  left: 0;
+}
+
+.UMKM-user .title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.UMKM-user .since {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Instrument Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  line-height: 12.6px;
+  white-space: nowrap;
+}
+
+.UMKM-user .text-wrapper-12 {
+  position: relative;
+  width: 283px;
+  font-family: "Instrument Serif-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.36px;
+  line-height: 16.2px;
+}
+
+.UMKM-user .frame-4 {
+  flex-direction: column;
+  gap: 96px;
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+}
+
+.UMKM-user .wilujeng-SUMPING {
+  position: relative;
+  width: 1231px;
+  margin-top: -1px;
+  font-family: "Instrument Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 170px;
+  text-align: center;
+  letter-spacing: -3.4px;
+  line-height: 153px;
+}
+
+.UMKM-user .span {
+  color: #ffa03f;
+  letter-spacing: -5.78px;
+}
+
+.UMKM-user .text-wrapper-13 {
+  color: #000000;
+  letter-spacing: -5.78px;
+}
+
+.UMKM-user .text-wrapper-14 {
+  position: relative;
+  width: 1106px;
+  font-family: "Instrument Serif-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.UMKM-user .destinasi-carousel {
+  position: absolute;
+  width: 1296px;
+  height: 829px;
+  top: 2725px;
+  left: 312px;
+  overflow: hidden;
+}
+
+.UMKM-user .group-4 {
+  position: relative;
+  width: 2736px;
+  height: 829px;
+}
+
+.UMKM-user .number-page {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 797px;
+  left: 572px;
+}
+
+.UMKM-user .page {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: #919eab;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.UMKM-user .carat {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.UMKM-user .page-active-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.UMKM-user .page-active {
+  position: relative;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--gsfsky-blue);
+}
+
+.UMKM-user .num {
+  position: absolute;
+  width: 24px;
+  top: 4px;
+  left: 4px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--gsfsky-blue);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.UMKM-user .page-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #dfe3e8;
+}
+
+.UMKM-user .num-2 {
+  position: absolute;
+  width: 24px;
+  top: 4px;
+  left: 4px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #212b36;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.UMKM-user .destinasi {
+  position: absolute;
+  width: 1296px;
+  height: 756px;
+  top: 0;
+  left: 0;
+}
+
+.UMKM-user .element-wrapper {
+  position: absolute;
+  width: 856px;
+  height: 311px;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .overlap-group-wrapper {
+  height: 311px;
+  background-color: #012e4166;
+}
+
+.UMKM-user .overlap-group-3 {
+  position: relative;
+  width: 158px;
+  height: 261px;
+  top: 24px;
+  left: 24px;
+}
+
+.UMKM-user .background-2 {
+  position: absolute;
+  width: 65px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 800px;
+}
+
+.UMKM-user .icon-2 {
+  top: 9px;
+  left: 12px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .text-wrapper-15 {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  top: 3px;
+  left: 34px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #4cc9f0;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .div-2 {
+  position: absolute;
+  width: 152px;
+  height: 207px;
+  top: 31px;
+  left: 0;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .text-wrapper-16 {
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .text-wrapper-17 {
+  position: absolute;
+  width: 158px;
+  height: 23px;
+  top: 238px;
+  left: 0;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-10 {
+  position: absolute;
+  width: 416px;
+  height: 420px;
+  top: 335px;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .element-11 {
+  position: relative;
+  height: 420px;
+  background-color: #012e4166;
+}
+
+.UMKM-user .overlap-group-4 {
+  position: absolute;
+  width: 152px;
+  height: 347px;
+  top: 24px;
+  left: 24px;
+}
+
+.UMKM-user .text-wrapper-18 {
+  position: absolute;
+  width: 152px;
+  height: 316px;
+  top: 31px;
+  left: 0;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .text-wrapper-19 {
+  position: absolute;
+  height: 25px;
+  top: 371px;
+  left: 24px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-11 {
+  position: absolute;
+  width: 416px;
+  height: 420px;
+  top: 335px;
+  left: 440px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .container-12 {
+  position: absolute;
+  width: 416px;
+  height: 234px;
+  top: 0;
+  left: 880px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .element-12 {
+  position: relative;
+  height: 234px;
+  background-color: #012e4166;
+}
+
+.UMKM-user .overlap-group-5 {
+  position: absolute;
+  width: 152px;
+  height: 161px;
+  top: 24px;
+  left: 24px;
+}
+
+.UMKM-user .text-wrapper-20 {
+  position: absolute;
+  width: 152px;
+  height: 130px;
+  top: 31px;
+  left: 0;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.UMKM-user .text-wrapper-21 {
+  position: absolute;
+  height: 25px;
+  top: 185px;
+  left: 24px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-13 {
+  position: absolute;
+  width: 416px;
+  height: 234px;
+  top: 258px;
+  left: 880px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .text-wrapper-22 {
+  width: 134px;
+  height: 24px;
+  top: 185px;
+  position: absolute;
+  left: 24px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-14 {
+  position: absolute;
+  width: 416px;
+  height: 234px;
+  top: 516px;
+  left: 880px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UMKM-user .destinasi-page {
+  position: absolute;
+  width: 1296px;
+  height: 756px;
+  top: 0;
+  left: 1440px;
+}
+
+.UMKM-user .destinasi-2 {
+  position: relative;
+  height: 756px;
+}
+
+.UMKM-user .icon-3 {
+  top: -1038px;
+  left: 16351px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .icon-4 {
+  top: -1374px;
+  left: 16351px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .icon-5 {
+  top: -1374px;
+  left: 15911px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .icon-6 {
+  top: -1038px;
+  left: 15471px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .icon-7 {
+  top: -1296px;
+  left: 15471px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .icon-8 {
+  top: -1554px;
+  left: 15471px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .container-15 {
+  position: absolute;
+  width: 770px;
+  height: 163px;
+  top: 2520px;
+  left: 575px;
+}
+
+.UMKM-user .text-wrapper-23 {
+  position: absolute;
+  height: 24px;
+  top: -1px;
+  left: 352px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .testimoni {
+  position: absolute;
+  width: 1296px;
+  height: 352px;
+  top: 2060px;
+  left: 312px;
+}
+
+.UMKM-user .overlap-2 {
+  position: relative;
+  height: 352px;
+}
+
+.UMKM-user .paragraph {
+  position: absolute;
+  width: 770px;
+  height: 142px;
+  top: 0;
+  left: 263px;
+}
+
+.UMKM-user .overlap-group-6 {
+  position: relative;
+  width: 735px;
+  height: 81px;
+  top: -1px;
+  left: 18px;
+}
+
+.UMKM-user .text-wrapper-24 {
+  position: absolute;
+  width: 83px;
+  height: 24px;
+  top: 0;
+  left: 326px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .heading-what-our {
+  position: absolute;
+  width: 735px;
+  height: 58px;
+  top: 24px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 57.6px;
+  white-space: nowrap;
+}
+
+.UMKM-user .container-16 {
+  position: absolute;
+  width: 1296px;
+  height: 210px;
+  top: 142px;
+  left: 0;
+  overflow: hidden;
+}
+
+.UMKM-user .group-5 {
+  position: absolute;
+  width: 421px;
+  height: 210px;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #e9e9e9;
+}
+
+.UMKM-user .group-6 {
+  position: absolute;
+  width: 421px;
+  height: 210px;
+  top: 0;
+  left: 437px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #fa7335;
+}
+
+.UMKM-user .group-7 {
+  position: absolute;
+  width: 421px;
+  height: 210px;
+  top: 0;
+  left: 875px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #e9e9e9;
+}
+
+.UMKM-user .rekomendasi {
+  position: absolute;
+  width: 1920px;
+  height: 1053px;
+  top: 892px;
+  left: 0;
+  background-color: #3d5c73;
+}
+
+.UMKM-user .container-17 {
+  position: absolute;
+  width: 770px;
+  height: 139px;
+  top: 120px;
+  left: 575px;
+}
+
+.UMKM-user .text-wrapper-25 {
+  position: absolute;
+  height: 24px;
+  top: -1px;
+  left: 337px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .rekomendasi-trip {
+  position: absolute;
+  width: 712px;
+  height: 115px;
+  top: -1px;
+  left: 17px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 57.6px;
+}
+
+.UMKM-user .background-border {
+  position: absolute;
+  width: 416px;
+  height: 512px;
+  top: 319px;
+  left: 312px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #e9e9e9;
+}
+
+.UMKM-user .overlap-group-7 {
+  position: absolute;
+  width: 366px;
+  height: 284px;
+  top: 25px;
+  left: 25px;
+}
+
+.UMKM-user .button {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: 82px;
+  height: 34px;
+  top: 8px;
+  left: 8px;
+  background-color: #ffa03f;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #fa7335;
+}
+
+.UMKM-user .text-wrapper-26 {
+  position: absolute;
+  width: 48px;
+  height: 24px;
+  top: 4px;
+  left: 17px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .icon-9 {
+  top: 338px;
+  left: 25px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.UMKM-user .text-wrapper-27 {
+  position: absolute;
+  height: 25px;
+  top: 332px;
+  left: 43px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #345867;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .gunung-tangkuban-wrapper {
+  position: absolute;
+  width: 245px;
+  height: 24px;
+  top: 365px;
+  left: 25px;
+}
+
+.UMKM-user .text-wrapper-28 {
+  position: absolute;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #012e41;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .list-4 {
+  position: absolute;
+  width: 366px;
+  height: 24px;
+  top: 397px;
+  left: 25px;
+}
+
+.UMKM-user .item {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 0;
+}
+
+.UMKM-user .item-2 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 18px;
+}
+
+.UMKM-user .item-3 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 36px;
+}
+
+.UMKM-user .item-4 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 54px;
+}
+
+.UMKM-user .item-5 {
+  position: absolute;
+  height: 17px;
+  top: 3px;
+  left: 72px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #012e41;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-13 {
+  width: 101px;
+  height: 42px;
+  top: 445px;
+  left: 290px;
+  background-color: #ffa03f;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #fa7335;
+  position: absolute;
+}
+
+.UMKM-user .text-wrapper-29 {
+  position: absolute;
+  width: 59px;
+  height: 24px;
+  top: 8px;
+  left: 21px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .background-border-2 {
+  left: 752px;
+  position: absolute;
+  width: 416px;
+  height: 512px;
+  top: 319px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #e9e9e9;
+}
+
+.UMKM-user .element-14 {
+  width: 366px;
+  height: 284px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.UMKM-user .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 82px;
+  height: 34px;
+  top: 8px;
+  left: 8px;
+  background-color: #ffa03f;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #fa7335;
+}
+
+.UMKM-user .glamping-lakeside-wrapper {
+  position: absolute;
+  width: 186px;
+  height: 24px;
+  top: 365px;
+  left: 25px;
+}
+
+.UMKM-user .background-border-3 {
+  left: 1192px;
+  position: absolute;
+  width: 416px;
+  height: 512px;
+  top: 319px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #e9e9e9;
+}
+
+.UMKM-user .sunrise-point-cukul-wrapper {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  top: 365px;
+  left: 25px;
+}
+
+.UMKM-user .element-15 {
+  position: absolute;
+  width: 120px;
+  height: 42px;
+  top: 891px;
+  left: 900px;
+  background-color: #26a59e;
+  border-radius: 4px;
+  border: 1px solid;
+  overflow-y: scroll;
+}
+
+.UMKM-user .element-15::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.UMKM-user .text-wrapper-30 {
+  position: absolute;
+  width: 79px;
+  height: 24px;
+  top: 8px;
+  left: 21px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #f4f4f6;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .SAGALA-BANDUNG {
+  position: absolute;
+  width: 1921px;
+  height: 817px;
+  top: 75px;
+  left: 0;
+  background-color: #bababa;
+}
+
+.UMKM-user .page-awal {
+  position: relative;
+  height: 817px;
+}
+
+.UMKM-user .text-wrapper-31 {
+  position: absolute;
+  width: 383px;
+  top: 408px;
+  left: 926px;
+  font-family: "Instrument Sans-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.UMKM-user .text-wrapper-32 {
+  position: absolute;
+  top: 219px;
+  left: 614px;
+  font-family: "Montserrat Alternates-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 128px;
+  text-align: center;
+  letter-spacing: -2.56px;
+  line-height: normal;
+}
+
+.UMKM-user .text-wrapper-33 {
+  position: absolute;
+  top: 140px;
+  left: 614px;
+  font-family: "Instrument Serif-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 110px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.UMKM-user .header {
+  position: absolute;
+  width: 1920px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.UMKM-user .list-5 {
+  position: relative;
+  width: 1202px;
+  height: 58px;
+  top: 9px;
+  left: 359px;
+}
+
+.UMKM-user .item-6 {
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: 10px;
+  left: 465px;
+}
+
+.UMKM-user .element-16 {
+  position: relative;
+  height: 40px;
+}
+
+.UMKM-user .text-wrapper-34 {
+  position: absolute;
+  width: 38px;
+  height: 24px;
+  top: 7px;
+  left: 8px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000a3;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .item-7 {
+  position: absolute;
+  width: 103px;
+  height: 40px;
+  top: 10px;
+  left: 667px;
+}
+
+.UMKM-user .text-wrapper-35 {
+  position: absolute;
+  width: 71px;
+  height: 24px;
+  top: 7px;
+  left: 8px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000a6;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .item-wrapper {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  top: 10px;
+  left: 535px;
+}
+
+.UMKM-user .item-8 {
+  position: relative;
+  width: 60px;
+  height: 40px;
+  left: 36px;
+}
+
+.UMKM-user .text-wrapper-36 {
+  position: absolute;
+  height: 25px;
+  top: 7px;
+  left: 8px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa7335;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.UMKM-user .element-17 {
+  position: absolute;
+  width: 101px;
+  height: 42px;
+  top: 8px;
+  left: 1097px;
+  background-color: #26a59e;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.UMKM-user .text-wrapper-37 {
+  position: absolute;
+  width: 59px;
+  height: 24px;
+  top: 8px;
+  left: 21px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
