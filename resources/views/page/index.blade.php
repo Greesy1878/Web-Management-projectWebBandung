@@ -13,7 +13,7 @@
                         </div>
                         <div class="item-7">
                             <div class="element-16">
-                                <a href="{{ route('pariwisata') }}">Pariwisata</a>
+                                <a href="{{ route('pariwisata.dashboard') }}">Pariwisata</a>
                             </div>
                         </div>
                         <div class="item-wrapper">

@@ -17,22 +17,20 @@
                     <div class="list-5">
                         <div class="item-6">
                             <div class="element-16">
-                                <a href="{{ route('dashboard') }}" class="nav-item">Home</a>
+                                <a href="{{ route('admin.dashboard') }}" class="nav-item">Home</a>
                             </div>
                         </div>
                         <div class="item-7">
                             <div class="element-16">
-                                <a href="{{ route('pariwisata') }}" class="nav-item">Pariwisata</a>
+                                <a href="{{ route('pariwisata.dashboard') }}" class="nav-item">Pariwisata</a>
                             </div>
                         </div>
                         <div class="item-8">
                             <div class="element-16">
-                                <a href="{{ route('umkm') }}" class="nav-item active">UMKM</a>
+                                <a href="{{ route('umkm.dashboard') }}" class="nav-item active">UMKM</a>
                             </div>
                         </div>
-                        <div class="element-17">
-                            <a href="{{ route('login') }}" class="login-btn">Login</a>
-                        </div>
+                        
                     </div>
                 </header>
 
