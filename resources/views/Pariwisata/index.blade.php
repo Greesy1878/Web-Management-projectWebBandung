@@ -1,286 +1,822 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="pariwisata/globalss.css" />
-    <link rel="stylesheet" href="pariwisata/stylee.css" />
-    <link rel="stylesheet" href="pariwisata/styleguidee.css" />
-    <title>Sagala Bandung - Portal Wisata & UMKM</title>
-</head>
-
-<body>
-    <div class="UMKM-user">
-        <div class="welcoming-dashboard-wrapper">
-            <div class="welcoming-dashboard">
-                <!-- Footer -->
-                <div class="footer">
-                    <div class="horizontal-border">
-                        <div class="container">
-                            <p class="hello-we-are-lift">
-                                Halo, kami adalah Lift Media. Tujuan kami adalah<br />menerjemahkan efek positif
-                                dari<br />revolusi digital
-                            </p>
-                            <div class="list">
-                                <div class="element">
-                                    <img class="icon" src="img/icon-3.svg" alt="Icon Media" />
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img class="icon" src="img/icon-14.svg" alt="Icon Sosial" />
-                                </div>
-                                <div class="img-wrapper">
-                                    <img class="icon" src="img/icon-21.svg" alt="Icon Wisata" />
-                                </div>
-                                <div class="div">
-                                    <img class="icon" src="img/icon-18.svg" alt="Icon UMKM" />
-                                </div>
-                            </div>
-                            <div class="heading-about">Sagala Bandung</div>
-                        </div>
-                        <div class="container-2">
-                            <div class="heading-about">Tentang Kami</div>
-                            <div class="list-2">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper">Profil</div>
-                                </div>
-                                <div class="element-2">
-                                    <div class="text-wrapper-2">Layanan</div>
-                                </div>
-                                <div class="element-3">
-                                    <div class="text-wrapper-3">Kebijakan Privasi</div>
-                                </div>
-                                <div class="terms-conditions-wrapper">
-                                    <div class="terms-conditions">Syarat & Ketentuan</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-3">
-                            <div class="heading-contact">Kontak</div>
-                            <div class="list-3">
-                                <div class="element-4">
-                                    <img class="icon" src="img/icon-8.svg" alt="Telepon" />
-                                    <div class="text-wrapper-4">+6282121090209</div>
-                                </div>
-                                <div class="element-5">
-                                    <img class="icon" src="img/icon-17.svg" alt="Email" />
-                                    <div class="text-wrapper-4">sagalabandung@gmail.com</div>
-                                </div>
-                                <div class="element-6">
-                                    <img class="icon" src="img/icon-10.svg" alt="Lokasi" />
-                                    <div class="text-wrapper-4">
-                                        PBB I49, BANDUNG, INDONESIA
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="p">© 2024 SagalaBandung. Hak cipta dilindungi</p>
-                </div>
-
-                <!-- Area Konten Utama -->
-                <div id="content-area">
-                    <!-- Konten akan dimuat dinamis di sini -->
-                </div>
-
-                <!-- Bagian Branding -->
-                <div class="SAGALA-BANDUNG">
-                    <div class="page-awal">
-                        <p class="text-wrapper-31">
-                            Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota
-                            Kembang, Bandung dijuluki The Most European City in The East
-                            Indies, Bandung Excelsior, Intelectuele Centrum Van Indie,
-                            Europe in The Tropen, Kota Permai, Kota Pendidikan, Kota Kreatif
-                            hingga Kota Kuliner.
-                        </p>
-                        <div class="text-wrapper-32">BANDUNG</div>
-                        <div class="text-wrapper-33">sagala</div>
-                    </div>
-                </div>
-
-                <!-- Navigasi Header -->
-                <header class="header">
-                    <div class="list-5">
-                        <div class="item-6">
-                            <div class="element-16">
-                                <button onclick="muatHalaman('dashboard')" class="nav-button active"
-                                    id="nav-dashboard">Beranda</button>
-                            </div>
-                        </div>
-                        <div class="item-7">
-                            <div class="element-16">
-                                <button onclick="muatHalaman('pariwisata')" class="nav-button"
-                                    id="nav-pariwisata">Pariwisata</button>
-                            </div>
-                        </div>
-                        <div class="item-wrapper">
-                            <div class="item-8">
-                                <div class="element-16">
-                                    <button onclick="muatHalaman('umkm')" class="nav-button" id="nav-umkm">UMKM</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="element-17">
-                            <button class="text-wrapper-37">Masuk</button>
-                        </div>
-                    </div>
-                </header>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Fungsi untuk memuat halaman berbeda
-        function muatHalaman(halaman) {
-            const areaKonten = document.getElementById('content-area');
-
-            // Reset semua tombol navigasi
-            document.querySelectorAll('.nav-button').forEach(button => {
-                button.classList.remove('active');
-            });
-
-            // Aktifkan tombol navigasi yang dipilih
-            document.getElementById(`nav-${halaman}`).classList.add('active');
-
-            // Kosongkan konten saat ini
-            areaKonten.innerHTML = '';
-
-            // Muat konten sesuai halaman yang dipilih
-            if (halaman === 'dashboard') {
-                areaKonten.innerHTML = `
-                    <!-- Konten Dashboard -->
-                    <div class="berita">
-                        <div class="overlap">
-                            <div class="group">
-                                <div class="background">
-                                    <div class="group-2">
-                                        <div class="container-4">
-                                            <div class="text-wrapper-5">Berita</div>
-                                            <div class="heading">
-                                                <p class="text-wrapper-6">
-                                                    Tips & Trik Berbelanja di Kabupaten Bandung
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Isi berita lainnya... -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <div class="title">
-                                    <div class="since">SEJAK 2025</div>
-                                    <p class="text-wrapper-12">
-                                        Dinas Kebudayaan dan Pariwisata Kota Bandung
-                                    </p>
-                                </div>
-                                <div class="frame-4">
-                                    <p class="wilujeng-SUMPING">
-                                        <span class="span">WILUJENG<br /></span>
-                                        <span class="text-wrapper-13">SUMPING!</span>
-                                    </p>
-                                    <p class="text-wrapper-14">
-                                        "Dan Bandung bagiku bukan cuma masalah geografis, lebih jauh dari itu melibatkan perasaan, yang bersamaku ketika sunyi" -Pidi Baiq
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="destinasi-carousel">
-                        <!-- Konten carousel destinasi... -->
-                    </div>
-                    <div class="rekomendasi">
-                        <!-- Konten rekomendasi... -->
-                    </div>
-                `;
-            }
-            else if (halaman === 'pariwisata') {
-                areaKonten.innerHTML = `
-                    <!-- Konten Pariwisata -->
-                    <div class="pariwisata-content">
-                        <div class="container-15">
-                            <div class="text-wrapper-23">Destinasi</div>
-                            <div class="heading">
-                                <p class="text-wrapper-6">
-                                    Destinasi Wisata di Kabupaten Bandung
-                                </p>
-                            </div>
-                        </div>
-                        <div class="destinasi-carousel">
-                            <!-- Daftar lengkap destinasi wisata... -->
-                        </div>
-                        <div class="testimoni">
-                            <div class="overlap-2">
-                                <div class="paragraph">
-                                    <div class="overlap-group-6">
-                                        <div class="text-wrapper-24">Testimoni</div>
-                                        <div class="heading-what-our">Apa Kata Pengunjung?</div>
-                                    </div>
-                                </div>
-                                <div class="container-16">
-                                    <div class="group-5"></div>
-                                    <div class="group-6"></div>
-                                    <div class="group-7"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            else if (halaman === 'umkm') {
-                areaKonten.innerHTML = `
-                    <!-- Konten UMKM -->
-                    <div class="umkm-content">
-                        <div class="container-17">
-                            <div class="text-wrapper-25">Rekomendasi</div>
-                            <div class="heading">
-                                <div class="rekomendasi-trip">
-                                    Rekomendasi UMKM Kabupaten Bandung
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rekomendasi">
-                            <!-- Daftar lengkap UMKM... -->
-                        </div>
-                        <div class="berita">
-                            <!-- Berita terkait UMKM... -->
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Scroll ke atas setelah memuat halaman
-            window.scrollTo(0, 0);
+    <title>Sagala Bandung - Pariwisata & UMKM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        // Muat dashboard secara default saat halaman dibuka
-        window.onload = function () {
-            muatHalaman('dashboard');
-        };
-    </script>
-
-    <style>
-        /* Gaya tambahan untuk navigasi */
-        .nav-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             color: #333;
-            padding: 8px 16px;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .header .list-5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header .list-5 > div {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header a, .header .text-wrapper-34, .header .text-wrapper-36, .header .text-wrapper-37 {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
             transition: all 0.3s ease;
         }
 
-        .nav-button:hover {
-            color: #0066cc;
+        .header a:hover, .header .text-wrapper-34:hover, .header .text-wrapper-36:hover {
+            background: #3D5C73;
+            color: white;
             transform: translateY(-2px);
         }
 
-        .nav-button.active {
-            color: #0066cc;
-            font-weight: bold;
-            border-bottom: 2px solid #0066cc;
+        .text-wrapper-37 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .SAGALA-BANDUNG {
+            background: linear-gradient(135deg, #707070 0%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .SAGALA-BANDUNG::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="40" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="80" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .page-awal {
+            position: relative;
+            z-index: 2;
+        }
+
+        .text-wrapper-33 {
+            font-size: 4rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .text-wrapper-32 {
+            font-size: 6rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #fff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-wrapper-31 {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .text-wrapper-25, .text-wrapper-23 {
+            color: #667eea;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .heading .text-wrapper-6, .rekomendasi-trip {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        /* Cards */
+        .destinasi, .background-border, .background-border-2, .background-border-3 {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .destinasi:hover, .background-border:hover, .background-border-2:hover, .background-border-3:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .background-border::before, .background-border-2::before, .background-border-3::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .rekomendasi {
+            background: #3D5C73;
+            padding: 80px 0;
+        }
+
+        .container-17 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .button, .button-2 {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .text-wrapper-28 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 1rem 0;
+        }
+
+        .text-wrapper-27 {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .list-4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .item-5 {
+            background: #fef3c7;
+            color: #d97706;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .btn-telusuri {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-telusuri:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Berita Section */
+        .berita {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .group-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .container-4 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .text-wrapper-5 {
+            color: #667eea;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .container-5, .container-6, .container-7, .container-8, .container-9 {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .container-5:hover, .container-6:hover, .container-7:hover, .container-8:hover, .container-9:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .solo-travel, .text-wrapper-7, .detik-com {
+            color: #667eea;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .pulang-dari-wisata, .text-wrapper-8, .text-wrapper-9 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .jelajahi-destinasi, .jelajahi-wisata {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Login Section */
+        .login-untuk-agar {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        .text-wrapper-10 {
+            color: #6b7280;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .horizontal-border {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hello-we-are-lift {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .heading-about, .heading-contact {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #f9fafb;
+        }
+
+        .list-2, .list-3 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .text-wrapper, .text-wrapper-2, .text-wrapper-3, .terms-conditions, .text-wrapper-4 {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .text-wrapper:hover, .text-wrapper-2:hover, .text-wrapper-3:hover, .terms-conditions:hover {
+            color: #667eea;
+        }
+
+        .element-4, .element-5, .element-6 {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .p {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .text-wrapper-33 {
+                font-size: 2.5rem;
+            }
+            
+            .text-wrapper-32 {
+                font-size: 3.5rem;
+            }
+            
+            .text-wrapper-31 {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            
+            .header .list-5 > div {
+                gap: 1rem;
+            }
+            
+            .header a, .header .text-wrapper-34, .header .text-wrapper-36 {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .heading .text-wrapper-6, .rekomendasi-trip {
+                font-size: 2rem;
+            }
+            
+            .group-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .destinasi, .background-border, .background-border-2, .background-border-3 {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Grid Layouts */
+        .destinasi-carousel {
+            padding: 40px 0;
+        }
+
+        .group-4 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .destinasi, .destinasi-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        /* Contact Section */
+        .element-15 {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .text-wrapper-30 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .text-wrapper-30:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Testimonial placeholder */
+        .testimoni {
+            background: #f8fafc;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .text-wrapper-24 {
+            color: #667eea;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .heading-what-our {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+        }
+
+        .container-16 {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .group-5, .group-6, .group-7 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #4338ca;
+            font-weight: 600;
+        }
+
+        .group-5::after, .group-6::after, .group-7::after {
+            content: "Testimoni Pengguna";
+        }
+
+        /* Additional styling for icons */
+        .icon-9 {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        /* Page navigation */
+        .number-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .page, .page-2, .page-active {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .page-active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .page, .page-2 {
+            background: #e5e7eb;
+            color: #6b7280;
+        }
+
+        .page:hover, .page-2:hover {
+            background: #d1d5db;
         }
     </style>
-</body>
+</head>
+<body>
+    <div class="UMKM-user">
+        <!-- Header -->
+        <header class="header">
+            <div class="list-5">
+                <div>
+                    <div class="item-6">
+                        <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                    </div>
+                    <div class="item-7">
+                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+                    </div>
+                    <div class="item-8">
+                        <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                    </div>
+                </div>
+                <div class="text-wrapper-37">Login</div>
+            </div>
+        </header>
 
+        <!-- Hero Section -->
+        <div class="SAGALA-BANDUNG">
+            <div class="page-awal">
+                <div class="text-wrapper-33">sagala</div>
+                <div class="text-wrapper-32">BANDUNG</div>
+                <p class="text-wrapper-31">
+                    Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang, 
+                    Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior, 
+                    Intelectuele Centrum Van Indie, Europe in The Tropen, Kota Permai, Kota Pendidkan, 
+                    Kota Kreatif hingga Kota Kuliner.
+                </p>
+            </div>
+        </div>
+
+        <!-- Rekomendasi UMKM -->
+        <div class="rekomendasi section">
+            <div class="container">
+                <div class="container-17 section-title">
+                    <div class="text-wrapper-25">Rekomendasi</div>
+                    <div class="heading">
+                        <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="background-border">
+                        <button class="button">
+                            <div class="text-wrapper-26">Populer</div>
+                        </button>
+                        <div class="icon-9"></div>
+                        <div class="text-wrapper-27">Padalarang, Kabupaten Bandung</div>
+                        <div class="text-wrapper-28">Roti Unyil & Kue Okeke 2</div>
+                        <div class="list-4">
+                            <div class="item-5">4.5(6.966)</div>
+                        </div>
+                        <a href="#" class="btn-telusuri">Telusuri</a>
+                    </div>
+
+                    <div class="background-border-2">
+                        <button class="button-2">
+                            <div class="text-wrapper-26">Populer</div>
+                        </button>
+                        <div class="icon-9"></div>
+                        <div class="text-wrapper-27">Buahbatu, Bojongsoang</div>
+                        <div class="text-wrapper-28">Batik Kina</div>
+                        <div class="list-4">
+                            <div class="item-5">4.7(4.570)</div>
+                        </div>
+                        <a href="#" class="btn-telusuri">Telusuri</a>
+                    </div>
+
+                    <div class="background-border-3">
+                        <button class="button-2">
+                            <div class="text-wrapper-26">Populer</div>
+                        </button>
+                        <div class="icon-9"></div>
+                        <div class="text-wrapper-27">Gajahmekar, Kutawiringin</div>
+                        <div class="text-wrapper-28">Sambal Hejo Beledag</div>
+                        <div class="list-4">
+                            <div class="item-5">4.6(1.535)</div>
+                        </div>
+                        <a href="#" class="btn-telusuri">Telusuri</a>
+                    </div>
+                </div>
+
+                <div class="element-15">
+                    <a href="#" class="text-wrapper-30">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destinasi Wisata -->
+        <div class="section">
+            <div class="container">
+                <div class="container-15 section-title">
+                    <div class="text-wrapper-23">Destinasi</div>
+                    <div class="heading">
+                        <div class="text-wrapper-6">Destinasi Wisata di Kabupaten Bandung</div>
+                    </div>
+                </div>
+
+                <div class="destinasi-carousel">
+                    <div class="group-4">
+                        <div class="destinasi">
+                            <div class="background-border">
+                                <div class="icon-9"></div>
+                                <div class="text-wrapper-17">Culinary</div>
+                                <div class="text-wrapper-28">Roti Unyil & Kue Okeke 2</div>
+                                <div class="list-4">
+                                    <div class="item-5">5.0</div>
+                                </div>
+                            </div>
+                            
+                            <div class="background-border">
+                                <div class="icon-9"></div>
+                                <div class="text-wrapper-19">Fashion</div>
+                                <div class="text-wrapper-28">Batik Kina</div>
+                                <div class="list-4">
+                                    <div class="item-5">5.0</div>
+                                </div>
+                            </div>
+                            
+                            <div class="background-border">
+                                <div class="icon-9"></div>
+                                <div class="text-wrapper-19">Culinary</div>
+                                <div class="text-wrapper-28">Sambal Hejo Beledag</div>
+                                <div class="list-4">
+                                    <div class="item-5">5.0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="number-page">
+                            <div class="page">‹</div>
+                            <div class="page-active"><div class="num">1</div></div>
+                            <div class="page-2"><div class="num-2">2</div></div>
+                            <div class="page-2">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Berita -->
+        <div class="berita section">
+            <div class="container">
+                <div class="group">
+                    <div class="background">
+                        <div class="group-2">
+                            <div class="container-4">
+                                <div class="text-wrapper-5">Berita</div>
+                                <div class="heading">
+                                    <div class="text-wrapper-6">Tips & Trik Berbelanja di Kabupaten Bandung</div>
+                                </div>
+                            </div>
+
+                            <div class="container-5">
+                                <div class="solo-travel">MSN</div>
+                                <div class="pulang-dari-wisata">
+                                    Pulang dari Wisata di Kabupaten Bandung? <br />Ini Deretan Oleh-Oleh Khas
+                                </div>
+                                <p class="jelajahi-destinasi">
+                                    Liburan ke Kabupaten Bandung nggak lengkap tanpa membawa pulang oleh-oleh khas daerah ini. 
+                                    Terkenal dengan lanskap alamnya yang sejuk dan penuh pesona.
+                                </p>
+                            </div>
+
+                            <div class="container-6">
+                                <div class="text-wrapper-7">Sokoguru</div>
+                                <div class="text-wrapper-8">5 UMKM Kabupaten Bandung yang Wajib Kamu Coba!</div>
+                                <p class="jelajahi-wisata">
+                                    Kabupaten Bandung bukan hanya terkenal dengan keindahan alamnya.
+                                </p>
+                            </div>
+
+                            <div class="container-7">
+                                <div class="detik-com">Bandung Bisnis</div>
+                                <div class="text-wrapper-8">7000 Produk UMKM di Kabupaten Bandung</div>
+                                <p class="jelajahi-wisata">
+                                    Pemerintah Kabupaten Bandung mendorong percepatan ekonomi.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 3rem;">
+                            <p class="login-untuk-agar">Login Untuk Agar <br />Tidak Ketinggalan Berita</p>
+                            <p class="text-wrapper-10">
+                                Sudah siap menjelajahi keindahan Bandung dan mendukung produk lokal? 
+                                Ayo masuk dan mulai petualanganmu!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimoni -->
+        <div class="testimoni section">
+            <div class="container">
+                <div class="paragraph">
+                    <div class="text-wrapper-24">Testimoni</div>
+                    <div class="heading-what-our">Apa Kata Konsumen?</div>
+                </div>
+                <div class="container-16">
+                    <div class="group-5"></div>
+                    <div class="group-6"></div>
+                    <div class="group-7"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="horizontal-border">
+                    <div>
+                        <p class="hello-we-are-lift">
+                            Hello, we are Lift Media. Our goal is to<br />translate the 
+                            positive effects from<br />revolutionizing
+                        </p>
+                        <div class="heading-about">Sagala Bandung</div>
+                    </div>
+                    
+                    <div>
+                        <div class="heading-about">Tentang</div>
+                        <div class="list-2">
+                            <a href="#" class="text-wrapper">About Us</a>
+                            <a href="#" class="text-wrapper-2">Our Services</a>
+                            <a href="#" class="text-wrapper-3">Privacy Policy</a>
+                            <a href="#" class="terms-conditions">Terms & Conditions</a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="heading-contact">Kontak</div>
+                        <div class="list-3">
+                            <div class="element-4">
+                                <span>📞</span>
+                                <div class="text-wrapper-4">+6282121090209</div>
+                            </div>
+                            <div class="element-5">
+                                <span>✉️</span>
+                                <div class="text-wrapper-4">sagalabandung@gmail.com</div>
+                            </div>
+                            <div class="element-6">
+                                <span>📍</span>
+                                <div class="text-wrapper-4">PBB I49, BANDUNG, INDONESIA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="p">© 2024 SagalaBandung. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

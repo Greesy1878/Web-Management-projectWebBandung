@@ -15,26 +15,21 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">Sagala Bandung</div>
-        <div class="hamburger">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
-        </div>
-        <nav class="nav-menu">
-            <form action="{{ url('/') }}" method="GET">
-                <button type="submit" class="nav-item active">Home</button>
-            </form>
-            <form action="{{ url('/umkm') }}" method="GET">
-                <button type="submit" class="nav-item">UMKM</button>
-            </form>
-            <form action="{{ url('/pariwisata') }}" method="GET">
-                <button type="submit" class="nav-item">Pariwisata</button>
-            </form>
-            <button class="login-btn" onclick="location.href='{{ url('/login') }}'">Login</button>
-        </nav>
-        
-    </header>
+            <div class="list-5">
+                <div>
+                    <div class="item-6">
+                        <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                    </div>
+                    <div class="item-7">
+                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+                    </div>
+                    <div class="item-8">
+                        <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                    </div>
+                </div>
+                <div class="text-wrapper-37">Login</div>
+            </div>
+        </header>
 
    @yield('content')
     <footer class="footer">
@@ -89,3 +84,88 @@
     <script src="{{asset('js/index.js')}}"></script>
 </body>
 </html>
+
+<style>
+    .header a, .header .text-wrapper-34, .header .text-wrapper-36, .header .text-wrapper-37 {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+    .text-wrapper-37 {
+            background: linear-gradient(135deg, #26A59E);
+            color: white !important;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    .header a:hover, .header .text-wrapper-34:hover, .header .text-wrapper-36:hover {
+            background: #3D5C73;
+            color: white;
+            transform: translateY(-2px);
+        }
+    
+    .header a, .header .text-wrapper-34, .header .text-wrapper-36 {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.9rem;
+            }
+    .item-5 {
+            background: #fef3c7;
+            color: #d97706;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .header .list-5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header .list-5 > div {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header a, .header .text-wrapper-34, .header .text-wrapper-36, .header .text-wrapper-37 {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .header a:hover, .header .text-wrapper-34:hover, .header .text-wrapper-36:hover {
+            background: #3D5C73;
+            color: white;
+            transform: translateY(-2px);
+        }
+        /* Login Section */
+        .login-untuk-agar {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+</style>
