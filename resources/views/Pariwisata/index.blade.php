@@ -62,7 +62,7 @@
                         <div class="list-4">
                             <div class="item-5">4.5(6.966)</div>
                         </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
+                        <a href="/detail" class="btn-telusuri">Telusuri</a>
                     </div>
 
                     <div class="background-border-2">
