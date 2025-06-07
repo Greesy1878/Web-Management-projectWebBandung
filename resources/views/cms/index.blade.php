@@ -42,14 +42,14 @@
         </div>
 
         <div class="image-container">
-            <img src="https://placehold.co/548x685" alt="Pariwisata Bandung">
+            <img src="{{ asset('img/bandungIMG/pariwisata1.jpg') }}" alt="UMKM Bandung">
         </div>
     </section>
 
     <!-- UMKM Section -->
     <section class="section umkm-section">
         <div class="umkm-image-container">
-            <img src="https://placehold.co/554x774" alt="UMKM Bandung">
+            <img src="{{ asset('img/bandungIMG/pariwisata1.jpg') }}" alt="UMKM Bandung">
         </div>
 
         <div class="section-content">
