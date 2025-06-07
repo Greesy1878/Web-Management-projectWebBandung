@@ -49,7 +49,7 @@
     <!-- UMKM Section -->
     <section class="section umkm-section">
         <div class="umkm-image-container">
-            <img src="{{ asset('img/bandungIMG/pariwisata1.jpg') }}" alt="UMKM Bandung">
+            <img src="{{ asset('img/bandungIMG/Backgroundhome.jpg') }}" alt="UMKM Bandung">
         </div>
 
         <div class="section-content">
