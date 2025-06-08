@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Review;
 
 class DetailController extends Controller
 {
     public function index()
     {
-        return view('detail.index');
+        $reviews = Review::latest()->get();
+        return view('detail.index', compact('reviews'));
     }
 }

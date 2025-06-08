@@ -21,4 +21,6 @@ Route::get('/admin', [DashboardController::class, 'index'])
 
     Route::get('/detail', [DetailController::class, 'index'])
         ->name('detail.dashboard');
+
+    
     
