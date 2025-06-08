@@ -88,7 +88,7 @@
                         <div class="list-4">
                             <div class="item-5">4.6(1.535)</div>
                         </div>
-                        <a href="/detailsunsire" class="btn-telusuri">Telusuri</a>
+                        <a href="/detailsunrise" class="btn-telusuri">Telusuri</a>
                     </div>
                 </div>
 
