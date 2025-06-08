@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CMSController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\PariwisataController;
 use App\Http\Controllers\UMKMController;
 use App\Http\Controllers\DetailController;
@@ -21,6 +22,20 @@ Route::get('/admin', [DashboardController::class, 'index'])
 
     Route::get('/detail', [DetailController::class, 'index'])
         ->name('detail.dashboard');
+    
+Route::get('/detailgunungtangkuban', [DetailController::class, 'index'])
+    ->name('detailgunungtangkuban.index');
+
+    Route::get('/detail/{id}', [DestinationController::class, 'show'])
+    ->name('destination.detail');
+
+    Route::get('/detailglamping', [DetailController::class, 'index'])
+    ->name('detailglamping.index');
+
+Route::get('/detailsunrise', [DetailController::class, 'index'])
+    ->name('detailsunrise.index');
+
+    
 
     
     
