@@ -9,6 +9,6 @@ class DetailController extends Controller
     public function index()
     {
         $reviews = Review::latest()->get();
-        return view('detail.index', compact('reviews'));
+        return view('detailgunungtangkuban.index', compact('reviews'));
     }
 }

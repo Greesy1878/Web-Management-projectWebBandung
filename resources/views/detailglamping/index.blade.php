@@ -43,8 +43,8 @@ function handleFileUpload($file)
 // Example destination data
 $destination = [
     'id' => 1,
-    'name' => 'Gunung Puntang',
-    'description' => 'Bukit Arca adalah salah satu tempat menarik wisata alam dengan berbagai fasilitas, destinasi wisata Gunung Puntang yang terletak berada di daerah Cimaung, Kecamatan Cimaung, Kabupaten Bandung, Jawa Barat. Letaknya di atas menara pohon dapat untuk berswafoto bersama passion sebagai Gunung puntang melewati kawasan wisata. Trekking atau pendakian terletak Gunung Puntang melalui jalur pemandangan. Saat ini Gunung Puntang memiliki beberapa tempat puncak yang bernama Puncak Mega dengan ketinggian berada di 2.222 mdpl. Perlu diketahui, bagi pengunjung yang berniat melakukan foto pendakian dalam Gunung Puntang, untuk dapat melakukan persiapan dan waktu sekitar 3-4 jam untuk bisa mencapai area Puncak Mega. Sementara itu, pengunjung juga dapat melakukan aktivitas lainnya di sekitar kawasan wisata.',
+    'name' => 'Glamping Resort Rancabali',
+    'description' => 'Bagi Anda yang ingin merasakan pengalaman menginap unik di tengah alam, Glamping Lakeside Rancabali bisa menjadi pilihan terbaik untuk liburan bersama keluarga maupun pasangan. Terletak di kawasan Rancabali, Kabupaten Bandung, destinasi ini menyuguhkan panorama Danau Situ Patenggang yang tenang, hamparan kebun teh yang hijau, serta udara pegunungan yang sejuk dan menyegarkan. Mengusung konsep glamorous camping, tempat ini menawarkan berbagai jenis akomodasi seperti tenda Lakeside, Keong Tent, dan Cabin dengan fasilitas lengkap layaknya hotel, namun tetap menyatu dengan alam. Salah satu ikon utamanya adalah Pinisi Resto, restoran berbentuk kapal besar yang berada di tepi danau dan menjadi spot foto favorit wisatawan.',
     'rating' => 4.5,
     'total_reviews' => 127,
     'location' => 'Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat',

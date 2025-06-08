@@ -62,7 +62,7 @@
                         <div class="list-4">
                             <div class="item-5">4.5(6.966)</div>
                         </div>
-                        <a href="/detail" class="btn-telusuri">Telusuri</a>
+                        <a href="{{ url('/detailgunungtangkuban') }}" class="btn-telusuri">Telusuri</a>
                     </div>
 
                     <div class="background-border-2">
@@ -75,7 +75,7 @@
                         <div class="list-4">
                             <div class="item-5">4.7(4.570)</div>
                         </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
+                        <a href="/detailglamping" class="btn-telusuri">Telusuri</a>
                     </div>
 
                     <div class="background-border-3">
@@ -88,7 +88,7 @@
                         <div class="list-4">
                             <div class="item-5">4.6(1.535)</div>
                         </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
+                        <a href="/detailsunsire" class="btn-telusuri">Telusuri</a>
                     </div>
                 </div>
 
