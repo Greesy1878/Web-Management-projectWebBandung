@@ -75,7 +75,7 @@ body {
 .hero-section {
     position: relative;
     background-image: url('/img/bandung_img/pageawal.png');
-    background-size: cover;
+    background-size: 1350px;
     background-position: center;
     height: 100vh;
     color: white;
@@ -107,15 +107,16 @@ body {
     font-size: 5rem;
     font-family: 'Instrument Serif';
     text-align: left;  /* Membuat teks rata kiri */
-    margin-bottom: 1px;
+    margin-bottom: -20px;
+    font-style: italic; /* Membuat teks miring */
+    margin-left: -18px; /* Geser teks lebih ke kiri */
 }
-
 
 .hero-title {
     font-size: 5rem;
-    font-weight: bold;
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat Alternates', sans-serif;
 }
+
 .centered-text {
     position: absolute;
     top: 32%; /* dinaikkan dari 40% */
@@ -125,14 +126,31 @@ body {
 }
 
 
-/* Angklung di kiri bawah teks */
 .angklung-icon {
     position: absolute;
     top: 43%;
     right: 54%;
     width: 192px;
     transform: rotate(-2deg);
+    animation: angklungFloat 4s ease-in-out infinite;
 }
+
+/* Animasi mengambang + rotasi halus */
+@keyframes angklungFloat {
+    0% {
+        transform: translateY(0) rotate(-2deg);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-10px) rotate(-4deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(-2deg);
+        opacity: 0.9;
+    }
+}
+
 
 /* Deskripsi di kanan */
 .hero-description {
@@ -149,7 +167,7 @@ body {
 }
 
 /* Tourism Section */
-/* Layout utama */
+
 .section {
   width: 100%;
   padding: 60px 40px;
@@ -173,7 +191,7 @@ body {
 
 /* Judul kecil */
 .section-title {
-  color: #f97316; /* oranye */
+  color: #f97316; 
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 10px;
@@ -198,7 +216,6 @@ body {
   text-align: left;
 }
 
-/* Tombol */
 .explore-btn {
   width: 150px;
   height: 50px;
@@ -214,6 +231,22 @@ body {
   cursor: pointer;
   border: none;
   margin-bottom: 40px;
+  animation: pulseBtn 2.5s ease-in-out infinite;
+}
+
+/* Animasi denyut lembut */
+@keyframes pulseBtn {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 160, 63, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 160, 63, 0.6);
+  }
+}
+.explore-btn:hover {
+  background-color: #ea580c;
 }
 
 /* Statistik */
@@ -225,12 +258,14 @@ body {
 
 .stat-item {
   min-width: 100px;
+  font-family: 'Inter',sans-serif;
 }
 
 .stat-number {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-family: 'Inter',sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .stat-label {
@@ -240,18 +275,14 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* Kanan - Gambar */
 .image-container {
   flex: 1;
   max-width: 400px;
-  border-radius: 40px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
-  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.1));
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  padding: 20px; /* Ruang untuk bayangan */
 }
 
 .image-container img {
@@ -259,22 +290,158 @@ body {
   height: auto;
   border-radius: 30px;
   object-fit: cover;
+  filter: drop-shadow(30px 25px 5px #D9D9D9); /* Lebih besar dan gelap */
 }
-
 
 
 /* UMKM Section */
-.umkm-section {
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.umkm-image-container {
-    width: 100%;
-    height: 500px;
-    background-color: #d4d4d4;
-    border-radius: 40px;
-    margin-bottom: 40px;
+.umkm-section {
+  padding: 60px 40px;
+  background-color: #f9fafb;
+  font-family: 'Arial', sans-serif;
 }
+
+.umkm-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* KIRI */
+.umkm-left {
+  flex: 1 1 400px;
+  max-width: 420px;
+  margin: 30px 20px 40px 50px; /* Atas, Kanan, Bawah, Kiri */
+
+}
+
+.umkm-label {
+  color: #f97316;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.umkm-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.umkm-image {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+margin: 30px 20px 40px 50px; /* Atas, Kanan, Bawah, Kiri */
+
+}
+
+.umkm-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* KANAN */
+.umkm-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.umkm-description {
+  font-size: 19px;
+  color: #000000;
+  line-height: 1.6;
+  margin: 210px -250px 200px 150px; /* Atas, Kanan, Bawah, Kiri */
+padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
+}
+
+
+.umkm-button {
+  width: 150px;
+  height: 50px;
+  background-color: #FFA03F;
+  color: white;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+
+  /* Jarak luar */
+  margin: 210px -250px 200px 150px; /* Atas, Kanan, Bawah, Kiri */
+
+  /* Jarak dalam */
+  padding: 10px 24px; /* Atas-bawah 10px, kanan-kiri 24px */
+
+  /* Animasi */
+  animation: pulseBtn 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseBtn {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 160, 63, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 160, 63, 0.6);
+  }
+}
+
+.umkm-button:hover {
+  background-color: #ea580c;
+}
+
+
+/* Statistik */
+.umkm-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+ margin: 30px 20px 40px 200px; /* Atas, Kanan, Bawah, Kiri */
+}
+
+.umkm-stat-item {
+  text-align: left;
+}
+
+.umkm-stat-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.umkm-stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+.umkm-wrapper {
+  display: flex;
+  align-items: flex-end; /* sejajarkan ke bawah */
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
 
 /* Welcome Section */
 .welcome-section {
@@ -308,7 +475,7 @@ body {
 }
 
 .welcome-title span:first-child {
-    color: #f97316;
+    color: #FFA03F;
 }
 
 .welcome-quote {
