@@ -934,3 +934,219 @@ body {
         font-size: 10rem;
     }
 }
+
+   /* Header styling dengan animasi */
+/* Header styling dengan animasi */
+.header {
+    background-color: #fafafa;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+
+    /* Animasi muncul dari atas */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideFadeDown 0.6s ease forwards;
+}
+
+/* Keyframes animasi */
+@keyframes slideFadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container menu dan login */
+.list-5 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigasi kiri */
+.list-5 > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+/* Styling link */
+.text-wrapper-36 {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Hover untuk link */
+.text-wrapper-36:hover {
+    color: #ff7f50;
+}
+
+/* Active link style */
+.item-6 .text-wrapper-36 {
+    color: #ff7f50;
+}
+
+/* Login button */
+.text-wrapper-37 {
+    background-color: #2baaa0;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Hover untuk login */
+.text-wrapper-37:hover {
+    background-color: #239089;
+    transform: scale(1.05);
+}
+
+
+
+    /* footer */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .footer {
+        background-color: #375E75;
+        color: #ffffff;
+        padding: 40px 20px 20px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-column {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        /* pastikan ini row, bukan column */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .social-icon i {
+        font-size: 14px;
+    }
+
+    .social-icon:hover {
+        background-color: #ffffff;
+        color: #375E75;
+    }
+
+    .social-icon:hover {
+        background-color: #ffffff;
+        color: #375E75;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-link {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-link:hover {
+        color: #cccccc;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #ffffff;
+    }
+
+    .contact-icon {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff22;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .contact-text {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .contact-text:hover {
+        color: #cccccc;
+    }
+
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
