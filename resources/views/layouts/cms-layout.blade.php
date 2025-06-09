@@ -91,105 +91,87 @@
 </html>
 
 <style>
-    .header a,
-    .header .text-wrapper-34,
-    .header .text-wrapper-36,
-    .header .text-wrapper-37 {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        padding: 0.5rem 1rem;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-    }
+   /* Header styling dengan animasi */
+/* Header styling dengan animasi */
+.header {
+    background-color: #fafafa;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
 
-    .text-wrapper-37 {
-        background: linear-gradient(135deg, #26A59E);
-        color: white !important;
-        padding: 0.7rem 1.5rem;
-        border-radius: 25px;
-        font-weight: 600;
-        cursor: pointer;
-    }
+    /* Animasi muncul dari atas */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideFadeDown 0.6s ease forwards;
+}
 
-    .header a:hover,
-    .header .text-wrapper-34:hover,
-    .header .text-wrapper-36:hover {
-        background: #3D5C73;
-        color: white;
-        transform: translateY(-2px);
+/* Keyframes animasi */
+@keyframes slideFadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .header a,
-    .header .text-wrapper-34,
-    .header .text-wrapper-36 {
-        padding: 0.3rem 0.8rem;
-        font-size: 0.9rem;
-    }
+/* Container menu dan login */
+.list-5 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .item-5 {
-        background: #fef3c7;
-        color: #d97706;
-        padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 600;
-    }
+/* Navigasi kiri */
+.list-5 > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
 
-    /* Header */
-    .header {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        padding: 1rem 0;
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    }
+/* Styling link */
+.text-wrapper-36 {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
 
-    .header .list-5 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
+/* Hover untuk link */
+.text-wrapper-36:hover {
+    color: #ff7f50;
+}
 
-    .header .list-5>div {
-        display: flex;
-        gap: 2rem;
-    }
+/* Active link style */
+.item-6 .text-wrapper-36 {
+    color: #ff7f50;
+}
 
-    .header a,
-    .header .text-wrapper-34,
-    .header .text-wrapper-36,
-    .header .text-wrapper-37 {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        padding: 0.5rem 1rem;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-    }
+/* Login button */
+.text-wrapper-37 {
+    background-color: #2baaa0;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
 
-    .header a:hover,
-    .header .text-wrapper-34:hover,
-    .header .text-wrapper-36:hover {
-        background: #3D5C73;
-        color: white;
-        transform: translateY(-2px);
-    }
+/* Hover untuk login */
+.text-wrapper-37:hover {
+    background-color: #239089;
+    transform: scale(1.05);
+}
 
-    /* Login Section */
-    .login-untuk-agar {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #1a1a1a;
-        text-align: center;
-        margin: 2rem 0 1rem;
-    }
+
 
     /* footer */
     body {
