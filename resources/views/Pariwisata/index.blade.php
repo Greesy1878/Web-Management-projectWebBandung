@@ -57,12 +57,12 @@
                             <div class="text-wrapper-26">Populer</div>
                         </button>
                         <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Padalarang, Kabupaten Bandung</div>
-                        <div class="text-wrapper-28">Roti Unyil & Kue Okeke 2</div>
+                        <div class="text-wrapper-27">Lembang, Bandung</div>
+                        <div class="text-wrapper-28">Gunung Tangkuban Perahu</div>
                         <div class="list-4">
                             <div class="item-5">4.5(6.966)</div>
                         </div>
-                        <a href="{{ url('/detailgunungtangkuban') }}" class="btn-telusuri">Telusuri</a>
+                        <a href="/detailgunungtangkuban" class="btn-telusuri">Telusuri</a>
                     </div>
 
                     <div class="background-border-2">
@@ -70,8 +70,8 @@
                             <div class="text-wrapper-26">Populer</div>
                         </button>
                         <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Buahbatu, Bojongsoang</div>
-                        <div class="text-wrapper-28">Batik Kina</div>
+                        <div class="text-wrapper-27">Ciwidey, Rancabali</div>
+                        <div class="text-wrapper-28">Glamping Lakeside Rancabali</div>
                         <div class="list-4">
                             <div class="item-5">4.7(4.570)</div>
                         </div>
@@ -83,12 +83,12 @@
                             <div class="text-wrapper-26">Populer</div>
                         </button>
                         <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Gajahmekar, Kutawiringin</div>
-                        <div class="text-wrapper-28">Sambal Hejo Beledag</div>
+                        <div class="text-wrapper-27">Pangalengan, Bandung</div>
+                        <div class="text-wrapper-28">Sunrise Point Cukul</div>
                         <div class="list-4">
                             <div class="item-5">4.6(1.535)</div>
                         </div>
-                        <a href="/detailsunrise" class="btn-telusuri">Telusuri</a>
+                        <a href="/detailsunsire" class="btn-telusuri">Telusuri</a>
                     </div>
                 </div>
 
