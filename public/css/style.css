@@ -72,10 +72,10 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section { 
     position: relative;
     background-image: url('/img/bandung_img/pageawal.png');
-    background-size: 1350px;
+    background-size: cover;
     background-position: center;
     height: 100vh;
     color: white;
@@ -97,45 +97,35 @@ body {
 /* Tulisan sagala & BANDUNG di tengah */
 .centered-text {
     position: absolute;
-    top: 40%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .hero-subtitle {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: 'Instrument Serif';
-    text-align: left;  /* Membuat teks rata kiri */
+    text-align: left;
     margin-bottom: -20px;
-    font-style: italic; /* Membuat teks miring */
-    margin-left: -18px; /* Geser teks lebih ke kiri */
+    font-style: italic;
+    margin-left: -45px;
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-
-.centered-text {
-    position: absolute;
-    top: 32%; /* dinaikkan dari 40% */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 
 .angklung-icon {
     position: absolute;
     top: 43%;
-    right: 54%;
+    right: 58%;
     width: 192px;
     transform: rotate(-2deg);
     animation: angklungFloat 4s ease-in-out infinite;
 }
 
-/* Animasi mengambang + rotasi halus */
 @keyframes angklungFloat {
     0% {
         transform: translateY(0) rotate(-2deg);
@@ -151,22 +141,69 @@ body {
     }
 }
 
-
-/* Deskripsi di kanan */
 .hero-description {
     position: absolute;
-    top: 43%;
+    top: 45%;
     right: 20%;
     width: 380px;
     font-size: 1rem;
     line-height: 1.5;
     color: #eee;
-    
     padding: 10px 15px;
     border-radius: 8px;
 }
 
-/* Tourism Section */
+/* ---------- MEDIA QUERIES UNTUK RESPONSIF ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .hero-subtitle,
+    .hero-title {
+        font-size: 5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-description {
+        width: 300px;
+        font-size: 0.9rem;
+        right: 10%;
+    }
+
+    .angklung-icon {
+        width: 140px;
+        top: 48%;
+        right: 55%;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    .hero-subtitle,
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .centered-text {
+        top: 28%;
+        width: 90%;
+    }
+
+    .hero-description {
+        position: static;
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .angklung-icon {
+        display: none; /* sembunyikan angklung di layar kecil */
+    }
+}
+
+
+
+/* --- pariwisata --- */
 
 .section {
   width: 100%;
@@ -191,7 +228,7 @@ body {
 
 /* Judul kecil */
 .section-title {
-  color: #f97316; 
+  color: #FFA03F; 
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 10px;
@@ -216,6 +253,7 @@ body {
   text-align: left;
 }
 
+/* Tombol */
 .explore-btn {
   width: 150px;
   height: 50px;
@@ -234,7 +272,6 @@ body {
   animation: pulseBtn 2.5s ease-in-out infinite;
 }
 
-/* Animasi denyut lembut */
 @keyframes pulseBtn {
   0%, 100% {
     transform: scale(1);
@@ -245,6 +282,7 @@ body {
     box-shadow: 0 0 20px rgba(255, 160, 63, 0.6);
   }
 }
+
 .explore-btn:hover {
   background-color: #ea580c;
 }
@@ -258,14 +296,13 @@ body {
 
 .stat-item {
   min-width: 100px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .stat-number {
-    font-family: 'Inter',sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .stat-label {
@@ -275,26 +312,120 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* Gambar */
 .image-container {
   flex: 1;
   max-width: 400px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 20px; /* Ruang untuk bayangan */
+  padding: 20px;
 }
 
 .image-container img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 30px;
   object-fit: cover;
-  filter: drop-shadow(30px 25px 5px #D9D9D9); /* Lebih besar dan gelap */
+  filter: drop-shadow(30px 25px 5px #D9D9D9);
+}
+
+/* --- Responsive Styles --- */
+
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .text-content,
+  .image-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 80%;
+  }
+
+  .image-container img {
+    max-height: 300px;
+  }
+
+  .stats-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .explore-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+
+  .explore-btn {
+    width: 130px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .image-container img {
+    max-height: 250px;
+    border-radius: 16px;
+    filter: drop-shadow(10px 10px 3px #ccc);
+  }
 }
 
 
-/* UMKM Section */
+
+ /* UMKM Section */
 * {
   margin: 0;
   padding: 0;
@@ -302,94 +433,93 @@ body {
 }
 
 .umkm-section {
-  padding: 60px 40px;
+  padding: 60px 100px; /* kiri-kanan lebih luas agar tidak terlalu sempit */
   background-color: #f9fafb;
   font-family: 'Arial', sans-serif;
 }
 
+
 .umkm-wrapper {
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* KIRI */
+/* KIRI - Gambar */
 .umkm-left {
   flex: 1 1 400px;
-  max-width: 420px;
-  margin: 30px 20px 40px 50px; /* Atas, Kanan, Bawah, Kiri */
+  max-width: 400px;
+
+}
+
+.umkm-image {
+ flex: 1;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.umkm-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  filter: drop-shadow(30px 25px 5px #D9D9D9);
+}
+
+/* KANAN - Teks dan Tombol */
+.umkm-right {
+  flex: 1 1 500px;
+  max-width: 600px;
 
 }
 
 .umkm-label {
-  color: #f97316;
-  font-size: 20px;
+  color: #FFA03F;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .umkm-title {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   color: #111827;
   margin-bottom: 20px;
   line-height: 1.4;
 }
 
-.umkm-image {
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-margin: 30px 20px 40px 50px; /* Atas, Kanan, Bawah, Kiri */
-
-}
-
-.umkm-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* KANAN */
-.umkm-right {
-  flex: 1 1 400px;
-  max-width: 600px;
-}
-
 .umkm-description {
-  font-size: 19px;
+  font-size: 16px;
   color: #000000;
   line-height: 1.6;
-  margin: 210px -250px 200px 150px; /* Atas, Kanan, Bawah, Kiri */
-padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
+  margin-bottom: 24px;
+  max-width: 90%;
 }
 
-
 .umkm-button {
-  width: 150px;
-  height: 50px;
   background-color: #FFA03F;
   color: white;
   border-radius: 999px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Instrument Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
+  padding: 12px 28px;
   cursor: pointer;
   border: none;
-
-  /* Jarak luar */
-  margin: 210px -250px 200px 150px; /* Atas, Kanan, Bawah, Kiri */
-
-  /* Jarak dalam */
-  padding: 10px 24px; /* Atas-bawah 10px, kanan-kiri 24px */
-
-  /* Animasi */
   animation: pulseBtn 2.5s ease-in-out infinite;
+  margin-bottom: 32px;
+}
+
+.umkm-button:hover {
+  background-color: #ea580c;
 }
 
 @keyframes pulseBtn {
@@ -403,17 +533,11 @@ padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
   }
 }
 
-.umkm-button:hover {
-  background-color: #ea580c;
-}
-
-
 /* Statistik */
 .umkm-stats {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
- margin: 30px 20px 40px 200px; /* Atas, Kanan, Bawah, Kiri */
 }
 
 .umkm-stat-item {
@@ -431,14 +555,70 @@ padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
   font-size: 14px;
   color: #6b7280;
 }
-.umkm-wrapper {
-  display: flex;
-  align-items: flex-end; /* sejajarkan ke bawah */
-  gap: 40px;
-  flex-wrap: wrap;
+@media (max-width: 1024px) {
+  .umkm-section {
+    padding: 40px 60px;
+  }
+
+  .umkm-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .umkm-left,
+  .umkm-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .umkm-image {
+    padding: 0;
+  }
+
+  .umkm-image img {
+    width: 90%;
+  }
+
+  .umkm-description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .umkm-stats {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
+@media (max-width: 600px) {
+  .umkm-section {
+    padding: 30px 20px;
+  }
 
+  .umkm-title {
+    font-size: 22px;
+  }
+
+  .umkm-description {
+    font-size: 15px;
+  }
+
+  .umkm-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .umkm-stat-number {
+    font-size: 18px;
+  }
+
+  .umkm-stat-label {
+    font-size: 13px;
+  }
+}
 
 
 
@@ -492,23 +672,33 @@ padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; /* Tambah jarak antar item */
     padding: 40px 20px;
 }
 
 .gallery-item {
-    width: 300px;
-    height: 450px;
+    width: 400px;
+    height: 500px;
     position: relative;
-    transform: rotate(15deg);
+    transform: rotate(8deg); /* Lebih ringan agar tidak terlalu menumpuk */
+    margin: 30px; /* Tambah jarak antar item */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: rotate(8deg) scale(1.05); /* Interaksi saat hover */
+    z-index: 2;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: rotate(-15deg);
+    transform: rotate(-8deg); /* Sesuaikan agar tetap lurus dalam bingkai */
+    border-radius: 120px;
+    box-shadow: 0 5px 0px rgba(0,0,0,0.1);
 }
+
 
 /* Footer */
 .footer {
@@ -614,11 +804,11 @@ padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
     }
 
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 8rem;
     }
 
     .hero-subtitle {
-        font-size: 3.5rem;
+        font-size: 8rem;
     }
 
     .section {
@@ -658,11 +848,11 @@ padding: 0px -50px; /* Atas-bawah 10px, kanan-kiri 24px */
 
 @media (min-width: 1024px) {
     .hero-title {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 
     .hero-subtitle {
-        font-size: 5rem;
+        font-size: 8rem;
     }
 
     .section {

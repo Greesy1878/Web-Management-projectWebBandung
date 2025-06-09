@@ -100,11 +100,6 @@
   </div>
 </section>
 
-
-
-
-</section>
-
 <!-- Welcome Section -->
 <section class="welcome-section">
     <div class="since-text">Since 2025</div>
@@ -124,13 +119,13 @@
 <!-- Gallery Section -->
 <section class="gallery">
     <div class="gallery-item">
-        <img src="https://placehold.co/185x283" alt="Gallery 1">
+        <img src="{{ asset('img/bandung_img/logo-rrkr.png') }}" alt="Gallery 1">
     </div>
     <div class="gallery-item">
-        <img src="https://placehold.co/185x283" alt="Gallery 2">
+        <img src="{{ asset('img/bandung_img/logo-disbudpar.png') }}" alt="Gallery 2">
     </div>
     <div class="gallery-item">
-        <img src="https://placehold.co/185x283" alt="Gallery 3">
+        <img src="{{ asset('img/bandung_img/logo-telkom.png') }}" alt="Gallery 3">
     </div>
 </section>
 
