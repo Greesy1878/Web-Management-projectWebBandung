@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Sagala Bandung - Pariwisata & UMKM</title>
-    <link rel="stylesheet" href="{{asset('css/bandungCSS/pariwisatadanumkam.style.css')}}">
-    
+    <link rel="stylesheet" href="{{ asset('css/bandungCSS/pariwisatadanumkam.style.css') }}">
+
 </head>
+
 <body>
     <div class="UMKM-user">
         <!-- Header -->
@@ -33,70 +35,48 @@
                 <div class="text-wrapper-33">sagala</div>
                 <div class="text-wrapper-32">BANDUNG</div>
                 <p class="text-wrapper-31">
-                    Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang, 
-                    Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior, 
-                    Intelectuele Centrum Van Indie, Europe in The Tropen, Kota Permai, Kota Pendidkan, 
+                    Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang,
+                    Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior,
+                    Intelectuele Centrum Van Indie, Europe in The Tropen, Kota Permai, Kota Pendidkan,
                     Kota Kreatif hingga Kota Kuliner.
                 </p>
             </div>
         </div>
 
         <!-- Rekomendasi UMKM -->
-        <div class="rekomendasi section">
-            <div class="container">
-                <div class="container-17 section-title">
-                    <div class="text-wrapper-25">Rekomendasi</div>
-                    <div class="heading">
-                        <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
-                    </div>
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-                    <div class="background-border">
-                        <button class="button">
-                            <div class="text-wrapper-26">Populer</div>
-                        </button>
-                        <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Padalarang, Kabupaten Bandung</div>
-                        <div class="text-wrapper-28">Roti Unyil & Kue Okeke 2</div>
-                        <div class="list-4">
-                            <div class="item-5">4.5(6.966)</div>
-                        </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
-                    </div>
-
-                    <div class="background-border-2">
-                        <button class="button-2">
-                            <div class="text-wrapper-26">Populer</div>
-                        </button>
-                        <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Buahbatu, Bojongsoang</div>
-                        <div class="text-wrapper-28">Batik Kina</div>
-                        <div class="list-4">
-                            <div class="item-5">4.7(4.570)</div>
-                        </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
-                    </div>
-
-                    <div class="background-border-3">
-                        <button class="button-2">
-                            <div class="text-wrapper-26">Populer</div>
-                        </button>
-                        <div class="icon-9"></div>
-                        <div class="text-wrapper-27">Gajahmekar, Kutawiringin</div>
-                        <div class="text-wrapper-28">Sambal Hejo Beledag</div>
-                        <div class="list-4">
-                            <div class="item-5">4.6(1.535)</div>
-                        </div>
-                        <a href="#" class="btn-telusuri">Telusuri</a>
-                    </div>
-                </div>
-
-                <div class="element-15">
-                    <a href="#" class="text-wrapper-30">Contact Us</a>
-                </div>
+<div class="rekomendasi section">
+    <div class="container">
+        <div class="container-17 section-title">
+            <div class="text-wrapper-25">Rekomendasi</div>
+            <div class="heading">
+                <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
             </div>
         </div>
+
+        <!-- Grid container DI LUAR foreach -->
+        <div class="destination-grid">
+            @foreach ($umkmdestination as $destination)
+                <div class="background-border">
+                    <button class="button">
+                        <div class="text-wrapper-26">Populer</div>
+                    </button>
+                    <div class="icon-9"></div>
+                    <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
+                    <div class="text-wrapper-28">{{ $destination->title }}</div>
+                    <div class="list-4">
+                        <div class="item-5">4.5(6.966)</div>
+                    </div>
+                    <a href="{{ route('pariwisata.detail', ['id' => $destination]) }}" class="btn-telusuri">Telusuri</a>
+                </div>
+            @endforeach
+        </div>
+
+        <div class="element-15">
+            <a href="#" class="text-wrapper-30">Contact Us</a>
+        </div>
+    </div>
+</div>
+
 
         <!-- Destinasi Wisata -->
         <div class="section">
@@ -119,7 +99,7 @@
                                     <div class="item-5">5.0</div>
                                 </div>
                             </div>
-                            
+
                             <div class="background-border">
                                 <div class="icon-9"></div>
                                 <div class="text-wrapper-19">Fashion</div>
@@ -128,7 +108,7 @@
                                     <div class="item-5">5.0</div>
                                 </div>
                             </div>
-                            
+
                             <div class="background-border">
                                 <div class="icon-9"></div>
                                 <div class="text-wrapper-19">Culinary</div>
@@ -141,8 +121,12 @@
 
                         <div class="number-page">
                             <div class="page">‹</div>
-                            <div class="page-active"><div class="num">1</div></div>
-                            <div class="page-2"><div class="num-2">2</div></div>
+                            <div class="page-active">
+                                <div class="num">1</div>
+                            </div>
+                            <div class="page-2">
+                                <div class="num-2">2</div>
+                            </div>
                             <div class="page-2">›</div>
                         </div>
                     </div>
@@ -169,7 +153,8 @@
                                     Pulang dari Wisata di Kabupaten Bandung? <br />Ini Deretan Oleh-Oleh Khas
                                 </div>
                                 <p class="jelajahi-destinasi">
-                                    Liburan ke Kabupaten Bandung nggak lengkap tanpa membawa pulang oleh-oleh khas daerah ini. 
+                                    Liburan ke Kabupaten Bandung nggak lengkap tanpa membawa pulang oleh-oleh khas
+                                    daerah ini.
                                     Terkenal dengan lanskap alamnya yang sejuk dan penuh pesona.
                                 </p>
                             </div>
@@ -194,7 +179,7 @@
                         <div style="text-align: center; margin-top: 3rem;">
                             <p class="login-untuk-agar">Login Untuk Agar <br />Tidak Ketinggalan Berita</p>
                             <p class="text-wrapper-10">
-                                Sudah siap menjelajahi keindahan Bandung dan mendukung produk lokal? 
+                                Sudah siap menjelajahi keindahan Bandung dan mendukung produk lokal?
                                 Ayo masuk dan mulai petualanganmu!
                             </p>
                         </div>
@@ -224,12 +209,12 @@
                 <div class="horizontal-border">
                     <div>
                         <p class="hello-we-are-lift">
-                            Hello, we are Lift Media. Our goal is to<br />translate the 
+                            Hello, we are Lift Media. Our goal is to<br />translate the
                             positive effects from<br />revolutionizing
                         </p>
                         <div class="heading-about">Sagala Bandung</div>
                     </div>
-                    
+
                     <div>
                         <div class="heading-about">Tentang</div>
                         <div class="list-2">
@@ -239,7 +224,7 @@
                             <a href="#" class="terms-conditions">Terms & Conditions</a>
                         </div>
                     </div>
-                    
+
                     <div>
                         <div class="heading-contact">Kontak</div>
                         <div class="list-3">
@@ -263,4 +248,5 @@
         </div>
     </div>
 </body>
+
 </html>

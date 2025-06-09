@@ -116,7 +116,6 @@
 
                     <!-- Visit Buttons -->
                     <button class="visit-btn">Kunjungi</button>
-                    <button class="visit-btn">Ulasan</button>
                 </div>
 
                 <!-- Right Column -->
@@ -204,8 +203,7 @@
     <!-- Review List -->
     <div class="review-list">
         <div class="container">
-            <h3>Ulasan Pengunjung (3 Ulasan)</h3>
-
+            <h3>Ulasan Pengunjung ({{ $destination->reviews->count() }} Ulasan)</h3>
             <div class="reviews-container">
                 @foreach ($destination->reviews as $review)
                     <div class="review-item">

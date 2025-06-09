@@ -5,14 +5,14 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DetailGunungTangkuban;
 use App\Http\Controllers\PariwisataController;
 use App\Http\Controllers\UMKMController;
-// use App\Http\Controllers\DetailController;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\DetailGlamping;
 use App\Http\Controllers\DetailSunrise;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
-
-Route::get('/admin', [DashboardController::class, 'index'])
-    ->name('admin.dashboard');
+use Symfony\Component\Mailer\Transport\Smtp\Auth\LoginAuthenticator;
+use App\Http\Controllers\AuthController;
 
     Route::get('/', [CMSController::class, 'index'])
     ->name('cms.home');
@@ -31,5 +31,6 @@ Route::get('/admin', [DashboardController::class, 'index'])
 
     Route::post('/rating', [DetailGlamping::class, 'store'])
         ->name('rating.store');
+
 
     

@@ -27,7 +27,7 @@
                         <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
                     </div>
                 </div>
-                <div class="text-wrapper-37">Login</div>
+                <a href="{{ url('/#') }}" class="text-wrapper-36">Login</a>
             </div>
         </header>
 
