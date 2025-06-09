@@ -44,14 +44,6 @@
         </div>
 
         <!-- Rekomendasi UMKM -->
-<<<<<<< HEAD
-<div class="rekomendasi section">
-    <div class="container">
-        <div class="container-17 section-title">
-            <div class="text-wrapper-25">Rekomendasi</div>
-            <div class="heading">
-                <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
-=======
         <div class="rekomendasi section">
             <div class="container">
                 <div class="container-17 section-title">
@@ -60,57 +52,28 @@
                         <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
                     </div>
                 </div>
-                @foreach ($umkmdestinations as $umkmdestination)
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-                        <div class="background-border">
-                            <button class="button">
-                                <div class="text-wrapper-26">Populer</div>
-                            </button>
-                            <div class="icon-9"></div>
-                            <div class="text-wrapper-27">{{ $umkmdestination->lokasi }}</div>
-                            <div class="text-wrapper-28">{{ $umkmdestination->title }}</div>
-                            <div class="list-4">
-                                <div class="item-5">4.5(6.966)</div>
-                            </div>
-                            <a href="{{ route('umkm.detail', ['id' => $umkmdestination]) }}"
-                                class="btn-telusuri">Telusuri</a>
-                        </div>
-
-
-                    </div>
-                @endforeach
-
-                <div class="element-15">
-                    <a href="#" class="text-wrapper-30">Contact Us</a>
-                </div>
->>>>>>> 4eedc045915e8247d061af2c759bad293c2c5312
-            </div>
-        </div>
-
-        <!-- Grid container DI LUAR foreach -->
-        <div class="destination-grid">
-            @foreach ($umkmdestination as $destination)
+                <div class="destination-grid">
+            @foreach ($umkmdestinations as $umkmdestination)
                 <div class="background-border">
                     <button class="button">
-                        <div class="text-wrapper-26">Populer</div>
+                    <div class="text-wrapper-26">Populer</div>
                     </button>
                     <div class="icon-9"></div>
-                    <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
-                    <div class="text-wrapper-28">{{ $destination->title }}</div>
+                    <div class="text-wrapper-27">{{ $umkmdestination->lokasi }}</div>
+                    <div class="text-wrapper-28">{{ $umkmdestination->title }}</div>
                     <div class="list-4">
                         <div class="item-5">4.5(6.966)</div>
                     </div>
-                    <a href="{{ route('pariwisata.detail', ['id' => $destination]) }}" class="btn-telusuri">Telusuri</a>
+                    <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}" class="btn-telusuri">Telusuri</a>
                 </div>
             @endforeach
         </div>
 
-        <div class="element-15">
-            <a href="#" class="text-wrapper-30">Contact Us</a>
+                <div class="element-15">
+                    <a href="#" class="text-wrapper-30">Contact Us</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
 
         <!-- Destinasi Wisata -->
         <div class="section">

@@ -204,15 +204,14 @@
     <!-- Review List -->
     <div class="review-list">
         <div class="container">
-            <h3>Ulasan Pengunjung (3 Ulasan)</h3>
-
+            <h3>Ulasan Pengunjung ({{ $destination->reviews->count() }} Ulasan)</h3>
             <div class="reviews-container">
-                @foreach ($umkmdestination->umkm_reviews as $umkm_review)
+                @foreach ($destination->reviews as $review)
                     <div class="review-item">
                         <div class="review-header">
                             <div class="reviewer-info">
-                                <strong class="reviewer-name">{{ $umkmreview->name }}</strong>
-                                <span class="review-date">{{ $umkmreview->created_at }}</span>
+                                <strong class="reviewer-name">{{ $review->name }}</strong>
+                                <span class="review-date">{{ $review->created_at }}</span>
                             </div>
                             <div class="review-rating">
                                 @for ($i = 1; $i < $umkmreview->rating; $i++)

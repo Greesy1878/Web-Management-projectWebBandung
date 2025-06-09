@@ -58,7 +58,7 @@
             @foreach ($destinations as $destination)
                 <div class="background-border">
                     <button class="button">
-                        <div class="text-wrapper-26">Populer</div>
+                    <div class="text-wrapper-26">Populer</div>
                     </button>
                     <div class="icon-9"></div>
                     <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
