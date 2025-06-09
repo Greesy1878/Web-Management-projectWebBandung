@@ -407,7 +407,7 @@ endfor;
                 
                 <!-- Load More Button -->
                 <?php    if (count($reviews) >= 20): ?>
-                <div class="load-more-section">
+                 <div class="load-more-section">
                     <button class="load-more-btn" onclick="loadMoreReviews()">
                         <i class="fas fa-chevron-down"></i> Muat Lebih Banyak
                     </button>

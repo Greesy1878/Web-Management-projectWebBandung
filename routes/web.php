@@ -34,4 +34,8 @@ Route::get('/admin', [DashboardController::class, 'index'])
 
     Route::get('/review', [ReviewController::class, 'index'])
         ->name('review.dashboard');
+
+    Route::post('/rating', [DetailGlamping::class, 'store'])
+        ->name('rating.store');
+
     

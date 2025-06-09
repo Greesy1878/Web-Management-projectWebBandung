@@ -308,7 +308,8 @@ endfor;
             </div>
             <?php endif; ?>
 
-            <form method="POST" enctype="multipart/form-data">
+            <form action="{{route('rating.store')}}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="form-group">
                     <label for="name">Nama Lengkap</label>
                     <input type="text" id="name" name="name" required maxlength="100" 
@@ -325,11 +326,11 @@ endfor;
                     <label for="rating">Rating</label>
                     <select id="rating" name="rating" required>
                         <option value="">-- Pilih Rating --</option>
-                        <option value="5" <?php echo (($_POST['rating'] ?? '') == '5') ? 'selected' : ''; ?>>⭐⭐⭐⭐⭐ - Luar Biasa</option>
-                        <option value="4" <?php echo (($_POST['rating'] ?? '') == '4') ? 'selected' : ''; ?>>⭐⭐⭐⭐ - Sangat Bagus</option>
-                        <option value="3" <?php echo (($_POST['rating'] ?? '') == '3') ? 'selected' : ''; ?>>⭐⭐⭐ - Bagus</option>
-                        <option value="2" <?php echo (($_POST['rating'] ?? '') == '2') ? 'selected' : ''; ?>>⭐⭐ - Cukup</option>
-                        <option value="1" <?php echo (($_POST['rating'] ?? '') == '1') ? 'selected' : ''; ?>>⭐ - Kurang</option>
+                        <option value="5" >⭐⭐⭐⭐⭐ - Luar Biasa</option>
+                        <option value="4" >⭐⭐⭐⭐ - Sangat Bagus</option>
+                        <option value="3" >⭐⭐⭐ - Bagus</option>
+                        <option value="2" >⭐⭐ - Cukup</option>
+                        <option value="1" >⭐ - Kurang</option>
                     </select>
                 </div>
 
