@@ -69,7 +69,7 @@
     <!-- Kiri: Gambar dan Judul -->
     <div class="umkm-left">
       <div class="umkm-label">UMKM</div>
-      <h2 class="umkm-title">Usaha Mikro Kecil Menengah<br>Kabupaten Bandung</h2>
+      <h2 class="umkm-title">Usaha Mikro Kecil<br>Menengah Kabupaten Bandung</h2>
       <div class="umkm-image">
         <img src="{{ asset('img/bandung_img/umkm1.png') }}" alt="UMKM Bandung" />
       </div>
