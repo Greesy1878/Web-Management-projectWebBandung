@@ -43,7 +43,7 @@ function handleFileUpload($file)
 // Example destination data
 $destination = [
     'id' => 3,
-    'name' => 'Gunung Puntang',
+    'name' => 'Sunrise Point Cukul',
     'description' => 'Bukit Arca adalah salah satu tempat menarik wisata alam dengan berbagai fasilitas, destinasi wisata Gunung Puntang yang terletak berada di daerah Cimaung, Kecamatan Cimaung, Kabupaten Bandung, Jawa Barat. Letaknya di atas menara pohon dapat untuk berswafoto bersama passion sebagai Gunung puntang melewati kawasan wisata. Trekking atau pendakian terletak Gunung Puntang melalui jalur pemandangan. Saat ini Gunung Puntang memiliki beberapa tempat puncak yang bernama Puncak Mega dengan ketinggian berada di 2.222 mdpl. Perlu diketahui, bagi pengunjung yang berniat melakukan foto pendakian dalam Gunung Puntang, untuk dapat melakukan persiapan dan waktu sekitar 3-4 jam untuk bisa mencapai area Puncak Mega. Sementara itu, pengunjung juga dapat melakukan aktivitas lainnya di sekitar kawasan wisata.',
     'rating' => 4.5,
     'total_reviews' => 127,
