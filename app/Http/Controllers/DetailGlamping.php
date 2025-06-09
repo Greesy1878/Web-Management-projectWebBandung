@@ -20,6 +20,7 @@ class DetailGlamping extends Controller
           'comment' => 'nullable|string|max:255',
           'media' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
           'email' => 'required|email|max:255',
+          'destination_id' => 'required|integer|exists:destinations,id',
       ]);
       $file = $request->file('media');
       if ($file) {
@@ -32,6 +33,6 @@ class DetailGlamping extends Controller
 
         // Simpan data ke database atau lakukan proses lain sesuai kebutuhan
         Review::create($data);
-        return redirect()->route('detailglamping.dashboard')->with('success', 'Review submitted successfully!');
+        return redirect()->back();
     }
 }

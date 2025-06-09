@@ -23,15 +23,9 @@ Route::get('/admin', [DashboardController::class, 'index'])
     Route::get('/umkm', [UMKMController::class, 'index'])
         ->name('umkm.dashboard');
 
-    Route::get('/detailgunungtangkuban', [DetailGunungTangkuban::class, 'index'])
-        ->name('detailgunungtangkuban.dashboard');
+    Route::get('/pariwisata/{id}', [PariwisataController::class, 'detail'])
+        ->name('pariwisata.detail');
     
-    Route::get('/detailglamping', [DetailGlamping::class, 'index'])
-        ->name('detailglamping.dashboard');
-    
-    Route::get('/detailsunrise', [DetailSunrise::class, 'index'])
-        ->name('detailsunrise.dashboard');
-
     Route::get('/review', [ReviewController::class, 'index'])
         ->name('review.dashboard');
 
