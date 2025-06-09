@@ -50,7 +50,7 @@ class UmkmReviewController extends Controller
     public function destroy($id)
     {
         $umkm_review = UmkmReview::findOrFail($id);
-        if ($umk_mreview->media_path) {
+        if ($umkm_review->media_path) {
             Storage::disk('public')->delete($umkm_review->media_path);
         }
         $umkm_review->delete();
