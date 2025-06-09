@@ -5,44 +5,68 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Tambahan CSS untuk modal dan styling yang lebih baik */
 .modal {
-    display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
 }
+
 .modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 8px;
+    position: relative;
+    margin: 5% auto;
     width: 90%;
-    max-width: 500px;
+    max-width: 800px;
+    text-align: center;
 }
+
 .close {
-    float: right;
-    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
     cursor: pointer;
 }
-.modal-content input,
-.modal-content textarea,
-.modal-content select {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
+
+.close:hover {
+    color: #bbb;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
     border-radius: 4px;
-    border: 1px solid #ccc;
 }
-.modal-content button {
-    padding: 10px 20px;
-    background-color: #2d767f;
-    color: white;
-    border: none;
-    border-radius: 6px;
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.review-image {
+    max-width: 200px;
+    max-height: 150px;
     cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.review-video {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 8px;
 }
