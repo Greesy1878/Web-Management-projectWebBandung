@@ -23,6 +23,12 @@ Route::get('/admin', [DashboardController::class, 'index'])
     Route::get('/umkm', [UMKMController::class, 'index'])
         ->name('umkm.dashboard');
 
+    Route::get('/umkm/{id}', [UMKMController::class, 'detail'])
+        ->name('umkm.detail');
+
+    //  Route::get('/umkm/{id}', [UMKMController::class, 'store'])
+    //     ->name('umkm.store');
+        
     Route::get('/pariwisata/{id}', [PariwisataController::class, 'detail'])
         ->name('pariwisata.detail');
     
