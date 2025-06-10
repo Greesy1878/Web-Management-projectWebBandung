@@ -36,7 +36,7 @@
                 Travelers Choice".
             </p>
 
-            <button class="explore-btn">Telusuri ➜</button>
+            <button class="explore-btn">Telusuri</button>
 
             <div class="stats-container">
                 <div class="stat-item">
