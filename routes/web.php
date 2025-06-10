@@ -13,6 +13,8 @@ use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Mailer\Transport\Smtp\Auth\LoginAuthenticator;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SessionController;
+use Illuminate\Support\Facades\Auth;
 
     Route::get('/', [CMSController::class, 'index'])
     ->name('cms.home');
@@ -25,9 +27,6 @@ use App\Http\Controllers\AuthController;
 
     Route::get('/umkm/{id}', [UMKMController::class, 'detail'])
         ->name('umkm.detail');
-
-    //  Route::get('/umkm/{id}', [UMKMController::class, 'store'])
-    //     ->name('umkm.store');
         
     Route::get('/pariwisata/{id}', [PariwisataController::class, 'detail'])
         ->name('pariwisata.detail');
@@ -37,6 +36,18 @@ use App\Http\Controllers\AuthController;
 
     Route::post('/rating', [DetailGlamping::class, 'store'])
         ->name('rating.store');
+    
+    route::get('/sesi', [SessionController::class, 'index']);
+    route::post('/sesi/login', [SessionController::class, 'login']);
+    route::get('/sesi/logout', [SessionController::class, 'logout']);
+    
+    Route::post('/logout', function () {
+    Auth::logout();
+    return redirect(to: '/'); // arahkan ke halaman utama setelah logout
+    })->name('logout');
 
+    Route::get('/login', function () {
+    return view('auth.login'); // pastikan view auth/login.blade.php ada
+    })->name('login');
 
     
