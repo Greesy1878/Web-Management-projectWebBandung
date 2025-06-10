@@ -29,11 +29,18 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <div class="SAGALA-BANDUNG">
+         <!-- Hero Section -->
+         <!-- Tulisan tengah -->
+        <div class="awalll">
+            <!-- Tulisan tengah -->
             <div class="page-awal">
                 <div class="text-wrapper-33">sagala</div>
                 <div class="text-wrapper-32">BANDUNG</div>
+            </div>
+                <!-- Gambar angklung -->
+        <img src="/img/bandung_img/angklung.png" alt="Angklung" class="angklung-icon">
+
+        <!-- Deskripsi di kanan -->
                 <p class="text-wrapper-31">
                     Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang,
                     Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior,

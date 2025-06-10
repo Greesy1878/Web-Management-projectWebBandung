@@ -30,10 +30,17 @@
         </header>
 
         <!-- Hero Section -->
-        <div class="SAGALA-BANDUNG">
+         <!-- Tulisan tengah -->
+        <div class="awall">
+            <!-- Tulisan tengah -->
             <div class="page-awal">
                 <div class="text-wrapper-33">sagala</div>
                 <div class="text-wrapper-32">BANDUNG</div>
+            </div>
+                <!-- Gambar angklung -->
+        <img src="/img/bandung_img/angklung.png" alt="Angklung" class="angklung-icon">
+
+        <!-- Deskripsi di kanan -->
                 <p class="text-wrapper-31">
                     Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang,
                     Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior,
@@ -43,13 +50,15 @@
             </div>
         </div>
 
+
+
         <!-- Rekomendasi UMKM -->
 <div class="rekomendasi section">
     <div class="container">
         <div class="container-17 section-title">
             <div class="text-wrapper-25">Rekomendasi</div>
             <div class="heading">
-                <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
+                <div class="rekomendasi-trip">Rekomendasi Trip Wisata Populer Kabupaten Bandung</div>
             </div>
         </div>
 
