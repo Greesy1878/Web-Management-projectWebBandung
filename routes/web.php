@@ -40,6 +40,8 @@ use Illuminate\Support\Facades\Auth;
     route::get('/sesi', [SessionController::class, 'index']);
     route::post('/sesi/login', [SessionController::class, 'login']);
     route::get('/sesi/logout', [SessionController::class, 'logout']);
+    route::get('/sesi/register', [SessionController::class, 'register']);
+    route::post('/sesi/create', [SessionController::class, 'create']);
     
     Route::post('/logout', function () {
     Auth::logout();
