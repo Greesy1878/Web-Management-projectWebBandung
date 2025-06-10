@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 use Symfony\Component\Mailer\Transport\Smtp\Auth\LoginAuthenticator;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SessionController;
+use Illuminate\Support\Facades\Auth;
 
     Route::get('/', [CMSController::class, 'index'])
     ->name('cms.home');
@@ -38,7 +39,15 @@ use App\Http\Controllers\SessionController;
     
     route::get('/sesi', [SessionController::class, 'index']);
     route::post('/sesi/login', [SessionController::class, 'login']);
+    route::get('/sesi/logout', [SessionController::class, 'logout']);
     
+    Route::post('/logout', function () {
+    Auth::logout();
+    return redirect(to: '/'); // arahkan ke halaman utama setelah logout
+    })->name('logout');
 
+    Route::get('/login', function () {
+    return view('auth.login'); // pastikan view auth/login.blade.php ada
+    })->name('login');
 
     

@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Aplikasi Web</title>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #4e54c8, #8f94fb);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .login-card {
-            background: #fff;
-            border-radius: 20px;
-            padding: 40px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .login-card h2 {
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .form-control:focus {
-            box-shadow: none;
-            border-color: #4e54c8;
-        }
-        .btn-primary {
-            background: #4e54c8;
-            border: none;
-        }
-        .btn-primary:hover {
-            background: #3d42b2;
-        }
-    </style>
 </head>
 <body>
 

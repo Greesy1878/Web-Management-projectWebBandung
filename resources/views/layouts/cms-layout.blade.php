@@ -16,22 +16,42 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="list-5">
-            <div>
-                <div class="item-6">
-                    <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
-                </div>
-                <div class="item-7">
-                    <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
-                </div>
-                <div class="item-8">
-                    <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
-                </div>
-                <a href="{{ url('/sesi') }}" class="text-wrapper-36">login</a>
+<header class="header">
+    <div class="list-5">
+        <div>
+            <div class="item-6">
+                <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
             </div>
+            <div class="item-7">
+                <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+            </div>
+            <div class="item-8">
+                <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+            </div>
+
+            <!-- Tombol Login hanya ditampilkan jika user belum login -->
+            @guest
+                <a href="{{ url('/sesi') }}" class="text-wrapper-36">Login</a>
+            @endguest
+
+            <!-- Tombol Logout hanya ditampilkan jika user sudah login -->
+            @auth
+                <div class="item-9">
+                    <a href="{{ route('logout') }}"
+                       class="text-wrapper-88"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                </div>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            @endauth
         </div>
-    </header>
+    </div>
+</header>
+
 
     @yield('content')
     <footer class="footer">
