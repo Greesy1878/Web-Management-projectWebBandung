@@ -56,8 +56,12 @@
 
         <!-- Kanan: Gambar -->
         <div class="image-container">
-            <img src="{{ asset('img/bandung_img/pariwisata1.png') }}" alt="UMKM Bandung">
-        </div>
+          <div class="image-wrapper">
+              <img src="{{ asset('img/bandung_img/pariwisata1.png') }}" alt="UMKM Bandung">
+          </div>
+      </div>
+      
+</div>
 
     </div>
 </section>

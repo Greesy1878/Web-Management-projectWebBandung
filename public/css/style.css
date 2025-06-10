@@ -655,7 +655,7 @@ body {
 /* Image Container */
 .image-container {
     flex: 1;
-    max-width: 400px;
+    max-width: 4000px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -665,15 +665,24 @@ body {
 }
 
 .image-container .image-wrapper {
-    width: 80%;
-    height: 400px;
+    width: 90%;
+    max-width: 900px;
+    height: 700px;
     border-radius: 30px;
     background: linear-gradient(135deg, #87CEEB 0%, #98E4E8 100%);
     position: relative;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih realistis */
+    box-shadow: -25px 25px 30px rgba(0, 0, 0, 0.4);
+    /* shadow tajam & tebal */
     overflow: hidden;
 }
 
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
 .temple-structure {
     position: absolute;
     bottom: 40%;
@@ -794,9 +803,10 @@ body {
 .umkm-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
+    
     margin: 0 auto;
     gap: 60px;
 }
@@ -822,17 +832,26 @@ body {
     line-height: 1.2;
 }
 
-.umkm-image {
+.umkm-wrapper .umkm-image {
     width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #87CEEB 0%, #98E4E8 100%);
     position: relative;
+    box-shadow: -25px 25px 30px rgba(0, 0, 0, 0.4);
+    /* shadow tajam ke kiri-bawah */
+    overflow: hidden;
+    margin: 0 auto;
+    /* agar center */
 }
 
 .umkm-image img {
     width: 100%;
-    height: auto;
-    border-radius: 24px;
+    height: 100%;
     object-fit: cover;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: block;
 }
 
 .umkm-right {
