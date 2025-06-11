@@ -2,6 +2,16 @@
 
 @section('content')
 <section class="hero-section">
+    <div class="hero-background">
+        <div class="background-slide slide-1 active"></div>
+        <div class="background-slide slide-2"></div>
+        <div class="background-slide slide-3"></div>
+        <div class="background-slide slide-4"></div>
+    </div>
+     
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    
     <div class="hero-content">
         <!-- Tulisan tengah -->
         <div class="centered-text">
@@ -19,7 +29,100 @@
             Permai, Kota Pendidikan, Kota Kreatif hingga Kota Kuliner.
         </div>
     </div>
+    <!-- Slideshow indicators -->
+    <div class="slideshow-indicators">
+        <div class="indicator active" data-slide="0"></div>
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
+        <div class="indicator" data-slide="3"></div>
+    </div>
 </section>
+
+<script>
+class HeroSlideshow {
+    constructor() {
+        this.slides = document.querySelectorAll('.background-slide');
+        this.indicators = document.querySelectorAll('.indicator');
+        this.currentSlide = 0;
+        this.slideInterval = null;
+        this.autoPlayDuration = 4000; // 5 detik
+
+        this.init();
+    }
+
+    init() {
+        // Event listeners untuk indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                this.goToSlide(index);
+                this.resetAutoPlay();
+            });
+        });
+
+        // Mulai autoplay
+        this.startAutoPlay();
+
+        // Pause saat hover, resume saat mouse leave
+        const heroSection = document.querySelector('.hero-section');
+        heroSection.addEventListener('mouseenter', () => this.pauseAutoPlay());
+        heroSection.addEventListener('mouseleave', () => this.startAutoPlay());
+    }
+
+    goToSlide(slideIndex) {
+        // Remove active class dari slide dan indicator saat ini
+        this.slides[this.currentSlide].classList.remove('active');
+        this.indicators[this.currentSlide].classList.remove('active');
+
+        // Update index slide
+        this.currentSlide = slideIndex;
+
+        // Add active class ke slide dan indicator baru
+        this.slides[this.currentSlide].classList.add('active');
+        this.indicators[this.currentSlide].classList.add('active');
+    }
+
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+    }
+
+    startAutoPlay() {
+        this.slideInterval = setInterval(() => {
+            this.nextSlide();
+        }, this.autoPlayDuration);
+    }
+
+    pauseAutoPlay() {
+        if (this.slideInterval) {
+            clearInterval(this.slideInterval);
+            this.slideInterval = null;
+        }
+    }
+
+    resetAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+    }
+}
+
+// Inisialisasi slideshow setelah DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new HeroSlideshow();
+});
+
+// Smooth scroll effect untuk indicators
+document.querySelectorAll('.indicator').forEach(indicator => {
+    indicator.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.3)';
+    });
+    
+    indicator.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('active')) {
+            this.style.transform = 'scale(1)';
+        }
+    });
+});
+</script>
 
 <!-- Tourism Section -->
 <section class="section">

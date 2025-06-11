@@ -16,38 +16,140 @@
             <div class="list-5">
                 <div>
                     <div class="item-6">
-                        <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                        <a href="{{ url('/') }}" class="text-wrapper-38">Home</a>
                     </div>
                     <div class="item-7">
-                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-38">Pariwisata</a>
                     </div>
                     <div class="item-8">
-                        <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                        <a href="{{ url('/umkm') }}" class="text-wrapper-38">UMKM</a>
                     </div>
                 </div>
             </div>
         </header>
 
-         <!-- Hero Section -->
-         <!-- Tulisan tengah -->
-        <div class="awalll">
-            <!-- Tulisan tengah -->
-            <div class="page-awal">
-                <div class="text-wrapper-33">sagala</div>
-                <div class="text-wrapper-32">BANDUNG</div>
-            </div>
-                <!-- Gambar angklung -->
+        <section class="hero-section">
+    <div class="hero-background">
+        <div class="background-slide slide-1 active"></div>
+        <div class="background-slide slide-2"></div>
+        <div class="background-slide slide-3"></div>
+        <div class="background-slide slide-4"></div>
+    </div>
+     
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <!-- Tulisan tengah -->
+        <div class="centered-text">
+            <div class="hero-subtitle">sagala</div>
+            <div class="hero-title">BANDUNG</div>
+        </div>
+
+        <!-- Gambar angklung -->
         <img src="/img/bandung_img/angklung.png" alt="Angklung" class="angklung-icon">
 
         <!-- Deskripsi di kanan -->
-                <p class="text-wrapper-31">
-                    Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang,
-                    Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior,
-                    Intelectuele Centrum Van Indie, Europe in The Tropen, Kota Permai, Kota Pendidkan,
-                    Kota Kreatif hingga Kota Kuliner.
-                </p>
-            </div>
+        <div class="hero-description">
+            Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang, Bandung pun dijuluki The Most European
+            City in The East Indies, Bandung Excelsior, Intelectuele Centrum Van Indie, Europe in The Tropen, Kota
+            Permai, Kota Pendidikan, Kota Kreatif hingga Kota Kuliner.
         </div>
+    </div>
+    <!-- Slideshow indicators -->
+    <div class="slideshow-indicators">
+        <div class="indicator active" data-slide="0"></div>
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
+        <div class="indicator" data-slide="3"></div>
+    </div>
+</section>
+
+<script>
+class HeroSlideshow {
+    constructor() {
+        this.slides = document.querySelectorAll('.background-slide');
+        this.indicators = document.querySelectorAll('.indicator');
+        this.currentSlide = 0;
+        this.slideInterval = null;
+        this.autoPlayDuration = 4000; // 5 detik
+
+        this.init();
+    }
+
+    init() {
+        // Event listeners untuk indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                this.goToSlide(index);
+                this.resetAutoPlay();
+            });
+        });
+
+        // Mulai autoplay
+        this.startAutoPlay();
+
+        // Pause saat hover, resume saat mouse leave
+        const heroSection = document.querySelector('.hero-section');
+        heroSection.addEventListener('mouseenter', () => this.pauseAutoPlay());
+        heroSection.addEventListener('mouseleave', () => this.startAutoPlay());
+    }
+
+    goToSlide(slideIndex) {
+        // Remove active class dari slide dan indicator saat ini
+        this.slides[this.currentSlide].classList.remove('active');
+        this.indicators[this.currentSlide].classList.remove('active');
+
+        // Update index slide
+        this.currentSlide = slideIndex;
+
+        // Add active class ke slide dan indicator baru
+        this.slides[this.currentSlide].classList.add('active');
+        this.indicators[this.currentSlide].classList.add('active');
+    }
+
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+    }
+
+    startAutoPlay() {
+        this.slideInterval = setInterval(() => {
+            this.nextSlide();
+        }, this.autoPlayDuration);
+    }
+
+    pauseAutoPlay() {
+        if (this.slideInterval) {
+            clearInterval(this.slideInterval);
+            this.slideInterval = null;
+        }
+    }
+
+    resetAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+    }
+}
+
+// Inisialisasi slideshow setelah DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new HeroSlideshow();
+});
+
+// Smooth scroll effect untuk indicators
+document.querySelectorAll('.indicator').forEach(indicator => {
+    indicator.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.3)';
+    });
+    
+    indicator.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('active')) {
+            this.style.transform = 'scale(1)';
+        }
+    });
+});
+</script>
 
         <!-- Rekomendasi UMKM -->
         <div class="rekomendasi section">
