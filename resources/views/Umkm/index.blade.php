@@ -213,6 +213,7 @@
                         <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
                     </div>
                 </div>
+        
                 <div class="destination-grid">
                     @foreach ($umkmdestinations as $umkmdestination)
                         <div class="background-border">
@@ -221,19 +222,20 @@
                             </button>
                             <div class="icon-9"></div>
                             <div class="destination-image">
-                                <img src="{{ $umkmdestination->imagedetination }}" alt="{{ $umkmdestination->title }}" />
+                                <img src="{{ $umkmdestination->imagedestination }}" alt="{{ $umkmdestination->title }}" />
                             </div>
                             <div class="text-wrapper-27">{{ $umkmdestination->lokasi }}</div>
                             <div class="text-wrapper-28">{{ $umkmdestination->title }}</div>
                             <div class="list-4">
                                 <div class="item-5">4.5(6.966)</div>
                             </div>
-                            <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}"
-                                class="btn-telusuri">Telusuri</a>
+                            <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}" class="btn-telusuri">Telusuri</a>
                         </div>
                     @endforeach
                 </div>
-
+            </div>
+        </div>
+        
                 <!-- Berita -->
                 <div class="berita section">
                     <div class="container">
