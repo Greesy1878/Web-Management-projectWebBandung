@@ -20,7 +20,6 @@
                     <a href="/pariwisata" class="nav-link">Pariwisata</a>
                     <a href="/umkm" class="nav-link">UMKM</a>
                 </div>
-                <button class="login-btn">Login</button>
             </div>
         </nav>
     </header>
@@ -207,39 +206,39 @@
             <h3>Ulasan Pengunjung ({{ $destination->reviews->count() }} Ulasan)</h3>
             <div class="reviews-container">
                 @foreach ($destination->reviews as $review)
-                    <div class="review-item">
-                        <div class="review-header">
-                            <div class="reviewer-info">
-                                <strong class="reviewer-name">{{ $review->name }}</strong>
-                                <span class="review-date">{{ $review->created_at }}</span>
-                            </div>
-                            <div class="review-rating">
-                                @for ($i = 1; $i < $umkmreview->rating; $i++)
-                                    <i class="fas fa-star active"></i>
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <strong class="reviewer-name">{{ $review->name }}</strong>
+                            <span class="review-date">{{ $review->created_at }}</span>
+                        </div>
+                        <div class="review-rating">
+                            @for ($i = 1; $i < $umkmreview->rating; $i++)
+                                <i class="fas fa-star active"></i>
                                 @endfor
                                 <i class="fas fa-star active"></i>
 
                                 <span class="rating-value">({{ $umkmreview->rating }}/5)</span>
-                            </div>
-                        </div>
-
-                        <div class="review-content">
-                            @if ($umkmreview->media_path)
-                                <img src="/{{ $umkmreview->media_path }}" alt="">
-                            @endif
-                            <p>{{ $umkmreview->comment }}</p>
-                            </p>
-                        </div>
-
-                        <div class="review-actions">
-                            <button class="like-btn" onclick="likeReview(1)">
-                                <i class="fas fa-thumbs-up"></i> Suka
-                            </button>
-                            <button class="reply-btn" onclick="replyToReview(1)">
-                                <i class="fas fa-reply"></i> Balas
-                            </button>
                         </div>
                     </div>
+
+                    <div class="review-content">
+                        @if ($umkmreview->media_path)
+                        <img src="/{{ $umkmreview->media_path }}" alt="">
+                        @endif
+                        <p>{{ $umkmreview->comment }}</p>
+                        </p>
+                    </div>
+
+                    <div class="review-actions">
+                        <button class="like-btn" onclick="likeReview(1)">
+                            <i class="fas fa-thumbs-up"></i> Suka
+                        </button>
+                        <button class="reply-btn" onclick="replyToReview(1)">
+                            <i class="fas fa-reply"></i> Balas
+                        </button>
+                    </div>
+                </div>
                 @endforeach
 
 

@@ -27,20 +27,128 @@
                 </div>
             </div>
         </header>
-
-        <!-- Hero Section -->
-        <div class="SAGALA-BANDUNG">
-            <div class="page-awal">
-                <div class="text-wrapper-33">sagala</div>
-                <div class="text-wrapper-32">BANDUNG</div>
-                <p class="text-wrapper-31">
-                    Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang,
-                    Bandung pun dijuluki The Most European City in The East Indies, Bandung Excelsior,
-                    Intelectuele Centrum Van Indie, Europe in The Tropen, Kota Permai, Kota Pendidkan,
-                    Kota Kreatif hingga Kota Kuliner.
-                </p>
-            </div>
+<section class="hero-section">
+    <div class="hero-background">
+        <div class="background-slide slide-1 active"></div>
+        <div class="background-slide slide-2"></div>
+        <div class="background-slide slide-3"></div>
+        <div class="background-slide slide-4"></div>
+    </div>
+     
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <!-- Tulisan tengah -->
+        <div class="centered-text">
+            <div class="hero-subtitle">sagala</div>
+            <div class="hero-title">BANDUNG</div>
         </div>
+
+        <!-- Gambar angklung -->
+        <img src="/img/bandung_img/angklung.png" alt="Angklung" class="angklung-icon">
+
+        <!-- Deskripsi di kanan -->
+        <div class="hero-description">
+            Sejak dahulu Bandung dikenal sebagai Paris Van Java dan Kota Kembang, Bandung pun dijuluki The Most European
+            City in The East Indies, Bandung Excelsior, Intelectuele Centrum Van Indie, Europe in The Tropen, Kota
+            Permai, Kota Pendidikan, Kota Kreatif hingga Kota Kuliner.
+        </div>
+    </div>
+    <!-- Slideshow indicators -->
+    <div class="slideshow-indicators">
+        <div class="indicator active" data-slide="0"></div>
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
+        <div class="indicator" data-slide="3"></div>
+    </div>
+</section>
+
+<script>
+class HeroSlideshow {
+    constructor() {
+        this.slides = document.querySelectorAll('.background-slide');
+        this.indicators = document.querySelectorAll('.indicator');
+        this.currentSlide = 0;
+        this.slideInterval = null;
+        this.autoPlayDuration = 4000; // 5 detik
+
+        this.init();
+    }
+
+    init() {
+        // Event listeners untuk indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                this.goToSlide(index);
+                this.resetAutoPlay();
+            });
+        });
+
+        // Mulai autoplay
+        this.startAutoPlay();
+
+        // Pause saat hover, resume saat mouse leave
+        const heroSection = document.querySelector('.hero-section');
+        heroSection.addEventListener('mouseenter', () => this.pauseAutoPlay());
+        heroSection.addEventListener('mouseleave', () => this.startAutoPlay());
+    }
+
+    goToSlide(slideIndex) {
+        // Remove active class dari slide dan indicator saat ini
+        this.slides[this.currentSlide].classList.remove('active');
+        this.indicators[this.currentSlide].classList.remove('active');
+
+        // Update index slide
+        this.currentSlide = slideIndex;
+
+        // Add active class ke slide dan indicator baru
+        this.slides[this.currentSlide].classList.add('active');
+        this.indicators[this.currentSlide].classList.add('active');
+    }
+
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+    }
+
+    startAutoPlay() {
+        this.slideInterval = setInterval(() => {
+            this.nextSlide();
+        }, this.autoPlayDuration);
+    }
+
+    pauseAutoPlay() {
+        if (this.slideInterval) {
+            clearInterval(this.slideInterval);
+            this.slideInterval = null;
+        }
+    }
+
+    resetAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+    }
+}
+
+// Inisialisasi slideshow setelah DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new HeroSlideshow();
+});
+
+// Smooth scroll effect untuk indicators
+document.querySelectorAll('.indicator').forEach(indicator => {
+    indicator.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.3)';
+    });
+    
+    indicator.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('active')) {
+            this.style.transform = 'scale(1)';
+        }
+    });
+});
+</script>
 
         <!-- Rekomendasi UMKM -->
 <div class="rekomendasi section">
@@ -48,14 +156,15 @@
         <div class="container-17 section-title">
             <div class="text-wrapper-25">Rekomendasi</div>
             <div class="heading">
-                <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
+                <div class="rekomendasi-trip">Rekomendasi Trip Wisata </div>
+                <div class="rekomendasi-trip">Populer Kabupaten Bandung</div>
             </div>
         </div>
 
         <!-- Grid container DI LUAR foreach -->
-        <div class="destination-grid">
+        <div class="rekomendasi-grid">
             @foreach ($destinations as $destination)
-                <div class="background-border">
+                <div class="rekomendasibackground-border">
                     <button class="button">
                     <div class="text-wrapper-26">Populer</div>
                     </button>
@@ -76,6 +185,20 @@
     </div>
 </div>
 
+         <!-- Testimoni -->
+         <div class="testimoni section">
+            <div class="container">
+                <div class="paragraph">
+                    <div class="text-wrapper-24">Testimoni</div>
+                    <div class="heading-what-our">Apa Kata Konsumen?</div>
+                </div>
+                <div class="container-16">
+                    <div class="group-5"></div>
+                    <div class="group-6"></div>
+                    <div class="group-7"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Destinasi Wisata -->
         <div class="section">
@@ -187,20 +310,7 @@
             </div>
         </div>
 
-        <!-- Testimoni -->
-        <div class="testimoni section">
-            <div class="container">
-                <div class="paragraph">
-                    <div class="text-wrapper-24">Testimoni</div>
-                    <div class="heading-what-our">Apa Kata Konsumen?</div>
-                </div>
-                <div class="container-16">
-                    <div class="group-5"></div>
-                    <div class="group-6"></div>
-                    <div class="group-7"></div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Footer -->
         <div class="footer">

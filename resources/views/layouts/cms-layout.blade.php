@@ -31,7 +31,7 @@
 
             <!-- Tombol Login hanya ditampilkan jika user belum login -->
             @guest
-                <a href="{{ url('/sesi') }}" class="text-wrapper-36">Login</a>
+                <a href="{{ url('/sesi') }}" class="text-wrapper-37">Login</a>
             @endguest
 
             <!-- Tombol Logout hanya ditampilkan jika user sudah login -->
