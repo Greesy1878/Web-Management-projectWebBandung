@@ -1,3 +1,135 @@
+/* Header Navigation */
+.list-5 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-5 > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Navigation Items */
+.nav-item,
+.text-wrapper-36 {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.item-6 .text-wrapper-36:hover {
+    color: #ff7f50;
+}
+
+.nav-item.active,
+.item-6 .text-wrapper-36 {
+    color: #000000;
+}
+
+/* Login Button */
+.login-btn,
+.text-wrapper-37 {
+    background-color: #2baaa0;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 7px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: 1px solid #2baaa0;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.login-btn:hover,
+.text-wrapper-37:hover {
+    color: #ff7f50;
+    background-color: #239089;
+    transform: scale(1.05);
+}
+.text-wrapper-37 {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 8px;
+    transition: color 0.3s ease;
+    float: right;
+    position: absolute;
+    right: 350px; /* Jarak dari tepi kanan */
+}
+
+/* logout Button */
+.login-btn,
+.text-wrapper-88 {
+    background-color: #2baaa0;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: 1px solid #2baaa0;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.login-btn:hover,
+.text-wrapper-88:hover {
+    color: #ff7f50;
+    background-color: #239089;
+    transform: scale(1.05);
+}
+.text-wrapper-88 {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 8px;
+    transition: color 0.3s ease;
+    float: right;
+    position: absolute;
+    right: 350px; /* Jarak dari tepi kanan */
+    top: 30%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
 
 /* ===== HERO SECTION ===== */
 .hero-overlay {
