@@ -169,7 +169,10 @@ document.querySelectorAll('.indicator').forEach(indicator => {
                     <div class="text-wrapper-26">Populer</div>
                     </button>
                     <div class="icon-9"></div>
-                    <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
+                    <div class="pull-image">
+                        <img src="{{ $destination->image }}" alt="{{ $destination->title }}" />
+                    </div>
+                    
                     <div class="text-wrapper-28">{{ $destination->title }}</div>
                     <div class="list-4">
                         <div class="item-5">4.5(6.966)</div>
@@ -201,60 +204,35 @@ document.querySelectorAll('.indicator').forEach(indicator => {
         </div>
 
         <!-- Destinasi Wisata -->
-        <div class="section">
+        <div class="rekomendasi section">
             <div class="container">
-                <div class="container-15 section-title">
-                    <div class="text-wrapper-23">Destinasi</div>
+                <div class="container-17 section-title">
+                    <div class="text-wrapper-25">Rekomendasi</div>
                     <div class="heading">
-                        <div class="text-wrapper-6">Destinasi Wisata di Kabupaten Bandung</div>
+                        <div class="destination-trip">destination Trip Wisata </div>
+                        <div class="destination-trip">Populer Kabupaten Bandung</div>
                     </div>
                 </div>
-
-                <div class="destinasi-carousel">
-                    <div class="group-4">
-                        <div class="destinasi">
-                            <div class="background-border">
-                                <div class="icon-9"></div>
-                                <div class="text-wrapper-17">Culinary</div>
-                                <div class="text-wrapper-28">Roti Unyil & Kue Okeke 2</div>
-                                <div class="list-4">
-                                    <div class="item-5">5.0</div>
-                                </div>
-                            </div>
-
-                            <div class="background-border">
-                                <div class="icon-9"></div>
-                                <div class="text-wrapper-19">Fashion</div>
-                                <div class="text-wrapper-28">Batik Kina</div>
-                                <div class="list-4">
-                                    <div class="item-5">5.0</div>
-                                </div>
-                            </div>
-
-                            <div class="background-border">
-                                <div class="icon-9"></div>
-                                <div class="text-wrapper-19">Culinary</div>
-                                <div class="text-wrapper-28">Sambal Hejo Beledag</div>
-                                <div class="list-4">
-                                    <div class="item-5">5.0</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="number-page">
-                            <div class="page">‹</div>
-                            <div class="page-active">
-                                <div class="num">1</div>
-                            </div>
-                            <div class="page-2">
-                                <div class="num-2">2</div>
-                            </div>
-                            <div class="page-2">›</div>
-                        </div>
+        <div class="destination-grid">
+            @foreach ($destinations as $destination)
+                <div class="background-border">
+                    <button class="button">
+                    <div class="text-wrapper-26">Populer</div>
+                    </button>
+                    <div class="icon-9"></div>
+                    <div class="destination-image">
+                        <img src="{{ $destination->image }}" alt="{{ $destination->title }}" />
                     </div>
+                    
+                    <div class="text-wrapper-28">{{ $destination->title }}</div>
+                    <div class="list-4">
+                        <div class="item-5">4.5(6.966)</div>
+                    </div>
+                    <a href="{{ route('pariwisata.detail', ['id' => $destination]) }}" class="btn-telusuri">Telusuri</a>
                 </div>
-            </div>
+            @endforeach
         </div>
+    </div>
 
         <!-- Berita -->
         <div class="berita section">

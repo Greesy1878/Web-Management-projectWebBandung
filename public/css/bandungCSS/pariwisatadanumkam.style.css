@@ -419,6 +419,15 @@ body {
     display: block;
 }
 
+.destination-trip {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    display: block;
+}
+
 .rekomendasidestinasi,
 .rekomendasibackground-border,
 .rekomendasibackground-border-2,
@@ -748,6 +757,9 @@ body {
     .rekomendasi-trip {
         font-size: 2rem;
     }
+    .destination-trip {
+            font-size: 2rem;
+        }
 
     .group-2 {
         grid-template-columns: 1fr;
