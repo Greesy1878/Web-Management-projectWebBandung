@@ -162,9 +162,9 @@ document.querySelectorAll('.indicator').forEach(indicator => {
         </div>
 
         <!-- Grid container DI LUAR foreach -->
-        <div class="destination-grid">
+        <div class="rekomendasi-grid">
             @foreach ($destinations as $destination)
-                <div class="background-border">
+                <div class="rekomendasibackground-border">
                     <button class="button">
                     <div class="text-wrapper-26">Populer</div>
                     </button>
@@ -185,6 +185,20 @@ document.querySelectorAll('.indicator').forEach(indicator => {
     </div>
 </div>
 
+         <!-- Testimoni -->
+         <div class="testimoni section">
+            <div class="container">
+                <div class="paragraph">
+                    <div class="text-wrapper-24">Testimoni</div>
+                    <div class="heading-what-our">Apa Kata Konsumen?</div>
+                </div>
+                <div class="container-16">
+                    <div class="group-5"></div>
+                    <div class="group-6"></div>
+                    <div class="group-7"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Destinasi Wisata -->
         <div class="section">
@@ -296,20 +310,7 @@ document.querySelectorAll('.indicator').forEach(indicator => {
             </div>
         </div>
 
-        <!-- Testimoni -->
-        <div class="testimoni section">
-            <div class="container">
-                <div class="paragraph">
-                    <div class="text-wrapper-24">Testimoni</div>
-                    <div class="heading-what-our">Apa Kata Konsumen?</div>
-                </div>
-                <div class="container-16">
-                    <div class="group-5"></div>
-                    <div class="group-6"></div>
-                    <div class="group-7"></div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Footer -->
         <div class="footer">

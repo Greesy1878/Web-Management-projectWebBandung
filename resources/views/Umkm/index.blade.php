@@ -160,9 +160,9 @@ document.querySelectorAll('.indicator').forEach(indicator => {
                         <div class="rekomendasi-trip">Rekomendasi UMKM Kabupaten Bandung</div>
                     </div>
                 </div>
-                <div class="destination-grid">
+                <div class="rekomendasi-grid">
             @foreach ($umkmdestinations as $umkmdestination)
-                <div class="background-border">
+                <div class="rekomendasibackground-border">
                     <button class="button">
                     <div class="text-wrapper-26">Populer</div>
                     </button>
@@ -179,6 +179,21 @@ document.querySelectorAll('.indicator').forEach(indicator => {
 
                 <div class="element-15">
                     <a href="#" class="text-wrapper-30">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimoni -->
+        <div class="testimoni section">
+            <div class="container">
+                <div class="paragraph">
+                    <div class="text-wrapper-24">Testimoni taaek</div>
+                    <div class="heading-what-our">Apa Kata Konsumen?</div>
+                </div>
+                <div class="container-16">
+                    <div class="group-5"></div>
+                    <div class="group-6"></div>
+                    <div class="group-7"></div>
                 </div>
             </div>
         </div>
@@ -293,20 +308,7 @@ document.querySelectorAll('.indicator').forEach(indicator => {
             </div>
         </div>
 
-        <!-- Testimoni -->
-        <div class="testimoni section">
-            <div class="container">
-                <div class="paragraph">
-                    <div class="text-wrapper-24">Testimoni</div>
-                    <div class="heading-what-our">Apa Kata Konsumen?</div>
-                </div>
-                <div class="container-16">
-                    <div class="group-5"></div>
-                    <div class="group-6"></div>
-                    <div class="group-7"></div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Footer -->
         <div class="footer">

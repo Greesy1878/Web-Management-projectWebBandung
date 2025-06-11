@@ -419,6 +419,41 @@ body {
     display: block;
 }
 
+.rekomendasidestinasi,
+.rekomendasibackground-border,
+.rekomendasibackground-border-2,
+.rekomendasibackground-border-3 {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rekomendasidestinasi:hover,
+.rekomendasibackground-border:hover,
+.rekomendasibackground-border-2:hover,
+.rekomendasibackground-border-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.rekomendasibackground-border::before,
+.rekomendasibackground-border-2::before,
+.rekomendasibackground-border-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #3D5C73);
+}
+
+
 /* Cards */
 .destinasi,
 .background-border,
@@ -880,6 +915,13 @@ body {
 }
 
 .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.rekomendasi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
