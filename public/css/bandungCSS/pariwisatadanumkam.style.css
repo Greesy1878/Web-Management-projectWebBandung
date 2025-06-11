@@ -250,22 +250,29 @@ body {
     margin-bottom: 3rem;
 }
 
-.text-wrapper-25,
-.text-wrapper-23 {
+.text-wrapper-25 {
     color: #FA7335;
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+    display: block;
 }
 
-.heading .text-wrapper-6,
+/* Container untuk heading utama */
+.heading {
+    display: block;
+}
+
+/* Teks heading utama */
 .rekomendasi-trip {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    display: block;
 }
 
 /* Cards */
@@ -300,7 +307,7 @@ body {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #3D5C73);
 }
 
 .rekomendasi {

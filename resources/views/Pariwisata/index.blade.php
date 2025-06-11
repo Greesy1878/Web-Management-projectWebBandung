@@ -57,7 +57,8 @@
         <div class="container-17 section-title">
             <div class="text-wrapper-25">Rekomendasi</div>
             <div class="heading">
-                <div class="rekomendasi-trip">Rekomendasi Trip Wisata Populer Kabupaten Bandung</div>
+                <div class="rekomendasi-trip">Rekomendasi Trip Wisata </div>
+                <div class="rekomendasi-trip">Populer Kabupaten Bandung</div>
             </div>
         </div>
 
