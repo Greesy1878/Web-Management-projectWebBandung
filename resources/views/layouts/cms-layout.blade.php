@@ -11,35 +11,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
     <!-- Header -->
-<header class="header">
-    <div class="list-5">
-        <div>
-            <div class="item-6">
-                <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
-            </div>
-            <div class="item-7">
-                <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
-            </div>
-            <div class="item-8">
-                <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
-            </div>
+    <header class="header">
+        <div class="list-5">
+            <div>
+                <div class="item-6">
+                    <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                </div>
+                <div class="item-7">
+                    <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+                </div>
+                <div class="item-8">
+                    <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                </div>
 
-            <!-- Tombol Login hanya ditampilkan jika user belum login -->
-            @guest
+                <!-- Tombol Login hanya ditampilkan jika user belum login -->
+                @guest
                 <a href="{{ url('/sesi') }}" class="text-wrapper-37">Login</a>
-            @endguest
+                @endguest
 
-            <!-- Tombol Logout hanya ditampilkan jika user sudah login -->
-            @auth
+                <!-- Tombol Logout hanya ditampilkan jika user sudah login -->
+                @auth
                 <div class="item-9">
                     <a href="{{ route('logout') }}"
-                       class="text-wrapper-88"
-                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        class="text-wrapper-88"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         Logout
                     </a>
                 </div>
@@ -47,10 +46,10 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-            @endauth
+                @endauth
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 
     @yield('content')

@@ -419,6 +419,7 @@ body {
     display: block;
 }
 
+/* Cards rekomendasi */
 .rekomendasidestinasi,
 .rekomendasibackground-border,
 .rekomendasibackground-border-2,
@@ -454,7 +455,7 @@ body {
 }
 
 
-/* Cards */
+/* Cards destinasi */
 .destinasi,
 .background-border,
 .background-border-2,
