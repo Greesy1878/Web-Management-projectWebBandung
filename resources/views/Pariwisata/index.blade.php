@@ -221,7 +221,7 @@ document.querySelectorAll('.indicator').forEach(indicator => {
                     </button>
                     <div class="icon-9"></div>
                     <div class="destination-image">
-                        <img src="{{ $destination->image }}" alt="{{ $destination->title }}" />
+                        <img src="{{ $destination->imagedestination }}" alt="{{ $destination->title }}" />
                     </div>
                     
                     <div class="text-wrapper-28">{{ $destination->title }}</div>
