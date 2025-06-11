@@ -17,9 +17,6 @@
                 <div class="d-grid mb-2">
                     <button type="submit" class="btn btn-primary">Login</button>
                 </div>
-                <div class="text-center">
-                    <span>Belum punya akun? <a href="/sesi/register">Register</a></span>
-                </div>
             </form>
         </div>
     </div>
