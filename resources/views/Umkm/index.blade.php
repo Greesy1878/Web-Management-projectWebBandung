@@ -221,7 +221,7 @@
                             </button>
                             <div class="icon-9"></div>
                             <div class="destination-image">
-                                <img src="{{ $umkmdestination->imagedetination }}" alt="{{ $umkmdestination->title }}" />
+                                <img src="{{ $umkmdestination->imagedestination }}" alt="{{ $umkmdestination->title }}" />
                             </div>
                             <div class="text-wrapper-27">{{ $umkmdestination->lokasi }}</div>
                             <div class="text-wrapper-28">{{ $umkmdestination->title }}</div>

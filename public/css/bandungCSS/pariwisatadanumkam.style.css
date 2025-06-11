@@ -169,10 +169,18 @@ body {
     opacity: 1;
 }
 
-.slide-1 { background-image: url("/img/bandung_img/page1.png"); }
-.slide-2 { background-image: url("/img/bandung_img/page2.png"); }
-.slide-3 { background-image: url("/img/bandung_img/page3.png"); }
-.slide-4 { background-image: url("/img/bandung_img/page4.png"); }
+.slide-1 {
+    background-image: url("/img/bandung_img/page1.png");
+}
+.slide-2 {
+    background-image: url("/img/bandung_img/page2.png");
+}
+.slide-3 {
+    background-image: url("/img/bandung_img/page3.png");
+}
+.slide-4 {
+    background-image: url("/img/bandung_img/page4.png");
+}
 
 /* Overlay untuk membuat teks lebih terbaca */
 .hero-overlay {
@@ -208,7 +216,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
 }
 
 .hero-subtitle {
@@ -251,7 +258,8 @@ body {
     width: 192px;
     transform: rotate(-2deg);
     animation: angklungFloat 4s ease-in-out infinite;
-    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4)) brightness(1.2) contrast(1.2) saturate(1.1);
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4)) brightness(1.2)
+        contrast(1.2) saturate(1.1);
     opacity: 0.95;
     z-index: 2;
 }
@@ -331,7 +339,7 @@ body {
         width: clamp(280px, 40vw, 400px);
         font-size: 0.9rem;
     }
-    
+
     .angklung-icon {
         right: 50%;
         width: 150px;
@@ -342,19 +350,19 @@ body {
     .centered-text {
         top: 25%;
     }
-    
+
     .hero-subtitle {
         margin-left: -20px;
         margin-bottom: -10px;
     }
-    
+
     .hero-description {
         position: static;
         margin: 50px auto 0;
         width: 90%;
         max-width: 400px;
     }
-    
+
     .angklung-icon {
         top: 35%;
         right: 45%;
@@ -365,7 +373,7 @@ body {
         flex-direction: column;
         padding: 20px;
     }
-    
+
     .slideshow-indicators {
         bottom: 20px;
     }
@@ -382,7 +390,6 @@ body {
     background-color: #f8f9fa;
 }
 
-
 /* Rekomendasi UMKM */
 
 .section {
@@ -395,7 +402,7 @@ body {
 }
 
 .text-wrapper-25 {
-    color: #FA7335;
+    color: #fa7335;
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -459,9 +466,8 @@ body {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #3D5C73);
+    background: linear-gradient(90deg, #3d5c73);
 }
-
 
 /* Cards */
 .destinasi,
@@ -495,7 +501,7 @@ body {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #3D5C73);
+    background: linear-gradient(90deg, #3d5c73);
 }
 
 .rekomendasi {
@@ -506,9 +512,8 @@ body {
 .container-17 {
     text-align: center;
     margin-bottom: 3rem;
-}z
-
-.button,
+}
+z .button,
 .button-2 {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
@@ -758,8 +763,8 @@ body {
         font-size: 2rem;
     }
     .destination-trip {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
+    }
 
     .group-2 {
         grid-template-columns: 1fr;
@@ -938,4 +943,31 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.pull-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.pull-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.destination-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
