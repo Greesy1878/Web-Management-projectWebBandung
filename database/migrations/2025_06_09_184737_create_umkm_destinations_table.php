@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('map');
             $table->text('image');
             $table->text('lokasi');
+            $table->text('imagedestination');
             $table->timestamps();
         });
     }

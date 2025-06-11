@@ -11,16 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('destinations', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 100);
-            $table->text('content');
-            $table->text('service');
-            $table->text('map');
-            $table->text('image');
-            $table->text('lokasi');
+        Schema::table('destinations', function (Blueprint $table) {
+            $table->text('imageberita');
             $table->text('imagedestination');
-            $table->timestamps();
+
         });
     }
 
