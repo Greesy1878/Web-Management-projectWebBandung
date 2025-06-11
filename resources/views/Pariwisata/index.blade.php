@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <title>Sagala Bandung - Pariwisata & UMKM</title>
     <link rel="stylesheet" href="{{ asset('css/bandungCSS/pariwisatadanumkam.style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/detail.css') }}"> --}}
 
 </head>
 
