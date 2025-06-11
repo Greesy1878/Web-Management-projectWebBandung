@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -50,19 +50,19 @@ class SessionController extends Controller
     {
         return View('sesi.register');
     }
-    function create(request $request)
+    function registerProcess(request $request)
     {
         Session::flash('name', $request->name);
         Session::flash('email', $request->email);
         $request->validate([
             'name'=>'required',
-            'email' => 'required|email|uniqe:users',
-            'password' => 'required|min:6'
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:6',
         ],[
             'name.required'=> 'Nama Wajib Di Isi',
             'email.required' => 'Email Wajib Di Isi',
             'email.email' => 'Format Email Tidak Valid',
-            'email.uniqe' => 'Email Sudah Digunakan',
+            'email.unique' => 'Email Sudah Digunakan',
             'password.required' => 'Password Wajib Di Isi',
             'password.min' => 'Password minimal 6 karakter',
         ]);
@@ -72,7 +72,6 @@ class SessionController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ];
-
         User::create($data);
 
         $infologin = [
@@ -85,7 +84,7 @@ class SessionController extends Controller
             return redirect('/')->with('success',Auth::user()->name.'Berhasil Login'); // Ganti dengan redirect jika ingin langsung ke halaman dashboard
         } else {
             // Kalau auth gagal
-            return redirect('sesi')->withErrors('Username/Password Yang Dimasukkan Tidak Valid');
+            return redirect('/sesi/register')->withErrors('Username/Password Yang Dimasukkan Tidak Valid');
         }
     }
 }

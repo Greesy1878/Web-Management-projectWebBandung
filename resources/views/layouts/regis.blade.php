@@ -12,35 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
-<body 15>
-
+<body>
     <div class="login-card">
         <h2 class="text-center">Selamat Datang</h2>
-        <p class="text-muted text-center">Silakan login untuk melanjutkan</p>
-
-        <form action="/sesi/login" method="POST">
+        <p class="text-muted text-center">Silakan registrasi untuk melanjutkan</p>
+        <form action="{{ route('registerProcess') }}" method="POST">
             @csrf
-
+            @error('name')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" name="name" class="form-control" id="name" required autofocus>
+            </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Alamat Email</label>
-                <input type="email" name="email" class="form-control" id="email" required autofocus>
+                <input type="text" name="email" class="form-control" id="email" required autofocus>
             </div>
-
             <div class="mb-3">
                 <label for="password" class="form-label">Kata Sandi</label>
                 <input type="password" name="password" class="form-control" id="password" required>
             </div>
 
             <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-
-            <div class="text-center mt-3">
-                <a href="#" class="text-decoration-none text-secondary">Lupa kata sandi?</a>
-            </div>
-            <div class="text-center mt-2">
-                <span class="text-muted">Belum punya akun?</span>
-                <a href="{{ url('/sesi/register') }}" class="text-decoration-none">Buat Disini</a>
+                <button type="submit" class="btn btn-primary">Register</button>
             </div>
         </form>
     </div>

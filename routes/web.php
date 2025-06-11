@@ -41,8 +41,8 @@ use Illuminate\Support\Facades\Auth;
     route::post('/sesi/login', [SessionController::class, 'login']);
     route::get('/sesi/logout', [SessionController::class, 'logout']);
     route::get('/sesi/register', [SessionController::class, 'register']);
-    route::post('/sesi/create', [SessionController::class, 'create']);
-    
+    route::post('/sesi/create', [SessionController::class, 'registerProcess'])->name('registerProcess');
+
     Route::post('/logout', function () {
     Auth::logout();
     return redirect(to: '/'); // arahkan ke halaman utama setelah logout
