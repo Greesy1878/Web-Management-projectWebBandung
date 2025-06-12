@@ -139,7 +139,7 @@
                 Travelers Choice".
             </p>
 
-            <button class="explore-btn">Telusuri</button>
+            <button class="explore-btn">Telusuri ➜</button>
 
             <div class="stats-container">
                 <div class="stat-item">
@@ -279,7 +279,7 @@
 <!-- Welcome Section -->
 <section class="welcome-section">
     <div class="since-text">Since 2025</div>
-    <div class="department-text">Dinas Kebudayaan dan Pariwisata Kota Bandung</div>
+    <div class="department-text">Dinas Kebudayaan dan Pariwisata Kabupaten Bandung</div>
 
     <h2 class="welcome-title">
         <span>WILUJENG</span>

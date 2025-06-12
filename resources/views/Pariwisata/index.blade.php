@@ -241,20 +241,6 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-        
-    <!-- Berita -->
-     <body>
-        <div class="berita section">
-            <div class="container">
-                <div class="group">
-                    <div class="background">
-                        <div class="group-2">
-                            <div class="container-4">
-                                <div class="text-wrapper-5">Berita</div>
-                                <div class="heading">
-                                    <div class="text-wrapper-6">Tips & Trik Berbelanja di Kabupaten Bandung</div>
-=======
             <!-- Berita -->
             <div class="berita section">
                 <div class="container">
@@ -294,87 +280,85 @@
                                     <p class="jelajahi-wisata">
                                         Pemerintah Kabupaten Bandung mendorong percepatan ekonomi.
                                     </p>
->>>>>>> a2799d65e6ad2410f5c41517800e58234ba3929e
                                 </div>
                             </div>
 
-                            <div style="text-align: center; margin-top: 3rem;">
-                                <p class="login-untuk-agar">Login Untuk Agar <br />Tidak Ketinggalan Berita</p>
-                                <p class="text-wrapper-10">
-                                    Sudah siap menjelajahi keindahan Bandung dan mendukung produk lokal?
-                                    Ayo masuk dan mulai petualanganmu!
-                                </p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
+            </div>
 
-             </div>
-        </div>
-        
-        <!-- Welcome Section -->
+<!-- Welcome Section -->
 <section class="welcome-section">
     <div class="since-text">Since 2025</div>
-    <div class="department-text">Dinas Kebudayaan dan Pariwisata Kota Bandung</div>
-=======
-            </div>
->>>>>>> a2799d65e6ad2410f5c41517800e58234ba3929e
+    <div class="department-text">Dinas Kebudayaan dan Pariwisata Kabupaten Bandung</div>
 
+    <h2 class="welcome-title">
+        <span>WILUJENG</span>
+        <span>SUMPING!</span>
+    </h2>
 
+    <p class="welcome-quote">
+        "Dan Bandung bagiku bukan cuma masalah geografis, lebih jauh dari itu melibatkan perasaan, yang bersamaku
+        ketika sunyi" -Pidi Baiq
+    </p>
+</section>
+ <!-- Globe Section -->
 
-            <!-- Footer -->
-            <div class="footer">
-                <div class="container">
-                    <div class="horizontal-border">
-                        <div>
-                            <p class="hello-we-are-lift">
-                                Hello, we are Lift Media. Our goal is to<br />translate the
-                                positive effects from<br />revolutionizing
-                            </p>
-                            <div class="heading-about">Sagala Bandung</div>
-                        </div>
+    <body>
+        <div class="wadah">
+            <!-- Background Elements -->
+            <div class="airplane airplane-1">✈</div>
+            <div class="airplane airplane-2">✈</div>
+            <div class="airplane airplane-3">✈</div>
+            <div class="airplane airplane-4">✈</div>
 
-                        <div>
-                            <div class="heading-about">Tentang</div>
-                            <div class="list-2">
-                                <a href="#" class="text-wrapper">About Us</a>
-                                <a href="#" class="text-wrapper-2">Our Services</a>
-                                <a href="#" class="text-wrapper-3">Privacy Policy</a>
-                                <a href="#" class="terms-conditions">Terms & Conditions</a>
-                            </div>
-                        </div>
+            <!-- Dashed Flight Paths -->
+            <div class="flight-path path-1"></div>
+            <div class="flight-path path-2"></div>
+            <div class="flight-path path-3"></div>
+            <div class="flight-path path-4"></div>
 
-                        <div>
-                            <div class="heading-contact">Kontak</div>
-                            <div class="list-3">
-                                <div class="element-4">
-                                    <span>📞</span>
-                                    <div class="text-wrapper-4">+6282121090209</div>
-                                </div>
-                                <div class="element-5">
-                                    <span>✉️</span>
-                                    <div class="text-wrapper-4">sagalabandung@gmail.com</div>
-                                </div>
-                                <div class="element-6">
-                                    <span>📍</span>
-                                    <div class="text-wrapper-4">PBB I49, BANDUNG, INDONESIA</div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Globe Section -->
+            <div class="globe-section">
+                <div class="globe">
+                    <div class="continents">
+                        <div class="continent north-america"></div>
+                        <div class="continent south-america"></div>
+                        <div class="continent europe"></div>
+                        <div class="continent africa"></div>
+                        <div class="continent asia"></div>
+                        <div class="continent australia"></div>
                     </div>
-                    <p class="p">© 2024 SagalaBandung. All rights reserved</p>
+
+                    <!-- Location Pins -->
+                    <div class="location-pin pin-1">
+                        <div class="pin-icon">📍</div>
+                        <div class="pin-label">KABUPATEN BANDUNG</div>
+                    </div>
+
+                    <div class="location-pin pin-2">
+                        <div class="pin-icon">📍</div>
+                        <div class="pin-label">UMKM</div>
+                    </div>
+
+                    <div class="location-pin pin-3">
+                        <div class="pin-icon">📍</div>
+                        <div class="pin-label">PARIWISATA</div>
+                    </div>
                 </div>
             </div>
-<<<<<<< HEAD
 
             <!-- Main Content -->
             <div class="content">
                 <h1 class="title">Login Untuk Agar<br>Tidak Ketinggalan Berita</h1>
                 <p class="subtitle">Sudah siap menjelajahi keindahan Bandung dan mendukung produk lokal? Ayo masuk dan mulai petualanganmu!</p>
+
+
             </div>
         </div>
-    </div>
+        </div>
 
        @yield('content')
     <footer class="footer">
@@ -419,7 +403,7 @@
                     </div>
                 </div>
             </div>
-        
+
 
         </div>
 
@@ -427,9 +411,5 @@
             © 2024 SagalaBandung. All rights reserved
         </div>
     </footer>
-=======
-        </div>
-</body>
->>>>>>> a2799d65e6ad2410f5c41517800e58234ba3929e
 
 </html>
