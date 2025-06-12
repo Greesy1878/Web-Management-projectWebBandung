@@ -68,7 +68,6 @@
 }
 .login-btn:hover,
 .text-wrapper-37:hover {
-    color: #ff7f50;
     background-color: #239089;
     transform: scale(1.05);
 }
@@ -172,7 +171,7 @@
     font-size: clamp(4rem, 8vw, 8rem);
     font-family: "Instrument Serif", serif;
     text-align: left;
-    margin-bottom: -20px;
+    margin-bottom: -60px;
     margin-left: -45px;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -201,12 +200,13 @@
 
 .angklung-icon {
     position: absolute;
-    top: 43%;
+    top: 44%;
     right: 58%;
     width: 192px;
     transform: rotate(-2deg);
     animation: angklungFloat 4s ease-in-out infinite;
-    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4)) brightness(1.2) contrast(1.2) saturate(1.1);
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4)) brightness(1.2)
+        contrast(1.2) saturate(1.1);
     opacity: 0.95;
     z-index: 2;
 }
@@ -245,7 +245,7 @@
 /* ===== MAIN CONTENT SECTION ===== */
 .main-content {
     padding: 80px 0;
-    background: linear-gradient(135deg, #ffffff );
+    background: linear-gradient(135deg, #ffffff);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -263,9 +263,8 @@
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-    
+
     animation: imageFloat 3s ease-in-out infinite;
-   
 }
 
 /* ===== LOGIN SECTION ===== */
@@ -307,7 +306,7 @@
 }
 
 .form-control {
-    border: 2px solid #F6F6F6;
+    border: 2px solid #f6f6f6;
     border-radius: 12px;
     padding: 12px 16px;
     font-size: 16px;
@@ -316,13 +315,13 @@
 }
 
 .form-control:focus {
-    border-color: #F6F6F6;
+    border-color: #f6f6f6;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
     background: white;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #FFA03F 0%, #FA7335 100%);
+    background: linear-gradient(135deg, #ffa03f 0%, #fa7335 100%);
     border: none;
     border-radius: 12px;
     padding: 12px 24px;
@@ -337,12 +336,12 @@
 }
 
 .text-decoration-none {
-    color: #FFA03F;
+    color: #ffa03f;
     transition: color 0.3s ease;
 }
 
 .text-decoration-none:hover {
-    color: #FA7335;
+    color: #fa7335;
 }
 
 /* ===== ANIMATIONS ===== */
@@ -384,7 +383,8 @@
 }
 
 @keyframes imageFloat {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     50% {
@@ -527,23 +527,23 @@
     .image-container {
         padding: 20px;
     }
-    
+
     .login-image {
         max-width: 90%;
     }
-    
+
     .login-card {
         padding: 30px 20px;
         margin: 0 20px;
     }
-    
+
     .hero-description {
         position: static;
         width: 90%;
         margin: 20px auto;
         text-align: center;
     }
-    
+
     .angklung-icon {
         position: static;
         display: block;

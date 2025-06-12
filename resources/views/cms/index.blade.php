@@ -225,30 +225,30 @@
             <div class="umkm-label">UMKM</div>
             <h2 class="umkm-title">Usaha Mikro Kecil<br>Menengah Kabupaten Bandung</h2>
             <div class="umkm-image">
-    <div class="slideshow-container">
-        <div class="slide active">
-            <img src="{{ asset('img/bandung_img/umkm1.png') }}" alt="UMKM Bandung 1">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm2.png') }}" alt="UMKM Bandung 2">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm3.png') }}" alt="UMKM Bandung 3">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm4.png') }}" alt="UMKM Bandung 4">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm5.png') }}" alt="UMKM Bandung 5">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm6.png') }}" alt="UMKM Bandung 6">
-        </div>
-        <div class="slide">
-            <img src="{{ asset('img/bandung_img/umkm7.png') }}" alt="UMKM Bandung 7">
-        </div>
-    </div>
-</div>
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="{{ asset('img/bandung_img/umkm1.png') }}" alt="UMKM Bandung 1">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm2.png') }}" alt="UMKM Bandung 2">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm3.png') }}" alt="UMKM Bandung 3">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm4.png') }}" alt="UMKM Bandung 4">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm5.png') }}" alt="UMKM Bandung 5">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm6.png') }}" alt="UMKM Bandung 6">
+                    </div>
+                    <div class="slide">
+                        <img src="{{ asset('img/bandung_img/umkm7.png') }}" alt="UMKM Bandung 7">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Kanan: Deskripsi, Tombol, Statistik -->

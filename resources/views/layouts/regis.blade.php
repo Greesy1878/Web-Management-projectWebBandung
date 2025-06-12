@@ -115,7 +115,7 @@
                                 @csrf
 
                                 @error('name')
-                                    <div class="text-danger">{{ $message }}</div>
+                                <div class="text-danger">{{ $message }}</div>
                                 @enderror
 
                                 <div class="mb-3">
@@ -124,7 +124,7 @@
                                 </div>
 
                                 @error('email')
-                                    <div class="text-danger">{{ $message }}</div>
+                                <div class="text-danger">{{ $message }}</div>
                                 @enderror
 
                                 <div class="mb-3">
@@ -133,7 +133,7 @@
                                 </div>
 
                                 @error('password')
-                                    <div class="text-danger">{{ $message }}</div>
+                                <div class="text-danger">{{ $message }}</div>
                                 @enderror
 
                                 <div class="mb-3">
@@ -209,7 +209,7 @@
 
     <!-- Scripts -->
     <script src="{{asset('js/index.js')}}"></script>
-    
+
     <!-- Hero Slideshow Script -->
     <script>
         class HeroSlideshow {
