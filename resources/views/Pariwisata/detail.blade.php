@@ -11,34 +11,32 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-links">
-                    <a href="/" class="nav-link active">Home</a>
-                    <a href="/pariwisata" class="nav-link">Pariwisata</a>
-                    <a href="/umkm" class="nav-link">UMKM</a>
+    <div class="detail">
+        <!-- Header -->
+        <header class="header">
+            <div class="list-5">
+                <div>
+                    <div class="item-6">
+                        <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                    </div>
+                    <div class="item-7">
+                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-38">Pariwisata</a>
+                    </div>
+                    <div class="item-8">
+                        <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                    </div>
                 </div>
-                <button class="login-btn">Login</button>
             </div>
-        </nav>
-    </header>
+        </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Detail Destinasi</h1>
-        </div>
+   <section class="hero">
+        <h1>Detail Destinasi</h1>
     </section>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-            <div class="content-wrapper">
-                <!-- Left Column -->
-                <div class="left-column">
+        <!-- Left Column -->
+        <div class="left-column">
                     <!-- Image Gallery -->
                     <div class="image-gallery">
                         <div class="main-image">
@@ -144,6 +142,8 @@
                     <!-- Map -->
                     <div class="contact-info">
                         <h3>Peta Lokasi</h3>
+                    <div class="map-container">
+                     </div>
                         {!! $destination->map !!}
                     </div>
                 </div>
