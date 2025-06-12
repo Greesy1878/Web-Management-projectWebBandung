@@ -332,7 +332,6 @@ body {
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -459,7 +458,7 @@ body {
 }
 
 .rekomendasi {
-    background: #3d5c73;
+    background: #ffffff;
     padding: 80px 0;
 }
 
@@ -748,7 +747,6 @@ z .button,
     color: rgba(255, 255, 255, 0.8);
 }
 
-
 .horizontal-border {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -809,7 +807,6 @@ z .button,
     padding-top: 2rem;
     border-top: 1px solid #374151;
 }
-
 
 /* Animations */
 @keyframes fadeInUp {
@@ -985,7 +982,6 @@ z .button,
     margin-top: 2px;
 }
 
-
 .pull-image {
     width: 100%;
     height: 400px;
@@ -1089,7 +1085,7 @@ z .button,
     margin: 0 auto;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 50%, #f8f9fa 100%);
     min-height: 100vh;
     overflow-x: hidden;
@@ -1098,14 +1094,13 @@ body {
 /* Travel Login Page Styles - Compact Version */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 50%, #f8f9fa 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-
-.wadah{
+.wadah {
     position: relative;
     min-height: 70vh; /* Dikurangi dari 100vh */
     display: flex;
@@ -1131,15 +1126,18 @@ body {
     border-radius: 50%;
     background: linear-gradient(135deg, #2c5f7c 0%, #1e3a5f 50%, #0d1b2a 100%);
     position: relative;
-    box-shadow: 
-        0 0 40px rgba(44, 95, 124, 0.3), /* Diperbesar dari 30px */
-        inset -18px -18px 35px rgba(0, 0, 0, 0.2); /* Diperbesar dari -15px */
+    box-shadow: 0 0 40px rgba(44, 95, 124, 0.3),
+        /* Diperbesar dari 30px */ inset -18px -18px 35px rgba(0, 0, 0, 0.2); /* Diperbesar dari -15px */
     animation: rotate 30s linear infinite;
 }
 
 @keyframes rotate {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 .continents {
@@ -1240,8 +1238,13 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); } /* Dikurangi dari -10px */
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    } /* Dikurangi dari -10px */
 }
 
 .pin-icon {
@@ -1287,10 +1290,20 @@ body {
 }
 
 @keyframes fly {
-    0% { transform: translateX(-15px) translateY(0px) rotate(0deg); opacity: 0; } /* Dikurangi dari -20px */
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateX(15px) translateY(-8px) rotate(15deg); opacity: 0; } /* Dikurangi dari 20px dan -10px */
+    0% {
+        transform: translateX(-15px) translateY(0px) rotate(0deg);
+        opacity: 0;
+    } /* Dikurangi dari -20px */
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(15px) translateY(-8px) rotate(15deg);
+        opacity: 0;
+    } /* Dikurangi dari 20px dan -10px */
 }
 
 /* Flight Paths */
@@ -1336,11 +1349,21 @@ body {
 }
 
 @keyframes dash {
-    0% { border-color: transparent #ff4757 transparent #ff4757; }
-    25% { border-color: #ff4757 transparent #ff4757 transparent; }
-    50% { border-color: transparent #ff4757 transparent #ff4757; }
-    75% { border-color: #ff4757 transparent #ff4757 transparent; }
-    100% { border-color: transparent #ff4757 transparent #ff4757; }
+    0% {
+        border-color: transparent #ff4757 transparent #ff4757;
+    }
+    25% {
+        border-color: #ff4757 transparent #ff4757 transparent;
+    }
+    50% {
+        border-color: transparent #ff4757 transparent #ff4757;
+    }
+    75% {
+        border-color: #ff4757 transparent #ff4757 transparent;
+    }
+    100% {
+        border-color: transparent #ff4757 transparent #ff4757;
+    }
 }
 
 /* Content Section */
