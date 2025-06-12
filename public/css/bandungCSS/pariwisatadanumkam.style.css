@@ -426,9 +426,6 @@ body {
     display: block;
 }
 
-<<<<<<< HEAD
-/* Cards rekomendasi */
-=======
 .destination-trip {
     font-size: 2.5rem;
     font-weight: 700;
@@ -438,7 +435,6 @@ body {
     display: block;
 }
 
->>>>>>> 2f9e64ad0302b35e5c36b394145c050ee4ae6783
 .rekomendasidestinasi,
 .rekomendasibackground-border,
 .rekomendasibackground-border-2,
@@ -473,12 +469,7 @@ body {
     background: linear-gradient(90deg, #3d5c73);
 }
 
-<<<<<<< HEAD
-
-/* Cards destinasi */
-=======
 /* Cards */
->>>>>>> 2f9e64ad0302b35e5c36b394145c050ee4ae6783
 .destinasi,
 .background-border,
 .background-border-2,
