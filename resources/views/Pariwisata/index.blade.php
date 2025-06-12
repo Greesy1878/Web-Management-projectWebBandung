@@ -366,7 +366,6 @@
                     <p class="p">© 2024 SagalaBandung. All rights reserved</p>
                 </div>
             </div>
-<<<<<<< HEAD
 
             <!-- Main Content -->
             <div class="content">
@@ -427,9 +426,5 @@
             © 2024 SagalaBandung. All rights reserved
         </div>
     </footer>
-=======
-        </div>
-</body>
->>>>>>> a2799d65e6ad2410f5c41517800e58234ba3929e
 
 </html>
