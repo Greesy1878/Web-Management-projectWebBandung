@@ -195,7 +195,7 @@
 
     <!-- Scripts -->
     <script src="{{asset('js/index.js')}}"></script>
-    
+
     <!-- Hero Slideshow Script -->
     <script>
         class HeroSlideshow {

@@ -7,6 +7,7 @@
     <title>Sagala Bandung - Pariwisata & UMKM</title>
     <link rel="stylesheet" href="{{ asset('css/bandungCSS/pariwisatadanumkam.style.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('css/detail.css') }}"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 

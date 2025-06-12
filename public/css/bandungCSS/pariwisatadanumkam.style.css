@@ -361,6 +361,7 @@ body {
         margin: 50px auto 0;
         width: 90%;
         max-width: 400px;
+        text-align: justify;
     }
 
     .angklung-icon {
@@ -664,12 +665,136 @@ z .button,
     margin-bottom: 2rem;
 }
 
-/* Footer */
+/* ===== FOOTER SECTION ===== */
 .footer {
-    background: #1f2937;
-    color: white;
-    padding: 60px 0 20px;
+    background-color: #375e75;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-size: 14px;
 }
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #375e75;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #cccccc;
+}
+
+/* Contact Information */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contact-text {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-text:hover {
+    color: #cccccc;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
 
 .horizontal-border {
     display: grid;
@@ -940,10 +1065,11 @@ z .button,
 
 .rekomendasi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 2fr));
+    gap: 3px;
+    margin-top: 2px;
 }
+
 
 .pull-image {
     width: 100%;
@@ -1003,4 +1129,359 @@ z .button,
     object-fit: cover;
     display: block;
     border-radius: inherit;
+}
+/* ===== WELCOME SECTION ===== */
+.welcome-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.since-text {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.department-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.welcome-title {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin: 60px 0;
+}
+
+.welcome-title span:first-child {
+    color: #ffa03f;
+}
+
+.welcome-quote {
+    font-family: "Instrument Serif", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 50%, #f8f9fa 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Travel Login Page Styles - Compact Version */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1e7dd 50%, #f8f9fa 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.wadah{
+    position: relative;
+    min-height: 70vh; /* Dikurangi dari 100vh */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Kurangi padding atas-bawah dari 20px jadi 10px */
+    max-width: 900px; /* Dikurangi dari 1200px */
+    margin: 20px auto; /* Tambah margin atas-bawah minimal */
+}
+
+/* Globe Section */
+.globe-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.globe {
+    width: 280px; /* Diperbesar dari 200px */
+    height: 280px; /* Diperbesar dari 200px */
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2c5f7c 0%, #1e3a5f 50%, #0d1b2a 100%);
+    position: relative;
+    box-shadow: 
+        0 0 40px rgba(44, 95, 124, 0.3), /* Diperbesar dari 30px */
+        inset -18px -18px 35px rgba(0, 0, 0, 0.2); /* Diperbesar dari -15px */
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+.continents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.continent {
+    position: absolute;
+    background: #4a7c59;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Semua kontinents diperbesar secara proporsional */
+.north-america {
+    width: 55px; /* Diperbesar dari 40px */
+    height: 75px; /* Diperbesar dari 55px */
+    top: 28px; /* Disesuaikan dari 20px */
+    left: 35px; /* Disesuaikan dari 25px */
+    border-radius: 28px 28px 55% 40%;
+}
+
+.south-america {
+    width: 35px; /* Diperbesar dari 25px */
+    height: 90px; /* Diperbesar dari 65px */
+    top: 110px; /* Disesuaikan dari 80px */
+    left: 55px; /* Disesuaikan dari 40px */
+    border-radius: 18px 35px 25px 55%;
+}
+
+.europe {
+    width: 28px; /* Diperbesar dari 20px */
+    height: 35px; /* Diperbesar dari 25px */
+    top: 35px; /* Disesuaikan dari 25px */
+    left: 110px; /* Disesuaikan dari 80px */
+    border-radius: 50% 30% 60% 40%;
+}
+
+.africa {
+    width: 42px; /* Diperbesar dari 30px */
+    height: 110px; /* Diperbesar dari 80px */
+    top: 55px; /* Disesuaikan dari 40px */
+    left: 120px; /* Disesuaikan dari 85px */
+    border-radius: 40% 50% 30% 70%;
+}
+
+.asia {
+    width: 70px; /* Diperbesar dari 50px */
+    height: 90px; /* Diperbesar dari 65px */
+    top: 28px; /* Disesuaikan dari 20px */
+    left: 165px; /* Disesuaikan dari 120px */
+    border-radius: 60% 40% 50% 80%;
+}
+
+.australia {
+    width: 32px; /* Diperbesar dari 23px */
+    height: 20px; /* Diperbesar dari 15px */
+    top: 165px; /* Disesuaikan dari 120px */
+    left: 185px; /* Disesuaikan dari 135px */
+    border-radius: 60% 40% 80% 30%;
+}
+
+/* Location Pins */
+.location-pin {
+    position: absolute;
+    background: white;
+    padding: 6px 10px; /* Dikurangi dari 8px 12px */
+    border-radius: 15px; /* Dikurangi dari 20px */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Dikurangi dari 4px 15px */
+    font-size: 10px; /* Dikurangi dari 12px */
+    font-weight: 500;
+    color: #333;
+    animation: float 3s ease-in-out infinite;
+}
+
+.pin-1 {
+    top: -35px; /* Disesuaikan dengan globe yang lebih besar */
+    right: 70px; /* Disesuaikan dengan globe yang lebih besar */
+    animation-delay: 0s;
+}
+
+.pin-2 {
+    left: -70px; /* Disesuaikan dengan globe yang lebih besar */
+    top: 50%;
+    animation-delay: 1s;
+}
+
+.pin-3 {
+    bottom: -35px; /* Disesuaikan dengan globe yang lebih besar */
+    right: -10px; /* Disesuaikan */
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); } /* Dikurangi dari -10px */
+}
+
+.pin-icon {
+    display: inline-block;
+    margin-right: 4px; /* Dikurangi dari 5px */
+    color: #ff4757;
+}
+
+/* Airplanes */
+.airplane {
+    position: absolute;
+    font-size: 18px; /* Dikurangi dari 24px */
+    color: #ff4757;
+    animation: fly 15s linear infinite;
+    z-index: 10;
+}
+
+.airplane-1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.airplane-2 {
+    top: 20%;
+    right: 10%;
+    animation-delay: 5s;
+    transform: rotate(45deg);
+}
+
+.airplane-3 {
+    bottom: 30%;
+    left: 5%;
+    animation-delay: 10s;
+    transform: rotate(-30deg);
+}
+
+.airplane-4 {
+    bottom: 10%;
+    right: 15%;
+    animation-delay: 7s;
+    transform: rotate(60deg);
+}
+
+@keyframes fly {
+    0% { transform: translateX(-15px) translateY(0px) rotate(0deg); opacity: 0; } /* Dikurangi dari -20px */
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(15px) translateY(-8px) rotate(15deg); opacity: 0; } /* Dikurangi dari 20px dan -10px */
+}
+
+/* Flight Paths */
+.flight-path {
+    position: absolute;
+    border: 2px dashed #ff4757;
+    opacity: 0.3;
+    border-radius: 50%;
+    animation: dash 20s linear infinite;
+}
+
+/* Semua flight paths diperkecil */
+.path-1 {
+    width: 130px; /* Dari 200px */
+    height: 100px; /* Dari 150px */
+    top: 15%;
+    left: 20%;
+    transform: rotate(30deg);
+}
+
+.path-2 {
+    width: 120px; /* Dari 180px */
+    height: 80px; /* Dari 120px */
+    top: 40%;
+    right: 15%;
+    transform: rotate(-45deg);
+}
+
+.path-3 {
+    width: 105px; /* Dari 160px */
+    height: 65px; /* Dari 100px */
+    bottom: 25%;
+    left: 10%;
+    transform: rotate(60deg);
+}
+
+.path-4 {
+    width: 95px; /* Dari 140px */
+    height: 55px; /* Dari 80px */
+    bottom: 15%;
+    right: 20%;
+    transform: rotate(-20deg);
+}
+
+@keyframes dash {
+    0% { border-color: transparent #ff4757 transparent #ff4757; }
+    25% { border-color: #ff4757 transparent #ff4757 transparent; }
+    50% { border-color: transparent #ff4757 transparent #ff4757; }
+    75% { border-color: #ff4757 transparent #ff4757 transparent; }
+    100% { border-color: transparent #ff4757 transparent #ff4757; }
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    max-width: 320px; /* Dikurangi dari 400px */
+    margin-left: 40px; /* Dikurangi dari 60px */
+}
+
+.title {
+    font-size: 2rem; /* Dikurangi dari 2.5rem */
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px; /* Dikurangi dari 15px */
+    line-height: 1.1; /* Dikurangi dari 1.2 */
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 17px; /* Dikurangi dari 1rem */
+    line-height: 1.4; /* Dikurangi dari 1.6 */
+    margin-bottom: 15px; /* Dikurangi dari 30px */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wadah {
+        flex-direction: column;
+        padding: 10px 15px; /* Kurangi padding atas-bawah */
+        min-height: 60vh; /* Kurangi tinggi minimum */
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 15px; /* Dikurangi dari 25px */
+        max-width: 100%;
+    }
+
+    .globe {
+        width: 220px; /* Diperbesar dari 180px untuk mobile */
+        height: 220px; /* Diperbesar dari 180px untuk mobile */
+    }
+
+    .title {
+        font-size: 1.7rem; /* Dikurangi dari 2rem */
+        text-align: center;
+        margin-bottom: 5px; /* Kurangi margin */
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 0.85rem;
+        margin-bottom: 10px; /* Kurangi margin */
+    }
+
+    .airplane {
+        font-size: 16px; /* Dikurangi dari 18px */
+    }
 }
