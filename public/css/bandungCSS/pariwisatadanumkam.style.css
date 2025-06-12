@@ -332,53 +332,6 @@ body {
     }
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero-description {
-        right: 50px;
-        width: clamp(280px, 40vw, 400px);
-        font-size: 0.9rem;
-    }
-
-    .angklung-icon {
-        right: 50%;
-        width: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .centered-text {
-        top: 25%;
-    }
-
-    .hero-subtitle {
-        margin-left: -20px;
-        margin-bottom: -10px;
-    }
-
-    .hero-description {
-        position: static;
-        margin: 50px auto 0;
-        width: 90%;
-        max-width: 400px;
-        text-align: justify;
-    }
-
-    .angklung-icon {
-        top: 35%;
-        right: 45%;
-        width: 120px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .slideshow-indicators {
-        bottom: 20px;
-    }
-}
 
 * {
     margin: 0;
@@ -857,44 +810,6 @@ z .button,
     border-top: 1px solid #374151;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .text-wrapper-33 {
-        font-size: 2.5rem;
-    }
-
-    .text-wrapper-32 {
-        font-size: 3.5rem;
-    }
-
-    .text-wrapper-31 {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-
-    .header .list-5 > div {
-        gap: 1rem;
-    }
-
-    .header a,
-    .header .text-wrapper-34,
-    .header .text-wrapper-36 {
-        padding: 0.3rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    .heading .text-wrapper-6,
-    .rekomendasi-trip {
-        font-size: 2rem;
-    }
-    .destination-trip {
-        font-size: 2rem;
-    }
-
-    .group-2 {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -1448,40 +1363,4 @@ body {
     font-size: 17px; /* Dikurangi dari 1rem */
     line-height: 1.4; /* Dikurangi dari 1.6 */
     margin-bottom: 15px; /* Dikurangi dari 30px */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .wadah {
-        flex-direction: column;
-        padding: 10px 15px; /* Kurangi padding atas-bawah */
-        min-height: 60vh; /* Kurangi tinggi minimum */
-    }
-
-    .content {
-        margin-left: 0;
-        margin-top: 15px; /* Dikurangi dari 25px */
-        max-width: 100%;
-    }
-
-    .globe {
-        width: 220px; /* Diperbesar dari 180px untuk mobile */
-        height: 220px; /* Diperbesar dari 180px untuk mobile */
-    }
-
-    .title {
-        font-size: 1.7rem; /* Dikurangi dari 2rem */
-        text-align: center;
-        margin-bottom: 5px; /* Kurangi margin */
-    }
-
-    .subtitle {
-        text-align: center;
-        font-size: 0.85rem;
-        margin-bottom: 10px; /* Kurangi margin */
-    }
-
-    .airplane {
-        font-size: 16px; /* Dikurangi dari 18px */
-    }
 }

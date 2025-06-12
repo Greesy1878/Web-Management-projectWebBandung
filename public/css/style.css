@@ -372,53 +372,6 @@ body {
     }
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero-description {
-        right: 50px;
-        width: clamp(280px, 40vw, 400px);
-        font-size: 0.9rem;
-    }
-
-    .angklung-icon {
-        right: 50%;
-        width: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .centered-text {
-        top: 25%;
-    }
-
-    .hero-subtitle {
-        margin-left: -20px;
-        margin-bottom: -10px;
-    }
-
-    .hero-description {
-        position: static;
-        margin: 50px auto 0;
-        width: 90%;
-        max-width: 400px;
-    }
-
-    .angklung-icon {
-        top: 35%;
-        right: 45%;
-        width: 120px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .slideshow-indicators {
-        bottom: 20px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -429,6 +382,7 @@ body {
     font-family: "Instrument Sans", sans-serif;
     background-color: #f8f9fa;
 }
+
 
 /* ===== TOURISM SECTION ===== */
 .section {
@@ -476,179 +430,7 @@ body {
     line-height: 1.7;
     margin-bottom: 30px;
     text-align: left;
-}
-
-/* Explore Button */
-.explore-btn {
-    width: 150px;
-    height: 50px;
-    background-color: #ffa03f;
-    color: white;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Instrument Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 40px;
-    transition: background-color 0.3s ease;
-    animation: pulseBtn 2.5s ease-in-out infinite;
-    text-decoration: none;
-}
-
-@keyframes pulseBtn {
-    0%,
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 rgba(255, 160, 63, 0.5);
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(255, 160, 63, 0.6);
-    }
-}
-
-.explore-btn:hover {
-    background-color: #ea580c;
-}
-
-.explore-btn::after {
-    content: "→";
-    margin-left: 8px;
-    font-size: 1.2rem;
-}
-
-/* Statistics */
-.stats-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    min-width: 100px;
-    font-family: "Inter", sans-serif;
-}
-
-.stat-number {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.stat-label {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-}
-
-/* Image Container */
-.image-container {
-    flex: 1;
-    max-width: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    padding: 20px;
-}
-
-.image-container .image-wrapper {
-    width: 80%;
-    height: 400px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #87ceeb 0%, #98e4e8 100%);
-    position: relative;
-    filter: drop-shadow(30px 25px 5px #d9d9d9);
-    overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .section-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .section-heading {
-        font-size: 2rem;
-    }
-
-    .stats-container {
-        gap: 20px;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-
-    .image-container {
-        max-width: 100%;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Instrument Sans", sans-serif;
-    background-color: #f8f9fa;
-}
-
-/* ===== TOURISM SECTION ===== */
-.section {
-    width: 100%;
-    padding: 60px 40px;
-    background-color: #fff;
-}
-
-.section-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Text Content */
-.text-content {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-}
-
-.section-title {
-    color: #ffa03f;
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.section-heading {
-    color: #000;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.section-description {
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.7;
-    margin-bottom: 30px;
-    text-align: left;
+    text-align: justify;
 }
 
 /* Explore Button */
@@ -704,6 +486,7 @@ body {
 .stat-item {
     min-width: 100px;
     font-family: "Inter", sans-serif;
+    text-align: justify;
 }
 
 .stat-number {
@@ -769,28 +552,6 @@ body {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .section-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .section-heading {
-        font-size: 2rem;
-    }
-
-    .stats-container {
-        gap: 20px;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-
-    .image-container {
-        max-width: 100%;
-    }
-}
 
 /* ===== UMKM SECTION ===== */
 .umkm-section {
@@ -925,6 +686,7 @@ body {
     line-height: 1.7;
     margin-bottom: 30px;
     text-align: left;
+    text-align: justify;
 }
 
 /* UMKM Button with Advanced Effects */
@@ -966,11 +728,6 @@ body {
     transition: left 0.5s;
 }
 
-.umkm-button::after {
-    content: "→";
-    margin-left: 8px;
-    font-size: 1.2rem;
-}
 
 .umkm-button:hover {
     transform: translateY(-2px) scale(1.05);
@@ -1000,8 +757,9 @@ body {
 
 .umkm-stat-item {
     text-align: left;
-    font-family: "Inter", sans-serif;
     min-width: 100px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
 }
 
 .umkm-stat-number {
@@ -1043,57 +801,6 @@ body {
     z-index: -1;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .umkm-section {
-        padding: 60px 80px;
-    }
-
-    .umkm-wrapper {
-        gap: 60px;
-    }
-
-    .umkm-right {
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .umkm-section {
-        padding: 40px 20px;
-        min-height: auto;
-    }
-
-    .umkm-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .umkm-left {
-        max-width: 100%;
-    }
-
-    .umkm-right {
-        max-width: 100%;
-        padding-left: 0;
-    }
-
-    .umkm-title {
-        font-size: 1.75rem;
-    }
-
-    .umkm-description {
-        font-size: 18px;
-    }
-
-    .umkm-stats {
-        gap: 30px;
-    }
-
-    .umkm-stat-number {
-        font-size: 24px;
-    }
-}
 
 /* ===== WELCOME SECTION ===== */
 .welcome-section {
