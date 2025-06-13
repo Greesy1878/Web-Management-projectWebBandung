@@ -275,17 +275,17 @@
         .score {
             font-size: 3rem;
             font-weight: bold;
-            color: #2c5530;
+            color: #000000;
         }
 
         .total-reviews {
-            color: #666;
+            color: #000000;
             font-size: 0.9rem;
         }
 
         .visit-btn {
             width: 100%;
-            background: #4CAF50;
+            background: #26A59E;
             color: white;
             padding: 1rem;
             border: none;
@@ -297,7 +297,7 @@
         }
 
         .visit-btn:hover {
-            background: #45a049;
+            background: #1b807a;
         }
 
         /* Right Column */
@@ -307,20 +307,20 @@
             gap: 2rem;
         }
 
-        .contact-info {
+        .contact-infoo {
             background: white;
             padding: 1.5rem;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .contact-info h3 {
+        .contactt-info h3 {
             color: #000000;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
 
-        .contact-item {
+        .contactt-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -328,7 +328,7 @@
             color: #000000;
         }
 
-        .contact-item i {
+        .contactt-item i {
             color: #000000;
             width: 20px;
         }
@@ -435,7 +435,7 @@
         }
 
         .submit-btn:hover {
-            background: #c2c2c2;
+            background: #156662;
         }
 
         /* Review List */
@@ -545,21 +545,21 @@
 
         .page-number {
             padding: 0.5rem 1rem;
-            border: 1px solid #ddd;
+            border: 1px solid #000000;
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s;
         }
 
         .page-number.active {
-            background: #4CAF50;
+            background: #8d8d8d;
             color: white;
-            border-color: #4CAF50;
+            border-color: #000000;
         }
 
         .page-number:hover:not(.active) {
-            background: #f8f9fa;
-            border-color: #4CAF50;
+            background: #8d8d8d;
+            border-color: #000000;
         }
 
   /* ===== FOOTER SECTION ===== */
@@ -596,4 +596,124 @@
 .footer-text {
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #375e75;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #cccccc;
+}
+/* Contact Information */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contact-text {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contact-text:hover {
+    color: #cccccc;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.horizontal-border {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.hello-we-are-lift {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.heading-about,
+.heading-contact {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #f9fafb;
+}
+
+.list-2,
+.list-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
