@@ -50,6 +50,12 @@
                     <span>UMKM</span>
                 </a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/sesi" method= "POST" style="color: #192A3E !important;">
+                    <i class="fa-solid fa-border-all" style="color: #C2CFE0 !important;"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
         </ul>
 
         <div id="content-wrapper" class=" bg-white">
