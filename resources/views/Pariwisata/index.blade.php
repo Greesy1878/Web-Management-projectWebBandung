@@ -176,10 +176,10 @@
                             <div class="pull-image">
                                 <img src="{{ $destination->image }}" alt="{{ $destination->title }}" />
                             </div>
-
+                            <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
                             <div class="text-wrapper-28">{{ $destination->title }}</div>
                             <div class="list-4">
-                                <div class="item-5">4.5(6n966)</div>
+                                <div class="item-5">4.5(6.966)</div>
                             </div>
                             <a href="{{ route('pariwisata.detail', ['id' => $destination]) }}"
                                 class="btn-telusuri">Telusuri</a>
@@ -229,7 +229,7 @@
                             <div class="destination-image">
                                 <img src="{{ $destination->imagedestination }}" alt="{{ $destination->title }}" />
                             </div>
-
+                            <div class="text-wrapper-27">{{ $destination->lokasi }}</div>
                             <div class="text-wrapper-28">{{ $destination->title }}</div>
                             <div class="list-4">
                                 <div class="item-5">4.5(6.966)</div>
@@ -282,9 +282,7 @@
                                     </p>
                                 </div>
                             </div>
-
-                            
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>

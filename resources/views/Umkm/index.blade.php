@@ -178,7 +178,7 @@
                         <div class="list-4">
                             <div class="item-5">4.5(6.966)</div>
                         </div>
-                        <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}"
+                        <a href="{{ route('umkm.detail', ['id' => $umkmdestination]) }}"
                             class="btn-telusuri">Telusuri</a>
                     </div>
                     @endforeach
@@ -230,7 +230,7 @@
                         <div class="list-4">
                             <div class="item-5">4.5(6.966)</div>
                         </div>
-                        <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}" class="btn-telusuri">Telusuri</a>
+                        <a href="{{ route('umkm.detail', ['id' => $umkmdestination]) }}" class="btn-telusuri">Telusuri</a>
                     </div>
                     @endforeach
                 </div>
@@ -238,53 +238,52 @@
         </div>
 
         <!-- Berita -->
-        <div class="berita section">
-            <div class="container">
-                <div class="group">
-                    <div class="background">
-                        <div class="group-2">
-                            <div class="container-4">
-                                <div class="text-wrapper-5">Berita</div>
-                                <div class="heading">
-                                    <div class="text-wrapper-6">Tips & Trik Berbelanja di Kabupaten Bandung
+       <!-- Berita -->
+            <div class="berita section">
+                <div class="container">
+                    <div class="group">
+                        <div class="background">
+                            <div class="group-2">
+                                <div class="container-4">
+                                    <div class="text-wrapper-5">Berita</div>
+                                    <div class="heading">
+                                        <div class="text-wrapper-6">Tips & Trik Berbelanja di Kabupaten Bandung</div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="container-5">
-                                <div class="solo-travel">MSN</div>
-                                <div class="pulang-dari-wisata">
-                                    Pulang dari Wisata di Kabupaten Bandung? <br />Ini Deretan Oleh-Oleh Khas
+                                <div class="container-5">
+                                    <div class="solo-travel">MSN</div>
+                                    <div class="pulang-dari-wisata">
+                                        Pulang dari Wisata di Kabupaten Bandung? <br />Ini Deretan Oleh-Oleh Khas
+                                    </div>
+                                    <p class="jelajahi-destinasi">
+                                        Liburan ke Kabupaten Bandung nggak lengkap tanpa membawa pulang oleh-oleh khas
+                                        daerah ini.
+                                        Terkenal dengan lanskap alamnya yang sejuk dan penuh pesona.
+                                    </p>
                                 </div>
-                                <p class="jelajahi-destinasi">
-                                    Liburan ke Kabupaten Bandung nggak lengkap tanpa membawa pulang oleh-oleh
-                                    khas
-                                    daerah ini.
-                                    Terkenal dengan lanskap alamnya yang sejuk dan penuh pesona.
-                                </p>
-                            </div>
 
-                            <div class="container-6">
-                                <div class="text-wrapper-7">Sokoguru</div>
-                                <div class="text-wrapper-8">5 UMKM Kabupaten Bandung yang Wajib Kamu Coba!
+                                <div class="container-6">
+                                    <div class="text-wrapper-7">Sokoguru</div>
+                                    <div class="text-wrapper-8">5 UMKM Kabupaten Bandung yang Wajib Kamu Coba!</div>
+                                    <p class="jelajahi-wisata">
+                                        Kabupaten Bandung bukan hanya terkenal dengan keindahan alamnya.
+                                    </p>
                                 </div>
-                                <p class="jelajahi-wisata">
-                                    Kabupaten Bandung bukan hanya terkenal dengan keindahan alamnya.
-                                </p>
-                            </div>
 
-                            <div class="container-7">
-                                <div class="detik-com">Bandung Bisnis</div>
-                                <div class="text-wrapper-8">7000 Produk UMKM di Kabupaten Bandung</div>
-                                <p class="jelajahi-wisata">
-                                    Pemerintah Kabupaten Bandung mendorong percepatan ekonomi.
-                                </p>
+                                <div class="container-7">
+                                    <div class="detik-com">Bandung Bisnis</div>
+                                    <div class="text-wrapper-8">7000 Produk UMKM di Kabupaten Bandung</div>
+                                    <p class="jelajahi-wisata">
+                                        Pemerintah Kabupaten Bandung mendorong percepatan ekonomi.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
 <!-- Welcome Section -->
 <section class="welcome-section">
     <div class="since-text">Since 2025</div>
@@ -399,10 +398,7 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
         <div class="copyright">
             © 2024 SagalaBandung. All rights reserved
         </div>
