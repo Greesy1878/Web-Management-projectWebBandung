@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\View;
 
+
 class SessionController extends Controller
 {
     function index(){
@@ -35,7 +36,7 @@ class SessionController extends Controller
 
         if (Auth::attempt($infologin)) {
             // Kalau auth sukses
-            return redirect('/')->with('success','Berhasil Login'); // Ganti dengan redirect jika ingin langsung ke halaman dashboard
+            return redirect('/admin')->with('success','Berhasil Login'); // Ganti dengan redirect jika ingin langsung ke halaman dashboard
         } else {
             // Kalau auth gagal
             return redirect('sesi')->withErrors('Username/Password Yang Dimasukkan Tidak Valid');

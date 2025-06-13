@@ -142,7 +142,7 @@
                 <!-- Map -->
                     <div class="lokasi-section">
                     <h3 class="map-title">Peta Lokasi</h3>
-                    <diV class="map-container">{{!! $destination->map !!}} </diV>
+                    <diV class="map-container">{{!! $destination->map !}} </diV>
                 </div>
 
             </div>

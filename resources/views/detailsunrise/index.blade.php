@@ -1,4 +1,4 @@
-<?php
+{{-- <?php
 // Database connection
 $host = 'localhost';
 $dbname = 'pariwisata';
@@ -539,4 +539,4 @@ endfor;
     </script>
 </body>
 
-</html>
+</html> --}}
