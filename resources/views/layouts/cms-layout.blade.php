@@ -95,16 +95,10 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
         <div class="copyright">
             © 2024 SagalaBandung. All rights reserved
         </div>
     </footer>
-
-    <script src="{{asset('js/index.js')}}"></script>
-</body>
 
 </html>

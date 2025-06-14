@@ -63,11 +63,11 @@
             <thead class="thead-light">
                 <tr>
                     <th>ID</th>
-                    <th>Title</th>
-                    <th>Service</th>
-                    <th>Map</th>
+                    <th>Judul</th>
+                    {{-- <th>Service</th>
+                    <th>Map</th> --}}
+                    <th>Gambar</th>
                     <th>Lokasi</th>
-                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -75,8 +75,8 @@
                 <tr>
                     <td>{{ $destination->id }}</td>
                     <td>{{ $destination->title }}</td>
-                    <td style="max-width: 250px; white-space: normal;">{{ $destination->service }}</td>
-                    <td>{{ $destination->map }}</td>
+                    {{-- <td >{{ $destination->service }}</td> --}}
+                    <td>{{ $destination->image }}</td>
                     <td>{{ $destination->lokasi }}</td>
                     <td>
                         <a href="{{ route('pariwisata.edit', $destination->id) }}" class="btn btn-sm btn-warning">Edit</a>

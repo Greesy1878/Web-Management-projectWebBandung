@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Destinasi - Glamping Lakeside Rancabali</title>
-    <link rel="stylesheet" href="{{ asset('css/detail.css') }}" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ asset('css/detail.css') }}" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" >
+
 </head>
 
 <body>
@@ -119,21 +123,21 @@
             <!-- Right Column -->
             <div class="right-column">
                 <!-- Contact Info -->
-                <div class="contact-info">
+                <div class="contact-infoo">
                     <h3>Kontak Informasi</h3>
-                    <div class="contact-item">
+                    <div class="contactt-item">
                         <i class="fas fa-user"></i>
                         <span>@gunungpuntang</span>
                     </div>
-                    <div class="contact-item">
+                    <div class="contactt-item">
                         <i class="fab fa-instagram"></i>
                         <span>@gunungpuntang_id</span>
                     </div>
-                    <div class="contact-item">
+                    <div class="contactt-item">
                         <i class="fas fa-phone"></i>
                         <span>098-890-503</span>
                     </div>
-                    <div class="contact-item">
+                    <div class="contactt-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat</span>
                     </div>
@@ -314,5 +318,8 @@
             © 2024 SagalaBandung. All rights reserved
         </div>
     </footer>
+
+    <script src="{{asset('js/index.js')}}"></script>
+</body>
 
 </html>
