@@ -54,15 +54,21 @@ Route::get('/login', function () {
 })->name('login');
 
 
-Route::prefix('/admin')->group(function () {
-    Route::get('/', [AdminController::class, 'index'])
-        ->name('admin.index');
-    Route::post('/tourism-objects', [AdminController::class, 'store'])
-        ->name('tourism-objects.store');
+Route::prefix('/admin')->middleware('auth')->group(function () {
+    // Dashboard admin
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+    Route::get('/{id}/edit', [PariwisataController::class, 'edit'])->name('pariwisata.edit');
+    Route::delete('/{id}', [PariwisataController::class, 'destroy'])->name('pariwisata.destroy');
+    Route::put('/{id}', [PariwisataController::class, 'update'])->name('pariwisata.update');
 
+    // Tourism Objects
+    Route::post('/tourism-objects', [AdminController::class, 'store'])->name('tourism-objects.store');
 
-    Route::get('/umkm', [UMKMController::class, 'adminIndex'])
-        ->name('admin.umkm.index');
-    Route::post('/umkm', [UMKMController::class, 'store'])
-        ->name('admin.umkm.store    ');
-})->middleware('auth');
+    // UMKM Routes
+    Route::get('/umkm', [UMKMController::class, 'adminIndex'])->name('admin.umkm.index');
+    Route::post('/umkm', [UMKMController::class, 'store'])->name('admin.umkm.store');
+    Route::get('/umkm/{id}/edit', [UMKMController::class, 'edit'])->name('umkm.edit');
+    Route::delete('/umkm/{id}', [UMKMController::class, 'destroy'])->name('umkm.destroy');
+    Route::put('/admin/umkm/{id}', [UMKMController::class, 'update'])->name('umkm.update');
+});
+
