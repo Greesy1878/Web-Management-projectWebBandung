@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Review;
+use App\Models\UmkmReview;
 use Illuminate\Http\Request;
 
 class DetailUmkmController extends Controller
@@ -32,7 +32,7 @@ class DetailUmkmController extends Controller
       }
 
         // Simpan data ke database atau lakukan proses lain sesuai kebutuhan
-        Review::create($data);
+        UmkmReview::create($data);
         return redirect()->back();
     }
 }

@@ -179,7 +179,7 @@
                     <div class="list-4">
                         <div class="item-5">4.5(6.966)</div>
                     </div>
-                    <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}"
+                    <a href="{{ route('umkm.detail', ['id' => $umkmdestination]) }}"
                         class="btn-telusuri">Telusuri</a>
                 </div>
                 @endforeach
@@ -283,7 +283,7 @@
                     <div class="listt-4">
                         <div class="itemm-5">4.5(6.966)</div>
                     </div>
-                    <a href="{{ route('pariwisata.detail', ['id' => $umkmdestination]) }}" class="btn-telusurii">Telusuri</a>
+                    <a href="{{ route('umkm.detail', ['id' => $umkmdestination]) }}" class="btn-telusurii">Telusuri</a>
                 </div>
                 @endforeach
             </div>

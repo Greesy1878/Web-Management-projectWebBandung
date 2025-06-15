@@ -65,10 +65,10 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::post('/tourism-objects', [AdminController::class, 'store'])->name('tourism-objects.store');
 
     // UMKM Routes
-    Route::get('/umkm', [UMKMController::class, 'adminIndex'])->name('admin.umkm.index');
+    Route::get('/umkm', [UMKMController::class, 'adminIndex'])->name('admin.umkm');
     Route::post('/umkm', [UMKMController::class, 'store'])->name('admin.umkm.store');
     Route::get('/umkm/{id}/edit', [UMKMController::class, 'edit'])->name('umkm.edit');
-    Route::delete('/umkm/{id}', [UMKMController::class, 'destroy'])->name('umkm.destroy');
+    Route::delete('/umkm/{id}', action: [UMKMController::class, 'destroy'])->name('umkm.destroy');
     Route::put('/admin/umkm/{id}', [UMKMController::class, 'update'])->name('umkm.update');
 });
 
