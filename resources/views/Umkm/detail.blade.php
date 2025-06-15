@@ -22,7 +22,7 @@
                 <div class="item-6">
                     <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
                 </div>
-                <div class="item-7">
+                <div class="item-6">
                     <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
                 </div>
                 <div class="item-8">

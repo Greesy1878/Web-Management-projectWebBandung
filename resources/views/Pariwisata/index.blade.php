@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <title>Sagala Bandung - Pariwisata & UMKM</title>
     <link rel="stylesheet" href="{{ asset('css/bandungCSS/pariwisatadanumkam.style.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/detail.css') }}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 
@@ -160,7 +160,7 @@
             <div class="container-17 section-title">
                 <div class="text-wrapper-25">Rekomendasi</div>
                 <div class="heading">
-                    <div class="rekomendasi-trip">Rekomendasi Trip Wisata </div>
+                    <div class="rekomendasi-trip">Rekomendasi Trip Wisata  Populer Kabupaten Bandung</div>
                     <div class="rekomendasi-trip">Populer Kabupaten Bandung</div>
                 </div>
             </div>
