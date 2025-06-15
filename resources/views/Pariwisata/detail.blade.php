@@ -127,11 +127,11 @@
                     <h3>Kontak Informasi</h3>
                     <div class="contactt-item">
                         <i class="fas fa-user"></i>
-                        <span>@gunungpuntang</span>
+                        {{-- <span>@gunungpuntang</span> --}}
                     </div>
                     <div class="contactt-item">
                         <i class="fab fa-instagram"></i>
-                        <span>@gunungpuntang_id</span>
+                        {{-- <span>@gunungpuntang_id</span> --}}
                     </div>
                     <div class="contactt-item">
                         <i class="fas fa-phone"></i>
@@ -139,7 +139,7 @@
                     </div>
                     <div class="contactt-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat</span>
+                        {{-- <span>Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat</span> --}}
                     </div>
                 </div>
 
@@ -298,15 +298,15 @@
                 <div class="contact-list">
                     <div class="contact-item">
                         <span class="contact-icon"><i class="fas fa-phone-alt"></i></span>
-                        <a href="tel:+6282121090209" class="contact-text">+62 821 2109 0209</a>
+                        {{-- <a href="tel:+6282121090209" class="contact-text">+62 821 2109 0209</a> --}}
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                        <a href="mailto:sagalabandung@gmail.com" class="contact-text">sagalabandung@gmail.com</a>
+                        {{-- <a href="mailto:sagalabandung@gmail.com" class="contact-text">sagalabandung@gmail.com</a> --}}
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span class="contact-text">PBB I49, BANDUNG, INDONESIA</span>
+                        {{-- <span class="contact-text">PBB I49, BANDUNG, INDONESIA</span> --}}
                     </div>
                 </div>
             </div>
