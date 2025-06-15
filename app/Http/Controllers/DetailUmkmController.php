@@ -9,7 +9,7 @@ class DetailUmkmController extends Controller
 {
     public function index(Request $request)
     {
-        return view('detailumkm.index');
+        return view('umkm.store');
     }
 
     public function store(Request $request)

@@ -68,7 +68,7 @@ class UMKMController extends Controller
         $umkm->update($validated);
 
         Alert::success('Berhasil', 'Data UMKM berhasil diperbarui');
-        return redirect()->route('admin.umkm.index');
+        return redirect()->route('umkm.index');
     }
 
     public function destroy($id)
@@ -77,6 +77,6 @@ class UMKMController extends Controller
         $umkm->delete();
 
         Alert::success('Berhasil', 'Data UMKM berhasil dihapus');
-        return redirect()->route('admin.umkm.index');
+        return redirect()->route('umkm.index');
     }
 }

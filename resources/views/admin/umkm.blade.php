@@ -5,7 +5,7 @@
     <div class="container mt-5">
         <div class="card">
             <div class="card-body">
-                <form method="POST" action="{{ route('tourism-objects.store') }}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('umkm.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="container mt-4">
                         <h3 class="text-secondary mb-4">UMKM</h3>
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
             </div>
         </div>
@@ -66,7 +66,7 @@
                     <th>Title</th>
                     <th>Service</th>
                     <th>Map</th>
-                    <th>Lokasi</th>
+                    <th>Location</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -75,11 +75,10 @@
                 <tr>
                     <td>{{ $umkmdestination->id }}</td>
                     <td>{{ $umkmdestination->title }}</td>
-                    <td style="max-width: 250px; white-space: normal;">{{ $umkmdestination->service }}</td>
-                    <td>{{ $umkmdestination->map }}</td>
+                    <td>{{ $umkmdestination->image }}</td>
                     <td>{{ $umkmdestination->lokasi }}</td>
                     <td>
-                        <a href="{{ route('umkm.edit', $umkmdestination->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="{{ route('umkm.edit', parameters: $umkmdestination->id) }}" class="btn btn-sm btn-warning">Edit</a>
                         <form action="{{ route('umkm.destroy', $umkmdestination->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')

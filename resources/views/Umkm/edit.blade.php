@@ -1,10 +1,11 @@
 @extends('layouts.admin')
 
 @php
-use App\Http\Controllers\TourismObjectController;
+use App\Http\Controllers\DetailUmkmController;
 use App\Models\UmkmDestination;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 @endphp
 
 @section('content')
@@ -82,7 +83,7 @@ use Illuminate\Support\Facades\Route;
 
                     <div class="mt-4">
                         <button type="submit" class="btn btn-success">Update</button>
-                        <a href="{{ route('admin.umkm.index') }}" class="btn btn-secondary ml-2">Batal</a>
+                        <a href="{{ route('umkm.index') }}" class="btn btn-secondary ml-2">Batal</a>
                     </div>
                 </form>
             </div>
