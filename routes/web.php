@@ -67,7 +67,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     // UMKM CRUD
     Route::get('/umkm', [UMKMController::class, 'adminIndex'])->name('umkm.index'); // Diperbaiki di sini
-    Route::post('/umkm', [DetailUmkmController::class, 'store'])->name('umkm.store');
+    Route::post('/umkm', [UMKMController::class, 'store'])->name('umkm.store');
     Route::get('/umkm/{id}/edit', [UMKMController::class, 'edit'])->name('umkm.edit');
     Route::delete('/umkm/{id}', [UMKMController::class, 'destroy'])->name('umkm.destroy');
     Route::put('/umkm/{id}', [UMKMController::class, 'update'])->name('umkm.update'); // Path juga disesuaikan
