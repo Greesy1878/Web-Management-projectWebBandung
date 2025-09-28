@@ -11,46 +11,69 @@
     <title>Dashboard Admin</title>
 
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- CSS Assets -->
-    {{-- <link rel="stylesheet" href="{{ asset('css/fontawesome-free/css/fontawesome.min.css') }}"> --}}
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet">
 </head>
 
 <body id="page-top">
-    @include('sweetalert::alert')
-    
+    {{-- SweetAlert2 --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if(session('success'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: "{{ session('success') }}",
+                timer: 2000,
+                showConfirmButton: false
+            });
+        </script>
+    @endif
+
+    @if(session('error'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: "{{ session('error') }}"
+            });
+        </script>
+    @endif
+
     <div id="wrapper">
         <!-- Sidebar -->
         <ul class="navbar-nav sidebar shadow-nav sidebar-dark accordion bg-light" id="accordionSidebar">
             <a class="sidebar-brand d-flex align-items-left justify-content-left" href="/admin" style="padding-left: 0;">
-                <div class="sidebar-brand-text mx-3" style="text-align: left;">
-                    Dashboard
-                </div>
+                <div class="sidebar-brand-text mx-3">Dashboard</div>
             </a>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/admin">
                     <i class="fa-solid fa-border-all"></i>
                     <span>Pariwisata</span>
                 </a>
             </li>
-            
-            <li class="nav-item active">
+
+            <li class="nav-item">
                 <a class="nav-link" href="/admin/umkm">
-                    <i class="fa-solid fa-border-all"></i>
+                    <i class="fa-solid fa-store"></i>
                     <span>UMKM</span>
                 </a>
             </li>
-            
-            <li class="nav-item active">
-                <a class="nav-link" href="/sesi" method="POST">
-                    <i class="fa-solid fa-border-all"></i>
-                    <span>Logout</span>
-                </a>
+
+            <li class="nav-item">
+                <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                    @csrf
+                    <button type="submit" class="nav-link btn btn-link p-0" style="color: inherit;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </button>
+                </form>
             </li>
         </ul>
 
@@ -67,25 +90,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal -->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Scripts -->
     <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
     <script>
@@ -93,21 +97,21 @@
             document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"><\/script>');
         }
     </script>
-    
+
     <script src="{{ asset('js/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script>
         if (typeof bootstrap === 'undefined') {
             document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"><\/script>');
         }
     </script>
-    
+
     <script src="{{ asset('js/jquery-easing/jquery.easing.min.js') }}"></script>
     <script>
         if (typeof jQuery.easing === 'undefined') {
             document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"><\/script>');
         }
     </script>
-    
+
     <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
 
     <script>
@@ -127,17 +131,6 @@
             const scrollToTop = document.querySelector('.scroll-to-top');
             window.addEventListener('scroll', function() {
                 scrollToTop.style.display = window.pageYOffset > 100 ? 'flex' : 'none';
-            });
-
-            // Mobile sidebar toggle
-            const sidebar = document.querySelector('.sidebar');
-            document.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    const sidebarToggle = document.querySelector('#sidebarToggle');
-                    if (!sidebar.contains(e.target) && !sidebarToggle?.contains(e.target)) {
-                        sidebar.classList.remove('active');
-                    }
-                }
             });
         });
     </script>

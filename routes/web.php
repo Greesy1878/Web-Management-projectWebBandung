@@ -32,6 +32,9 @@ Route::get('/umkm/{id}', [UMKMController::class, 'detail'])->name('umkm.detail')
 Route::get('/review', [ReviewController::class, 'index'])->name('review.dashboard');
 Route::post('/rating', [DetailGlamping::class, 'store'])->name('rating.store');
 
+// Route::get('/umkmreview', [ReviewController::class, 'index'])->name('umkm.review.store');+
+Route::post('/umkmrating', [DetailUmkmController::class, 'store'])->name('umkm.review.store');
+
 // ===================
 // Auth Session Routes
 // ===================
@@ -60,6 +63,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 
     // Pariwisata CRUD
+    Route::get('/pariwisata', [PariwisataController::class, 'adminIndex'])->name('pariwisata.index');
     Route::get('/{id}/edit', [PariwisataController::class, 'edit'])->name('pariwisata.edit');
     Route::delete('/{id}', [PariwisataController::class, 'destroy'])->name('pariwisata.destroy');
     Route::put('/{id}', [PariwisataController::class, 'update'])->name('pariwisata.update');

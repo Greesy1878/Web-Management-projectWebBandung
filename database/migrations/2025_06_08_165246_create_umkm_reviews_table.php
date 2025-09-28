@@ -15,7 +15,7 @@ return new class extends Migration
             $table->tinyInteger('rating'); // 1–5
             $table->text('comment');
             $table->string('media_path', 255)->nullable();
-            $table->string('lokasi', 150);
+
 
             $table->timestamps();
         });

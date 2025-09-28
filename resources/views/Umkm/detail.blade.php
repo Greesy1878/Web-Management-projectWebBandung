@@ -5,162 +5,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Destinasi - Glamping Lakeside Rancabali</title>
-    <link rel="stylesheet" href="{{ asset('css/detail.css') }}" >
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" >
+    <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap">
 
 </head>
 
 <body>
     <div class="detail">
-    <header class="header">
-        <div class="list-5">
-            <div>
-                <div class="item-6">
-                    <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
-                </div>
-                <div class="item-6">
-                    <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
-                </div>
-                <div class="item-8">
-                    <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+        <header class="header">
+            <div class="list-5">
+                <div>
+                    <div class="item-6">
+                        <a href="{{ url('/') }}" class="text-wrapper-36">Home</a>
+                    </div>
+                    <div class="item-6">
+                        <a href="{{ url('/pariwisata') }}" class="text-wrapper-36">Pariwisata</a>
+                    </div>
+                    <div class="item-8">
+                        <a href="{{ url('/umkm') }}" class="text-wrapper-36">UMKM</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Detail Destinasi</h1>
-    </section>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Detail Destinasi</h1>
+        </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Left Column -->
-        <div class="left-column">
-            <!-- Image Gallery -->
-            <div class="image-gallery">
-                <div class="main-image">
-                    <img src="{{ $umkmdestination->image }}" alt="{{ $umkmdestination->title }}" />
-                </div>
-                <div class="thumbnail-images">
-                    <div class="thumbnail">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div class="main-image">
                         <img src="{{ $umkmdestination->image }}" alt="{{ $umkmdestination->title }}" />
                     </div>
-                    <div class="thumbnail">
-                        <img src="{{ $umkmdestination->image }}" alt="{{ $umkmdestination->title }}" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rating -->
-            <div class="rating-section">
-                <div class="rating-stars">
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star active"></i>
-                    <i class="fas fa-star-half-alt active"></i>
-                </div>
-                <span class="rating-text">Rating: 4.5/5</span>
-            </div>
-
-            <!-- Title -->
-            <h2 class="destination-title">{{ $umkmdestination->title }}</h2>
-
-            <!-- Description -->
-            <div class="description">
-                <h3>Deskripsi</h3>
-                <p>{{ $umkmdestination->content }}</p>
-            </div>
-
-            <!-- Facilities and Services -->
-            <div class="facilities-services">
-                <div class="facilities">
-                    <h3>Fasilitas</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Sistem Pembayaran Digital</li>
-                        <li><i class="fas fa-check"></i> Toilet</li>
-                        <li><i class="fas fa-check"></i> Area Parkir</li>
-                        <li><i class="fas fa-check"></i> Spot Foto</li>
-                        <li><i class="fas fa-check"></i> Sewa Direkam</li>
-                    </ul>
-                </div>
-                <div class="services">
-                    <h3>Layanan</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Area Camping & Penginapan</li>
-                        <li><i class="fas fa-check"></i> Lokasi Sejarah</li>
-                        <li><i class="fas fa-check"></i> Penyewaan Alat Camping</li>
-                        <li><i class="fas fa-check"></i> Penawaran Wisata Gunung</li>
-                        <li><i class="fas fa-check"></i> Jalur Tracking & Hiking</li>
-                    </ul>
-                </div>
-            </div>
-
-                    <!-- Rating Display -->
-                    <div class="rating-display">
-                        <div class="rating-score">
-                            <span class="score">4.5</span>
-                            <div class="rating-stars">
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star active"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="total-reviews">(127 Reviews)</span>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail">
+                            <img src="{{ $umkmdestination->image }}" alt="{{ $umkmdestination->title }}" />
+                        </div>
+                        <div class="thumbnail">
+                            <img src="{{ $umkmdestination->image }}" alt="{{ $umkmdestination->title }}" />
                         </div>
                     </div>
-
-                    <!-- Visit Buttons -->
-                    <button class="visit-btn">Kunjungi</button>
-                    
                 </div>
 
-                <!-- Right Column -->
-                <div class="right-column">
-                    <!-- Contact Info -->
-                    <div class="contact-infoo">
-                        <h3>Kontak Informasi</h3>
-                        <div class="contactt-item">
-                            <i class="fas fa-user"></i>
-                            {{-- <span>@gunungpuntang</span> --}}
-                        </div>
-                        <div class="contactt-item">
-                            <i class="fab fa-instagram"></i>
-                            {{-- <span>@gunungpuntang_id</span> --}}
-                        </div>
-                        <div class="contactt-item">
-                            <i class="fas fa-phone"></i>
-                            <span>098-890-503</span>
-                        </div>
-                        <div class="contactt-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            {{-- <span>Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat</span> --}}
-                        </div>
+                <!-- Rating -->
+                <div class="rating-section">
+                    <div class="rating-stars">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star-half-alt active"></i>
                     </div>
-    
-                    <!-- Map -->
-                        <div class="lokasi-section">
-                        <h3 class="map-title">Peta Lokasi</h3>
-                        <diV class="map-container">{!! $umkmdestination->map !!} </diV>
-                    </div>
-    
+                    <span class="rating-text">Rating: 4.5/5</span>
                 </div>
-        </div>
-        </div>
-        </main>
+
+                <!-- Title -->
+                <h2 class="destination-title">{{ $umkmdestination->title }}</h2>
+
+                <!-- Description -->
+                <div class="description">
+                    <h3>Deskripsi</h3>
+                    <p>{{ $umkmdestination->content }}</p>
+                </div>
+
+                <!-- Facilities and Services -->
+                <div class="facilities-services">
+                    <div class="facilities">
+                        <h3>Fasilitas</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Sistem Pembayaran Digital</li>
+                            <li><i class="fas fa-check"></i> Toilet</li>
+                            <li><i class="fas fa-check"></i> Area Parkir</li>
+                            <li><i class="fas fa-check"></i> Spot Foto</li>
+                            <li><i class="fas fa-check"></i> Sewa Direkam</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <h3>Layanan</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Area Camping & Penginapan</li>
+                            <li><i class="fas fa-check"></i> Lokasi Sejarah</li>
+                            <li><i class="fas fa-check"></i> Penyewaan Alat Camping</li>
+                            <li><i class="fas fa-check"></i> Penawaran Wisata Gunung</li>
+                            <li><i class="fas fa-check"></i> Jalur Tracking & Hiking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rating Display -->
+                <div class="rating-display">
+                    <div class="rating-score">
+                        <span class="score">4.5</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="total-reviews">(127 Reviews)</span>
+                    </div>
+                </div>
+
+                <!-- Visit Buttons -->
+                <button class="visit-btn">Kunjungi</button>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Contact Info -->
+                <div class="contact-infoo">
+                    <h3>Kontak Informasi</h3>
+                    <div class="contactt-item">
+                        <i class="fas fa-user"></i>
+                        {{-- <span>@gunungpuntang</span> --}}
+                    </div>
+                    <div class="contactt-item">
+                        <i class="fab fa-instagram"></i>
+                        {{-- <span>@gunungpuntang_id</span> --}}
+                    </div>
+                    <div class="contactt-item">
+                        <i class="fas fa-phone"></i>
+                        <span>098-890-503</span>
+                    </div>
+                    <div class="contactt-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        {{-- <span>Majalengka Wol, Bandung, Kabupaten Bandung, Jawa Barat</span> --}}
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="lokasi-section">
+                    <h3 class="map-title">Peta Lokasi</h3>
+                    <diV class="map-container">{!! $umkmdestination->map !!} </diV>
+                </div>
+
+            </div>
+    </div>
+    </div>
+    </main>
 
     <!-- Review Form -->
     <div class="review-form">
         <div class="container">
             <h3>Beri Ulasan</h3>
 
-            <form action="{{ route('rating.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('umkm.review.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="umkmdestination_id" value="{{ $umkmdestination->id }}" />
                 <div class="form-group">
@@ -210,39 +210,39 @@
             <h3>Ulasan Pengunjung ({{ $umkmdestination->umkm_reviews->count() }} Ulasan)</h3>
             <div class="reviews-container">
                 @foreach ($umkmdestination->umkm_reviews as $umkmreview)
-                <div class="review-item">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <strong class="reviewer-name">{{ $umkmreview->name }}</strong>
-                            <span class="review-date">{{ $umkmreview->created_at }}</span>
-                        </div>
-                        <div class="review-rating">
-                            @for ($i = 1; $i < $umkmreview->rating; $i++)
-                                <i class="fas fa-star active"></i>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">{{ $umkmreview->name }}</strong>
+                                <span class="review-date">{{ $umkmreview->created_at }}</span>
+                            </div>
+                            <div class="review-rating">
+                                @for ($i = 1; $i < $umkmreview->rating; $i++)
+                                    <i class="fas fa-star active"></i>
                                 @endfor
                                 <i class="fas fa-star active"></i>
 
                                 <span class="rating-value">({{ $umkmreview->rating }}/5)</span>
+                            </div>
+                        </div>
+
+                        <div class="review-content">
+                            @if ($umkmreview->media_path)
+                                <img src="/{{ $umkmreview->media_path }}" alt="">
+                            @endif
+                            <p>{{ $umkmreview->comment }}</p>
+                            </p>
+                        </div>
+
+                        <div class="review-actions">
+                            <button class="like-btn" onclick="likeReview(1)">
+                                <i class="fas fa-thumbs-up"></i> Suka
+                            </button>
+                            <button class="reply-btn" onclick="replyToReview(1)">
+                                <i class="fas fa-reply"></i> Balas
+                            </button>
                         </div>
                     </div>
-
-                    <div class="review-content">
-                        @if ($umkmreview->media_path)
-                        <img src="/{{ $umkmreview->media_path }}" alt="">
-                        @endif
-                        <p>{{ $umkmreview->comment }}</p>
-                        </p>
-                    </div>
-
-                    <div class="review-actions">
-                        <button class="like-btn" onclick="likeReview(1)">
-                            <i class="fas fa-thumbs-up"></i> Suka
-                        </button>
-                        <button class="reply-btn" onclick="replyToReview(1)">
-                            <i class="fas fa-reply"></i> Balas
-                        </button>
-                    </div>
-                </div>
                 @endforeach
 
 
@@ -320,7 +320,7 @@
         </div>
     </footer>
 
-    <script src="{{asset('js/index.js')}}"></script>
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 
 </html>
